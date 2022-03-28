@@ -21,7 +21,6 @@ const ContactForm = () => {
 	const {
 		register,
 		handleSubmit,
-		watch,
 		formState: { errors },
 	} = useForm({
 		resolver: yupResolver(schema),
@@ -32,9 +31,7 @@ const ContactForm = () => {
 	const openModal = () => setIsOpen(true);
 	const closeModal = () => setIsOpen(false);
 
-	const onSubmit = e => {
-		e.preventDefault();
-
+	const onSubmit = () => {
 		const formData = new FormData(myForm.current);
 
 		fetch('/', {
@@ -44,7 +41,6 @@ const ContactForm = () => {
 		})
 			.then(() => {
 				openModal();
-				e.target.reset();
 			})
 			.catch(error => console.log(error));
 	};
@@ -120,7 +116,7 @@ const ContactForm = () => {
 				method='POST'
 				netlify-honeypot='bot-field'
 				data-netlify='true'
-				onSubmit={e => handleSubmit(onSubmit(e))}
+				onSubmit={handleSubmit(onSubmit)}
 				className='space-y-6'
 			>
 				<input type='hidden' name='form-name' value='contact' />
@@ -180,7 +176,9 @@ const ContactForm = () => {
 						name='message'
 						rows='10'
 						{...register('message')}
-						className='text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2'
+						className={`${
+							errors.message && 'border-primary-200'
+						} text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
 					/>
 					<p className='text-sm text-gray-700'>
 						{errors.message &&
