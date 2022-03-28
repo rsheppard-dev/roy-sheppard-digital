@@ -23,6 +23,7 @@
 	span,
 	label,
 	input,
+	textarea,
 	button {
 		@apply font-lato text-lg tracking-wider md:text-2xl;
 	}
