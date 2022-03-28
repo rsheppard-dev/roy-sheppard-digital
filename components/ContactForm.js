@@ -21,7 +21,6 @@ const ContactForm = () => {
 	const {
 		register,
 		handleSubmit,
-		watch,
 		formState: { errors },
 	} = useForm({
 		resolver: yupResolver(schema),
@@ -32,7 +31,7 @@ const ContactForm = () => {
 	const openModal = () => setIsOpen(true);
 	const closeModal = () => setIsOpen(false);
 
-	const onSubmit = e => {
+	const onSubmit = (data, e) => {
 		e.preventDefault();
 
 		fetch('/', {
