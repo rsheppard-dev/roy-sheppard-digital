@@ -1,8 +1,10 @@
-import { useState, Fragment } from 'react';
+import { useState, useRef, Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 
 const ContactForm = () => {
 	const [isOpen, setIsOpen] = useState(false);
+
+	const myForm = useRef();
 
 	const openModal = () => setIsOpen(true);
 	const closeModal = () => setIsOpen(false);
@@ -10,20 +12,18 @@ const ContactForm = () => {
 	const handleSubmit = e => {
 		e.preventDefault();
 
+		e.preventDefault();
+		const formData = new FormData(myForm.current);
 		fetch('/', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: this.encode({
-				'form-name': 'contact',
-				Name: e.target.name.value,
-				Email: e.target.email.value,
-				Phone: e.target.phone.value,
-				Message: e.target.message.value,
-			}),
-		}).then(() => {
-			openModal();
-			e.target.reset();
-		});
+			body: new URLSearchParams(formData).toString(),
+		})
+			.then(() => {
+				openModal();
+				e.target.reset();
+			})
+			.catch(error => console.log(error));
 	};
 	return (
 		<>
@@ -92,6 +92,7 @@ const ContactForm = () => {
 			</Transition>
 
 			<form
+				ref={myForm}
 				name='contact'
 				method='POST'
 				netlify-honeypot='bot-field'
