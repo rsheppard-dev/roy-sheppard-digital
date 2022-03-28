@@ -10,7 +10,7 @@ const ContactForm = () => {
 	const handleSubmit = e => {
 		e.preventDefault();
 		openModal();
-		console.log(e);
+		e.target.reset();
 	};
 	return (
 		<>
@@ -86,6 +86,7 @@ const ContactForm = () => {
 				onSubmit={e => handleSubmit(e)}
 				className='space-y-6'
 			>
+				<input type='hidden' name='form-name' value='contact' />
 				<div className='hidden'>
 					<label>
 						Don’t fill this out if you’re human: <input name='bot-field' />
@@ -97,7 +98,7 @@ const ContactForm = () => {
 						id='name'
 						name='name'
 						type='text'
-						required='true'
+						required={true}
 						className='text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2'
 					/>
 				</div>
@@ -107,7 +108,7 @@ const ContactForm = () => {
 						type='text'
 						id='phone'
 						name='phone'
-						required='true'
+						required={true}
 						className='text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2'
 					/>
 				</div>
@@ -117,7 +118,7 @@ const ContactForm = () => {
 						id='email'
 						name='email'
 						type='text'
-						required='true'
+						required={true}
 						className='text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2'
 					/>
 				</div>
@@ -127,7 +128,7 @@ const ContactForm = () => {
 						id='message'
 						name='message'
 						rows='10'
-						required='true'
+						required={true}
 						className='text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2'
 					/>
 				</div>
