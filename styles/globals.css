@@ -1,16 +1,91 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://use.typekit.net/hpq4abv.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html,
+	body {
+		@apply scroll-smooth overflow-x-hidden;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		@apply font-futura;
+	}
+	p,
+	a,
+	li,
+	span,
+	label,
+	input,
+	button {
+		@apply font-lato text-lg tracking-wider md:text-2xl;
+	}
+
+	h2 {
+		@apply text-3xl md:text-6xl font-bold;
+	}
+
+	h3 {
+		@apply text-2xl md:text-3xl font-bold;
+	}
+
+	li {
+		@apply bg-bullet bg-no-repeat pl-16;
+	}
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@layer utilities {
+	.text-shadow {
+		text-shadow: 2px 2px 4px black;
+	}
+
+	.shape-outside-circle {
+		shape-outside: circle(50%);
+	}
+
+	.link-underline {
+		border-bottom-width: 0;
+		padding-bottom: 10px;
+		background-image: linear-gradient(transparent, transparent),
+			linear-gradient(#fff, #fff);
+		background-size: 8px 8px;
+		background-position: 0 100%;
+		background-repeat: no-repeat;
+		transition: background-size 0.5s ease-in-out;
+	}
+
+	.link-underline-black {
+		background-image: linear-gradient(transparent, transparent),
+			linear-gradient(#f49730, #f49730);
+	}
+
+	.link-underline:hover {
+		background-size: 100% 8px;
+		background-position: 0 100%;
+	}
+
+	.button-fill-left {
+		box-shadow: inset 0px 0px 0px #f49730;
+		transition: all 0.5s !important;
+	}
+
+	.button-fill-left:hover {
+		box-shadow: inset 150px 0px 0px #f49730;
+	}
 }
 
-* {
-  box-sizing: border-box;
+@layer components {
+	.text-link {
+		@apply underline decoration-wavy underline-offset-2 decoration-primary-100 hover:decoration-primary-200 transition-colors ease-in-out duration-500;
+	}
+
+	.button-tertiary {
+		@apply bg-primary-100 py-3 px-6 rounded-lg hover:bg-primary-200 transition-colors duration-500 ease-in-out;
+	}
 }
