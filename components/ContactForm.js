@@ -137,7 +137,9 @@ const ContactForm = () => {
 						name='name'
 						type='text'
 						{...register('fullName')}
-						className='text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2'
+						className={`${
+							errors.fullName && 'border-2 border-primary-100'
+						} text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
 					/>
 					<p className='text-sm text-gray-700'>
 						{errors.fullName && 'Please enter your full name.'}
@@ -150,7 +152,9 @@ const ContactForm = () => {
 						id='phone'
 						name='phone'
 						{...register('phone')}
-						className='text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2'
+						className={`${
+							errors.phone && 'border-2 border-primary-100'
+						} text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
 					/>
 					<p className='text-sm text-gray-700'>
 						{errors.phone && 'Please enter a valid phone number.'}
@@ -163,7 +167,9 @@ const ContactForm = () => {
 						name='email'
 						type='text'
 						{...register('email')}
-						className='text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2'
+						className={`${
+							errors.email && 'border-2 border-primary-100'
+						} text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
 					/>
 					<p className='text-sm text-gray-700'>
 						{errors.email && 'Please enter a valid email address.'}
@@ -177,7 +183,7 @@ const ContactForm = () => {
 						rows='10'
 						{...register('message')}
 						className={`${
-							errors.message && 'border-primary-200'
+							errors.message && 'border-2 border-primary-100'
 						} text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
 					/>
 					<p className='text-sm text-gray-700'>
