@@ -21,6 +21,7 @@ const ContactForm = () => {
 	const {
 		register,
 		handleSubmit,
+		watch,
 		formState: { errors },
 	} = useForm({
 		resolver: yupResolver(schema),
@@ -31,16 +32,15 @@ const ContactForm = () => {
 	const openModal = () => setIsOpen(true);
 	const closeModal = () => setIsOpen(false);
 
-	const onSubmit = (data, e) => {
+	const onSubmit = e => {
 		e.preventDefault();
+
+		const formData = new FormData(myForm.current);
 
 		fetch('/', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: encode({
-				'form-name': 'contact',
-				...data,
-			}),
+			body: new URLSearchParams(formData).toString(),
 		})
 			.then(() => {
 				openModal();
@@ -120,7 +120,7 @@ const ContactForm = () => {
 				method='POST'
 				netlify-honeypot='bot-field'
 				data-netlify='true'
-				onSubmit={handleSubmit(onSubmit)}
+				onSubmit={e => handleSubmit(onSubmit(e))}
 				className='space-y-6'
 			>
 				<input type='hidden' name='form-name' value='contact' />
