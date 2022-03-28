@@ -9,8 +9,21 @@ const ContactForm = () => {
 
 	const handleSubmit = e => {
 		e.preventDefault();
-		openModal();
-		e.target.reset();
+
+		fetch('/', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			body: this.encode({
+				'form-name': 'contact',
+				Name: e.target.name.value,
+				Email: e.target.email.value,
+				Phone: e.target.phone.value,
+				Message: e.target.message.value,
+			}),
+		}).then(() => {
+			openModal();
+			e.target.reset();
+		});
 	};
 	return (
 		<>
