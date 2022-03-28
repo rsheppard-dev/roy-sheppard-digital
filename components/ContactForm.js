@@ -10,6 +10,7 @@ const ContactForm = () => {
 	const handleSubmit = e => {
 		e.preventDefault();
 		openModal();
+		console.log(e);
 	};
 	return (
 		<>
@@ -85,7 +86,7 @@ const ContactForm = () => {
 				onSubmit={e => handleSubmit(e)}
 				className='space-y-6'
 			>
-				<div class='hidden'>
+				<div className='hidden'>
 					<label>
 						Don’t fill this out if you’re human: <input name='bot-field' />
 					</label>
