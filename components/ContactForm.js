@@ -21,6 +21,7 @@ const ContactForm = () => {
 	const {
 		register,
 		handleSubmit,
+		reset,
 		formState: { errors },
 	} = useForm({
 		resolver: yupResolver(schema),
@@ -41,6 +42,7 @@ const ContactForm = () => {
 		})
 			.then(() => {
 				openModal();
+				reset();
 			})
 			.catch(error => console.log(error));
 	};
