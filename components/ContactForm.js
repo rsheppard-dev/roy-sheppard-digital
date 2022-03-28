@@ -1,10 +1,15 @@
 const ContactForm = () => {
+	const handleSubmit = e => {
+		e.preventDefault();
+		alert('Form Submitted');
+	};
 	return (
 		<form
 			name='contact'
 			method='POST'
 			netlify-honeypot='bot-field'
 			data-netlify='true'
+			onSubmit={e => handleSubmit(e)}
 			className='space-y-6'
 		>
 			<div class='hidden'>
@@ -18,6 +23,7 @@ const ContactForm = () => {
 					id='name'
 					name='name'
 					type='text'
+					required='true'
 					className='rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2'
 				/>
 			</div>
@@ -27,6 +33,7 @@ const ContactForm = () => {
 					type='text'
 					id='phone'
 					name='phone'
+					required='true'
 					className='rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2'
 				/>
 			</div>
@@ -36,6 +43,7 @@ const ContactForm = () => {
 					id='email'
 					name='email'
 					type='text'
+					required='true'
 					className='rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2'
 				/>
 			</div>
@@ -45,6 +53,7 @@ const ContactForm = () => {
 					id='message'
 					name='message'
 					rows='10'
+					required='true'
 					className='rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2'
 				/>
 			</div>
