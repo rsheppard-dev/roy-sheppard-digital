@@ -55,7 +55,7 @@
 		padding-bottom: 10px;
 		background-image: linear-gradient(transparent, transparent),
 			linear-gradient(#fff, #fff);
-		background-size: 8px 8px;
+		background-size: 0px 5px;
 		background-position: 0 100%;
 		background-repeat: no-repeat;
 		transition: background-size 0.5s ease-in-out;
@@ -67,7 +67,7 @@
 	}
 
 	.link-underline:hover {
-		background-size: 100% 8px;
+		background-size: 100% 5px;
 		background-position: 0 100%;
 	}
 

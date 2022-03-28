@@ -1,18 +1,40 @@
 import { useState, useRef, Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
+import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
+
+const phoneRegExp = /((\+44(\s\(0\)\s|\s0\s|\s)?)|0)7\d{3}(\s)?\d{6}/g;
+
+const schema = yup
+	.object({
+		fullName: yup.string().required(),
+		phone: yup.string().matches(phoneRegExp).required(),
+		email: yup.string().email().required(),
+		message: yup.string().required(),
+	})
+	.required();
 
 const ContactForm = () => {
 	const [isOpen, setIsOpen] = useState(false);
+
+	const {
+		register,
+		handleSubmit,
+		watch,
+		formState: { errors },
+	} = useForm({
+		resolver: yupResolver(schema),
+	});
 
 	const myForm = useRef();
 
 	const openModal = () => setIsOpen(true);
 	const closeModal = () => setIsOpen(false);
 
-	const handleSubmit = e => {
+	const onSubmit = e => {
 		e.preventDefault();
 
-		e.preventDefault();
 		const formData = new FormData(myForm.current);
 		fetch('/', {
 			method: 'POST',
@@ -97,7 +119,7 @@ const ContactForm = () => {
 				method='POST'
 				netlify-honeypot='bot-field'
 				data-netlify='true'
-				onSubmit={e => handleSubmit(e)}
+				onSubmit={handleSubmit(onSubmit)}
 				className='space-y-6'
 			>
 				<input type='hidden' name='form-name' value='contact' />
@@ -117,9 +139,12 @@ const ContactForm = () => {
 						id='name'
 						name='name'
 						type='text'
-						required={true}
+						{...register('fullName')}
 						className='text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2'
 					/>
+					<p className='text-sm text-gray-700'>
+						{errors.fullName && 'Please enter your full name.'}
+					</p>
 				</div>
 				<div className='flex flex-col space-y-2'>
 					<label htmlFor='phone'>Phone number:</label>
@@ -127,9 +152,12 @@ const ContactForm = () => {
 						type='text'
 						id='phone'
 						name='phone'
-						required={true}
+						{...register('phone')}
 						className='text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2'
 					/>
+					<p className='text-sm text-gray-700'>
+						{errors.phone && 'Please enter a valid phone number.'}
+					</p>
 				</div>
 				<div className='flex flex-col space-y-2'>
 					<label htmlFor='email'>Email:</label>
@@ -137,9 +165,12 @@ const ContactForm = () => {
 						id='email'
 						name='email'
 						type='text'
-						required={true}
+						{...register('email')}
 						className='text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2'
 					/>
+					<p className='text-sm text-gray-700'>
+						{errors.email && 'Please enter a valid email address.'}
+					</p>
 				</div>
 				<div className='flex flex-col space-y-2'>
 					<label htmlFor='message'>Tell me about your project:</label>
@@ -147,9 +178,13 @@ const ContactForm = () => {
 						id='message'
 						name='message'
 						rows='10'
-						required={true}
+						{...register('message')}
 						className='text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2'
 					/>
+					<p className='text-sm text-gray-700'>
+						{errors.message &&
+							'Come on, you must tell me a little bit about your project.'}
+					</p>
 				</div>
 				<button
 					type='submit'
