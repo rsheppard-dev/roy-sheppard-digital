@@ -48,7 +48,10 @@ const ContactForm = () => {
 					className='rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2'
 				/>
 			</div>
-			<button className='my-10 text-white bg-secondary-100 py-3 px-6 rounded-lg hover:bg-secondary-200 transition-colors duration-500 ease-in-out'>
+			<button
+				type='submit'
+				className='my-10 text-white bg-secondary-100 py-3 px-6 rounded-lg hover:bg-secondary-200 transition-colors duration-500 ease-in-out'
+			>
 				Send Message
 			</button>
 		</form>
