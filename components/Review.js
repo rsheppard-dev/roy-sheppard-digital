@@ -28,10 +28,10 @@ const Review = () => {
 				variants={buttonVariants}
 				whileTap='tap'
 				whileHover='hover'
-				className='rounded-full bg-secondary-100 w-52 h-52 md:w-64 md:h-64 flex p-4 absolute left-[calc(50%-6.5rem)] sm:left-[calc(50%-8rem)] md:left-[calc(100%-17rem)] -top-40 md:-top-52'
+				className='rounded-full bg-secondary-100 w-52 h-52 sm:w-64 sm:h-64 flex p-4 absolute left-[calc(50%-6.5rem)] sm:left-[calc(100%-17rem)] -top-40 sm:-top-52'
 				onClick={onClick}
 			>
-				<span className='font-futura font-medium tracking-wide place-self-center text-white text-xl md:text-2xl text-center leading-snug'>
+				<span className='font-futura font-medium tracking-wide place-self-center text-white text-xl sm:text-2xl text-center leading-snug'>
 					BOOK YOUR FREE WEBSITE STRATEGY CALL TODAY!
 				</span>
 			</motion.button>

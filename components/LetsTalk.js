@@ -1,5 +1,7 @@
 import Image from 'next/image';
+
 import Seperator from './Seperator';
+import developer from '../public/images/web-developer-watford.jpg';
 
 const LetsTalk = () => {
 	return (
@@ -10,11 +12,12 @@ const LetsTalk = () => {
 				</div>
 				<div>
 					<Image
-						src='/images/web-developer-watford.jpg'
+						src={developer}
 						alt='Freelance web developer in Watford'
 						layout='responsive'
 						width={1800}
 						height={1200}
+						placeholder='blur'
 					/>
 				</div>
 				<div className='absolute left-0 top-0 w-full h-full bg-black/30 mix-blend-hue'></div>
