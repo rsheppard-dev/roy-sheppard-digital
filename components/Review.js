@@ -25,12 +25,10 @@ const Review = () => {
 
 		return (
 			<motion.button
-				animate={{ y: [-1000, 100, -80, 60, -40, 20, 0] }}
-				transition={{ delay: 2.7, duration: 1 }}
 				variants={buttonVariants}
 				whileTap='tap'
 				whileHover='hover'
-				className='z-40 rounded-full bg-secondary-100 w-52 h-52 sm:w-64 sm:h-64 flex p-4 absolute left-[calc(50%-6.5rem)] sm:left-[calc(100%-17rem)] -top-40 sm:-top-52'
+				className='rounded-full bg-secondary-100 w-52 h-52 sm:w-64 sm:h-64 flex p-4 absolute left-[calc(50%-6.5rem)] sm:left-[calc(100%-17rem)] -top-40 sm:-top-52'
 				onClick={onClick}
 			>
 				<span className='font-futura font-medium tracking-wide place-self-center text-white text-xl sm:text-2xl text-center leading-snug'>
