@@ -19,7 +19,7 @@ const Contact = () => {
 	return (
 		<section
 			id='contact'
-			className='container text-accent-100 mb-10 scroll-mt-20'
+			className='container text-accent-100 mb-10 scroll-mt-22'
 		>
 			<div className='h-2 w-1/2 bg-primary-100 mx-auto my-10'></div>
 
@@ -49,7 +49,7 @@ const Contact = () => {
 					</a>
 				</div>
 
-				<div className='bg-gray-200 p-8 rounded-lg lg:order-last'>
+				<div className='bg-gray-200 px-8 pb-8 rounded-lg lg:order-last'>
 					<ContactForm />
 				</div>
 
