@@ -51,7 +51,7 @@ const Review = () => {
 
 				<div className='flex justify-center'>
 					<div className='md:ml-[100px]'>
-						<form action=''>
+						<form action='/free-website-review'>
 							<label htmlFor='url' className='text-gray-400 block mb-10'>
 								Enter your website address below:
 							</label>

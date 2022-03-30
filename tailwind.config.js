@@ -39,6 +39,9 @@ module.exports = {
 			backgroundImage: {
 				bullet: 'url("/images/bullet.svg")',
 			},
+			spacing: {
+				18: '4.3rem',
+			},
 		},
 	},
 	plugins: [],

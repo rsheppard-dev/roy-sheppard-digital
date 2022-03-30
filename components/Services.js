@@ -3,7 +3,7 @@ import { WebDesign, WebDevelopment, ECommerce } from './Icons';
 
 const Services = () => {
 	return (
-		<section id='services' className='container text-accent-100 scroll-mt-22'>
+		<section id='services' className='container text-accent-100 scroll-mt-18'>
 			<div className='h-2 w-1/2 bg-primary-100 mx-auto my-10'></div>
 			<h2 className='mb-10 text-center'>What can I do for you?</h2>
 

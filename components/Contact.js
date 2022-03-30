@@ -19,7 +19,7 @@ const Contact = () => {
 	return (
 		<section
 			id='contact'
-			className='container text-accent-100 mb-10 scroll-mt-22'
+			className='container text-accent-100 mb-10 scroll-mt-18'
 		>
 			<div className='h-2 w-1/2 bg-primary-100 mx-auto my-10'></div>
 

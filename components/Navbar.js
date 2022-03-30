@@ -40,7 +40,7 @@ const Navbar = () => {
 		<header
 			className={`${
 				scrollDown && '-translate-y-24'
-			} h-24 fixed z-50 w-screen bg-accent-100/90 py-4 transition-transform duration-500`}
+			} h-24 fixed z-30 w-screen bg-accent-100/90 py-4 transition-transform duration-500`}
 		>
 			<nav className='container h-full flex items-center justify-between'>
 				<Link href='/'>
