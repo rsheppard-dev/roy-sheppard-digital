@@ -8,7 +8,8 @@ const phoneRegExp = /((\+44(\s\(0\)\s|\s0\s|\s)?)|0)7\d{3}(\s)?\d{6}/g;
 
 const schema = yup
 	.object({
-		fullName: yup.string().required(),
+		firstName: yup.string().required(),
+		lastName: yup.string().required(),
 		phone: yup.string().matches(phoneRegExp).required(),
 		email: yup.string().email().required(),
 		message: yup.string().required(),
@@ -133,24 +134,39 @@ const ContactForm = () => {
 					</label>
 				</div>
 				<div className='flex flex-col space-y-2'>
-					<label htmlFor='name'>Full name:</label>
+					<label htmlFor='name'>First name:</label>
 					<input
-						id='name'
-						name='name'
+						id='firstName'
+						name='firstName'
 						type='text'
-						{...register('fullName')}
+						{...register('firstName')}
 						className={`${
-							errors.fullName && 'border-2 border-primary-100'
+							errors.firstName && 'border-2 border-primary-100'
 						} text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
 					/>
 					<p className='text-sm text-gray-700'>
-						{errors.fullName && 'Please enter your full name.'}
+						{errors.firstName && 'Please enter your first name above.'}
+					</p>
+				</div>
+				<div className='flex flex-col space-y-2'>
+					<label htmlFor='name'>Last name:</label>
+					<input
+						id='lastName'
+						name='lastName'
+						type='text'
+						{...register('lastName')}
+						className={`${
+							errors.lastName && 'border-2 border-primary-100'
+						} text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
+					/>
+					<p className='text-sm text-gray-700'>
+						{errors.lastName && 'Please enter your last name above.'}
 					</p>
 				</div>
 				<div className='flex flex-col space-y-2'>
 					<label htmlFor='phone'>Phone number:</label>
 					<input
-						type='text'
+						type='tel'
 						id='phone'
 						name='phone'
 						{...register('phone')}
@@ -167,7 +183,7 @@ const ContactForm = () => {
 					<input
 						id='email'
 						name='email'
-						type='text'
+						type='email'
 						{...register('email')}
 						className={`${
 							errors.email && 'border-2 border-primary-100'

@@ -57,7 +57,7 @@ const Review = () => {
 							</label>
 							<div className='mb-10 space-x-3 space-y-6 md:space-y-0 flex flex-col md:flex-row justify-center items-center'>
 								<input
-									type='text'
+									type='url'
 									name='url'
 									placeholder='https://www.yoursite.com'
 									className='w-full md:w-96 p-4 rounded-xl md:rounded-tr-none md:rounded-br-none'
