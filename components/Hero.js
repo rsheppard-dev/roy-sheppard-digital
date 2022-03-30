@@ -5,7 +5,7 @@ import hero from '../public/images/freelance-web-developer.png';
 
 const Hero = () => {
 	return (
-		<section className='h-screen w-screen font-lato font-bold'>
+		<section className='h-screen w-screen min-h-[650px] font-lato font-bold'>
 			<div className='relative top-0 h-full w-full'>
 				<Image
 					src={hero}
@@ -18,13 +18,13 @@ const Hero = () => {
 				/>
 				<div className='absolute w-full h-full bg-black/30 mix-blend-hue overflow-y-hidden'></div>
 
-				<div className='absolute mt-32 inset-0 container'>
-					<div>
+				<div className='absolute inset-0 container flex flex-col justify-center'>
+					<div className='mb-5'>
 						<motion.h1
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1 }}
 							transition={{ delay: 1.5, duration: 1 }}
-							className='text-white text-xl leading-loose text-shadow font-lato'
+							className='text-white text-sm sm:text-base md:text-lg leading-loose text-shadow font-lato'
 						>
 							Freelance web designer and <br />
 							full-stack developer based in Watford.
@@ -36,7 +36,7 @@ const Hero = () => {
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1 }}
 							transition={{ delay: 2, duration: 1 }}
-							className='mt-6 text-white text-4xl lg:text-6xl leading-normal lg:leading-normal text-shadow font-lato'
+							className='text-white text-2xl sm:text-3xl md:text-4xl lg:text-6xl leading-normal lg:leading-normal text-shadow font-lato'
 						>
 							I create websites
 							<br />
