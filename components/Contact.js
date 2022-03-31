@@ -69,9 +69,11 @@ const Contact = () => {
 						analyse it for you and I’ll give my feedback on what I would do to
 						improve it.
 					</p>
-					<Link href='/free-website-review'>
-						<a className='my-10 button-tertiary'>Free Website Review</a>
-					</Link>
+					<div className='my-10'>
+						<Link href='/free-website-review'>
+							<a className='button-tertiary'>Free Website Review</a>
+						</Link>
+					</div>
 				</div>
 			</div>
 		</section>
