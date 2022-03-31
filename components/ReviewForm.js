@@ -87,7 +87,7 @@ const ReviewForm = ({ url = '' }) => {
 							<div className='inline-block max-w-md p-6 my-8 text-left align-middle transition-all transform bg-accent-100 shadow-xl rounded-2xl'>
 								<Dialog.Title
 									as='h3'
-									className='font-medium leading-6 text-primary-100'
+									className='subheading leading-6 text-primary-100'
 								>
 									Website Received
 								</Dialog.Title>
