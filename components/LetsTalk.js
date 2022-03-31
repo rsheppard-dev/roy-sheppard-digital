@@ -1,7 +1,6 @@
 import Image from 'next/image';
 
 import Seperator from './Seperator';
-import developer from '../public/images/web-developer-watford.jpg';
 
 const LetsTalk = () => {
 	return (
@@ -12,12 +11,11 @@ const LetsTalk = () => {
 				</div>
 				<div>
 					<Image
-						src={developer}
-						alt='Freelance web developer in Watford'
+						src='https://res.cloudinary.com/roy-sheppard-digital/image/upload/f_auto,q_auto/v1643532339/roy-sheppard-digital/freelance-web-designer-watford.jpg'
+						alt='Freelance web designer in Watford'
 						layout='responsive'
-						width={1800}
-						height={1200}
-						placeholder='blur'
+						width={1086}
+						height={724}
 					/>
 				</div>
 				<div className='absolute left-0 top-0 w-full h-full bg-black/30 mix-blend-hue'></div>
