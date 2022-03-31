@@ -1,3 +1,5 @@
+import Router from 'next/router';
+
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -20,7 +22,12 @@ const Review = () => {
 		resolver: yupResolver(schema),
 	});
 
-	const onSubmit = data => console.log(data);
+	const onSubmit = data => {
+		Router.push({
+			pathname: '/free-website-review',
+			query: { url: data.url },
+		});
+	};
 
 	const StrategyCall = ({ url }) => {
 		const onClick = async () => {
@@ -80,10 +87,15 @@ const Review = () => {
 								Enter your website address below:
 							</label>
 							<div className='mb-10 space-x-3 space-y-6 md:space-y-0 flex flex-col flex-wrap md:flex-row justify-center items-center'>
-								<p className='w-full mb-4 text-sm text-gray-300'>
-									{errors.url &&
-										'Please enter a valid URL. Remember to start it with http:// or https://.'}
-								</p>
+								{errors.url && (
+									<span className='w-full mb-4 text-sm text-gray-300'>
+										Please enter a valid URL.
+										<br />
+										Remember to start it with{' '}
+										<span className='font-bold text-sm'>http://</span> or{' '}
+										<span className='font-bold text-sm'>https://</span>
+									</span>
+								)}
 								<input
 									type='url'
 									name='url'

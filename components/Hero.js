@@ -24,7 +24,7 @@ const Hero = () => {
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1 }}
 							transition={{ delay: 1.5, duration: 1 }}
-							className='text-white text-sm sm:text-base md:text-lg leading-loose text-shadow font-lato'
+							className='text-white text-base md:text-lg leading-loose text-shadow font-lato'
 						>
 							Freelance web designer and <br />
 							full-stack developer based in Watford.
