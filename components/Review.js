@@ -90,7 +90,7 @@ const Review = () => {
 									placeholder='https://www.yoursite.com'
 									{...register('url')}
 									className={`${
-										errors.url && 'border-2 border-primary-100'
+										errors.url && 'border-4 border-primary-200	'
 									} w-full md:w-96 p-4 rounded-xl md:rounded-tr-none md:rounded-br-none`}
 								/>
 
