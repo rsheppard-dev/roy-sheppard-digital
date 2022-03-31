@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const Hero = () => {
 	return (
 		<section className='h-screen w-screen min-h-[650px] font-lato font-bold'>
-			<div className='relative top-0 h-full w-full bg-[url("https://res.cloudinary.com/roy-sheppard-digital/image/upload/e_blur:1000,f_auto,q_1/v1648761011/roy-sheppard-digital/freelance-web-designer.png")]'>
+			<div className='relative top-0 h-full w-full bg-[url("https://res.cloudinary.com/roy-sheppard-digital/image/upload/e_blur:1000,f_auto,q_1/v1648761011/roy-sheppard-digital/freelance-web-designer.png")] bg-cover'>
 				<Image
 					src='https://res.cloudinary.com/roy-sheppard-digital/image/upload/f_auto,q_auto/v1648761011/roy-sheppard-digital/freelance-web-designer.png'
 					alt='Freelance web designer in Watford'
