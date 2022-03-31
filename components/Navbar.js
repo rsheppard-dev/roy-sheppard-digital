@@ -51,7 +51,6 @@ const Navbar = () => {
 							layout='intrinsic'
 							width={376}
 							height={88}
-							priority={true}
 						/>
 					</a>
 				</Link>
