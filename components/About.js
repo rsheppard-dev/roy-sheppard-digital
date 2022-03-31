@@ -5,7 +5,7 @@ const About = () => {
 		<section id='about' className='container text-accent-100 scroll-mt-18'>
 			<div className='h-2 w-1/2 bg-primary-100 mx-auto my-10'></div>
 
-			<h2 className='text-center mb-10 leading-snug'>
+			<h2 className='heading text-center mb-10 leading-snug'>
 				Why hire me as your
 				<br />
 				freelance web designer?

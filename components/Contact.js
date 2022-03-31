@@ -2,30 +2,14 @@ import Link from 'next/link';
 
 import ContactForm from './ContactForm';
 import { Phone, Email } from './Icons';
+import OpenCalendar from './OpenCalendar';
 
 const Contact = () => {
-	const StrategyCall = ({ url }) => {
-		const onClick = async () => {
-			// dynamically load react-calendly
-			const { openPopupWidget } = await import('react-calendly');
-
-			openPopupWidget({ url });
-		};
-
-		return (
-			<button className='my-10 button-tertiary' onClick={onClick}>
-				Book Free Strategy Call
-			</button>
-		);
-	};
 	return (
-		<section
-			id='contact'
-			className='container text-accent-100 mb-10 scroll-mt-18'
-		>
+		<section id='contact' className='container text-accent-100 scroll-mt-18'>
 			<div className='h-2 w-1/2 bg-primary-100 mx-auto my-10'></div>
 
-			<h2 className='text-center mb-10 leading-snug'>
+			<h2 className='heading text-center mb-10 leading-snug'>
 				Let's talk about your website project
 			</h2>
 			<div className='grid lg:grid-cols-2 gap-10'>
@@ -56,18 +40,21 @@ const Contact = () => {
 				</div>
 
 				<div>
-					<h3 className='mb-10'>Still not sure?</h3>
+					<h3 className='subheading mb-10'>Still not sure?</h3>
 					<p>
-						I offer a FREE 30 minute strategy call to anyone planning a new
-						website. I can advise you on the best methods to get your business
-						online, even if you don’t end up working with me.
+						I offer a <span className='underline'>FREE</span> 30 minute strategy
+						call to anyone planning a new website. I can advise you on the best
+						methods to get your business online, even if you don’t end up
+						working with me.
 					</p>
-					<StrategyCall url='https://calendly.com/roysheppard-digital/30min?hide_gdpr_banner=1' />
+					<button className='my-10 button-tertiary' onClick={OpenCalendar}>
+						Book Free Strategy Call
+					</button>
 					<p>
-						I am also currently offering FREE website reviews. If you already
-						have a website but aren’t getting the results you hoped for, let me
-						analyse it for you and I’ll give my feedback on what I would do to
-						improve it.
+						I am also currently offering <span className='underline'>FREE</span>{' '}
+						website reviews. If you already have a website but aren’t getting
+						the results you hoped for, let me analyse it for you and I’ll give
+						my feedback on what I would do to improve it.
 					</p>
 					<div className='my-10'>
 						<Link href='/free-website-review'>

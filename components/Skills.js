@@ -17,7 +17,7 @@ const Skills = () => {
 			<div className='container'>
 				<div className='h-2 w-1/2 bg-primary-100 mx-auto my-10'></div>
 
-				<h2 className='text-center mb-10 text-white leading-snug'>
+				<h2 className='heading text-center mb-10 text-white leading-snug'>
 					I'll keep you ahead of your competition with modern web development
 				</h2>
 

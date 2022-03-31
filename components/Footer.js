@@ -1,24 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
+
 import { Facebook, Instagram, Twitter, LinkedIn } from './Icons';
+import OpenCalendar from './OpenCalendar';
 
 const Footer = () => {
-	const StrategyCall = ({ url }) => {
-		const onClick = async () => {
-			// dynamically load react-calendly
-			const { openPopupWidget } = await import('react-calendly');
-
-			openPopupWidget({ url });
-		};
-
-		return (
-			<button className='underline text-base w-fit' onClick={onClick}>
-				Free Strategy Call
-			</button>
-		);
-	};
 	return (
-		<footer className='bg-accent-100 text-white w-screen pt-16 pb-4'>
+		<footer className='bg-accent-100 text-white w-screen pt-16 pb-4 mt-10'>
 			<div className='container grid grid-cols-2 md:grid-cols-3 gap-6 md:grid-rows-4'>
 				<div className='col-span-2 md:col-span-1 md:row-span-1'>
 					<Link href='/'>
@@ -62,7 +50,11 @@ const Footer = () => {
 					<Link href='/ecommerce-watford'>
 						<a className='underline text-base'>E-Commerce</a>
 					</Link>
-					<StrategyCall url='https://calendly.com/roysheppard-digital/30min?hide_gdpr_banner=1' />
+					<div>
+						<button className='underline text-base' onClick={OpenCalendar}>
+							Free Strategy Call
+						</button>
+					</div>
 					<Link href='/free-website-review'>
 						<a className='underline text-base'>Free Website Review</a>
 					</Link>

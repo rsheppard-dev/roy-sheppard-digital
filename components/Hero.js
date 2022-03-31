@@ -23,7 +23,7 @@ const Hero = () => {
 						<motion.h1
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1 }}
-							transition={{ delay: 1.5, duration: 1 }}
+							transition={{ delay: 1, duration: 1 }}
 							className='text-white text-base md:text-lg leading-loose text-shadow font-lato'
 						>
 							Freelance web designer and <br />
@@ -35,7 +35,7 @@ const Hero = () => {
 						<motion.h2
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1 }}
-							transition={{ delay: 2, duration: 1 }}
+							transition={{ delay: 1.5, duration: 1 }}
 							className='text-white text-2xl sm:text-3xl md:text-4xl lg:text-6xl leading-normal lg:leading-normal text-shadow font-lato'
 						>
 							I create websites

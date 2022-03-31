@@ -63,7 +63,7 @@ const Navbar = () => {
 					<Link href='/#about'>
 						<a className='link-underline link-underline-black'>About</a>
 					</Link>
-					<Dropdown />
+					<Dropdown scrollDown={scrollDown} />
 					<Link href='/faq'>
 						<a className='link-underline link-underline-black'>FAQ</a>
 					</Link>

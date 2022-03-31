@@ -69,7 +69,7 @@ const Review = () => {
 				<StrategyCall url='https://calendly.com/roysheppard-digital/30min?hide_gdpr_banner=1' />
 				<div className='h-2 w-1/2 bg-primary-100 mx-auto mb-10'></div>
 
-				<h2 className='text-white mb-10 leading-snug'>
+				<h2 className='heading text-white mb-10 leading-snug'>
 					Already have a website?
 					<br />
 					Apply for your free website review.

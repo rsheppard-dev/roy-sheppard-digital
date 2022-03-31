@@ -28,14 +28,6 @@
 		@apply font-lato text-lg tracking-wider md:text-2xl;
 	}
 
-	h2 {
-		@apply text-3xl md:text-6xl font-bold;
-	}
-
-	h3 {
-		@apply text-2xl md:text-3xl font-bold;
-	}
-
 	li {
 		@apply bg-bullet bg-no-repeat pl-16;
 	}
@@ -88,5 +80,13 @@
 
 	.button-tertiary {
 		@apply bg-primary-100 py-3 px-6 rounded-lg hover:bg-primary-200 transition-colors duration-500 ease-in-out;
+	}
+
+	.heading {
+		@apply text-3xl md:text-6xl font-bold;
+	}
+
+	.subheading {
+		@apply text-2xl md:text-3xl font-bold;
 	}
 }

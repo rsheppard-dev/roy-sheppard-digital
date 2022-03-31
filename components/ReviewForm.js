@@ -4,18 +4,18 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
-const ContactForm = () => {
+const ReviewForm = ({ url = '' }) => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const phoneRegex = /((\+44(\s\(0\)\s|\s0\s|\s)?)|0)7\d{3}(\s)?\d{6}/g;
 
 	const schema = yup
 		.object({
+			url: yup.string().url().required(),
 			firstName: yup.string().required(),
 			lastName: yup.string().required(),
 			phone: yup.string().matches(phoneRegex).required(),
 			email: yup.string().email().required(),
-			message: yup.string().required(),
 		})
 		.required();
 
@@ -89,12 +89,12 @@ const ContactForm = () => {
 									as='h3'
 									className='font-medium leading-6 text-primary-100'
 								>
-									Message Sent
+									Website Received
 								</Dialog.Title>
 								<div className='mt-5'>
 									<p className='text-white'>
-										Thank you for getting in touch. I will get back to you
-										within the next 24 hours.
+										Thank you for applying for your free website review. I aim
+										to send reviews with 2-3 days.
 									</p>
 								</div>
 
@@ -115,23 +115,44 @@ const ContactForm = () => {
 
 			<form
 				ref={myForm}
-				name='contact'
+				name='website-review'
 				method='POST'
 				netlify-honeypot='bot-field'
 				data-netlify='true'
 				onSubmit={handleSubmit(onSubmit)}
 				className='space-y-6'
 			>
-				<input type='hidden' name='form-name' value='contact' />
+				<input type='hidden' name='form-name' value='website-review' />
 				<input
 					type='hidden'
 					name='subject'
-					value='New customer enquiry from roysheppard.digital'
+					value='New website review request from roysheppard.digital'
 				/>
 				<div className='hidden'>
 					<label>
 						Don’t fill this out if you’re human: <input name='bot-field' />
 					</label>
+				</div>
+				<div className='flex flex-col space-y-2'>
+					<label htmlFor='url'>Website URL:</label>
+					<input
+						id='url'
+						name='url'
+						type='url'
+						value={url ? url : ''}
+						placeholder='https://'
+						{...register('url')}
+						className={`${
+							errors.url && 'border-4 border-primary-200'
+						} text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
+					/>
+					{errors.url && (
+						<span className='w-full mb-4 text-sm text-gray-700'>
+							Please enter a valid URL. Remember to start it with{' '}
+							<span className='font-bold text-sm'>http://</span> or{' '}
+							<span className='font-bold text-sm'>https://</span>
+						</span>
+					)}
 				</div>
 				<div className='flex flex-col space-y-2'>
 					<label htmlFor='firstName'>First name:</label>
@@ -144,9 +165,11 @@ const ContactForm = () => {
 							errors.firstName && 'border-4 border-primary-200'
 						} text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
 					/>
-					<p className='text-sm text-gray-700'>
-						{errors.firstName && 'Please enter your first name above.'}
-					</p>
+					{errors.firstName && (
+						<span className='w-full mb-4 text-sm text-gray-700'>
+							Please enter your first name above.
+						</span>
+					)}
 				</div>
 				<div className='flex flex-col space-y-2'>
 					<label htmlFor='lastName'>Last name:</label>
@@ -159,9 +182,11 @@ const ContactForm = () => {
 							errors.lastName && 'border-4 border-primary-200'
 						} text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
 					/>
-					<p className='text-sm text-gray-700'>
-						{errors.lastName && 'Please enter your last name above.'}
-					</p>
+					{errors.lastName && (
+						<span className='w-full mb-4 text-sm text-gray-700'>
+							Please enter your last name above.
+						</span>
+					)}
 				</div>
 				<div className='flex flex-col space-y-2'>
 					<label htmlFor='phone'>Phone number:</label>
@@ -174,9 +199,11 @@ const ContactForm = () => {
 							errors.phone && 'border-4 border-primary-200'
 						} text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
 					/>
-					<p className='text-sm text-gray-700'>
-						{errors.phone && 'Please enter a valid phone number.'}
-					</p>
+					{errors.phone && (
+						<span className='w-full mb-4 text-sm text-gray-700'>
+							Please enter a valid phone number.
+						</span>
+					)}
 				</div>
 				<div className='flex flex-col space-y-2'>
 					<label htmlFor='email'>Email:</label>
@@ -189,35 +216,21 @@ const ContactForm = () => {
 							errors.email && 'border-4 border-primary-200'
 						} text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
 					/>
-					<p className='text-sm text-gray-700'>
-						{errors.email && 'Please enter a valid email address.'}
-					</p>
-				</div>
-				<div className='flex flex-col space-y-2'>
-					<label htmlFor='message'>Tell me about your project:</label>
-					<textarea
-						id='message'
-						name='message'
-						rows='10'
-						{...register('message')}
-						className={`${
-							errors.message && 'border-4 border-primary-200'
-						} text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
-					/>
-					<p className='text-sm text-gray-700'>
-						{errors.message &&
-							'Come on, you must tell me a little bit about your project.'}
-					</p>
+					{errors.email && (
+						<span className='w-full mb-4 text-sm text-gray-700'>
+							Please enter a valid email address.
+						</span>
+					)}
 				</div>
 				<button
 					type='submit'
 					className='my-10 text-white bg-secondary-100 py-3 px-6 rounded-lg hover:bg-secondary-200 transition-colors duration-500 ease-in-out'
 				>
-					Send Message
+					Submit Website
 				</button>
 			</form>
 		</>
 	);
 };
 
-export default ContactForm;
+export default ReviewForm;
