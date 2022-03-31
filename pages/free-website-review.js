@@ -92,7 +92,7 @@ const WebsiteReview = props => {
 						</p>
 
 						<p className='text-sm'>
-							You also agree that the review may be shared online and used for
+							You also agree that the review may be shared online or used for
 							promotional purposes.
 						</p>
 					</div>
