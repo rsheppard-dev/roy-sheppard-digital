@@ -4,13 +4,13 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
-const phoneRegExp = /((\+44(\s\(0\)\s|\s0\s|\s)?)|0)7\d{3}(\s)?\d{6}/g;
+const phoneRegex = /((\+44(\s\(0\)\s|\s0\s|\s)?)|0)7\d{3}(\s)?\d{6}/g;
 
 const schema = yup
 	.object({
 		firstName: yup.string().required(),
 		lastName: yup.string().required(),
-		phone: yup.string().matches(phoneRegExp).required(),
+		phone: yup.string().matches(phoneRegex).required(),
 		email: yup.string().email().required(),
 		message: yup.string().required(),
 	})
