@@ -139,7 +139,7 @@ const ReviewForm = ({ url = '' }) => {
 						id='url'
 						name='url'
 						type='url'
-						value={url ? url : ''}
+						defaultValue={url ? url : ''}
 						placeholder='https://'
 						{...register('url')}
 						className={`${
