@@ -31,7 +31,7 @@ const WebsiteReview = props => {
 
 			<div className='grid grid-cols-1 xl:grid-cols-2 gap-10'>
 				<div>
-					<ul className='space-y-8 my-10'>
+					<ul className='space-y-8 mt-10'>
 						<li>
 							<h3 className='font-bold'>UX Design</h3>
 							<p>
@@ -76,14 +76,15 @@ const WebsiteReview = props => {
 							</p>
 						</li>
 					</ul>
-
+				</div>
+				<div className='xl:col-span-2'>
 					<p>
-						Complete the short form on this page and I will provide you with a
-						full breakdown of my suggestions in a short video where I will talk
-						you through your website and the improvements I would make.
+						Complete the form on this page and I will provide you with a full
+						breakdown of my suggestions in a short video where I will talk you
+						through your website and the improvements I would make.
 					</p>
 				</div>
-				<div className='bg-gray-200 px-8 pb-8 xl:mt-10 rounded-lg h-fit'>
+				<div className='bg-gray-200 px-8 pb-8 xl:mt-10 rounded-lg h-fit xl:row-start-1 xl:col-start-2'>
 					<ReviewForm url={url} />
 					<div className='mt-8 bg-gray-100 rounded-lg p-4'>
 						<p className='text-sm mb-2'>
