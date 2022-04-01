@@ -1,23 +1,23 @@
 @font-face {
-	font-family: 'latobold';
+	font-family: 'lato';
 	src: url('lato-bold-webfont.woff2') format('woff2'),
 		url('lato-bold-webfont.woff') format('woff');
-	font-weight: normal;
+	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'latoregular';
+	font-family: 'lato';
 	src: url('lato-regular-webfont.woff2') format('woff2'),
 		url('lato-regular-webfont.woff') format('woff');
-	font-weight: normal;
+	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'latoblack';
+	font-family: '900';
 	src: url('lato-black-webfont.woff2') format('woff2'),
 		url('lato-black-webfont.woff') format('woff');
 	font-weight: normal;

@@ -10,8 +10,6 @@ const Hero = () => {
 					src='https://res.cloudinary.com/roy-sheppard-digital/image/upload/f_auto,q_auto/v1648761011/roy-sheppard-digital/freelance-web-designer.png'
 					alt='Freelance web designer in Watford'
 					layout='fill'
-					width={1787}
-					height={1080}
 					objectFit='cover'
 					objectPosition='center'
 					priority={true}
