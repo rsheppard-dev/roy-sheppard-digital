@@ -24,14 +24,35 @@ const WebsiteReview = props => {
 				help correct many common mistakes business owners make when launching
 				their website.
 			</p>
-
-			<h2 className='subheading'>
-				What Does My Five Step Free Website Review Cover?
-			</h2>
-
+			<p className='mb-10'>
+				Complete the form on this page and I will provide you with a full
+				breakdown of my suggestions in a short video where I will talk you
+				through your website and the improvements I would make.
+			</p>
 			<div className='grid grid-cols-1 xl:grid-cols-2 gap-10'>
+				<div className='bg-gray-200 px-8 pb-8 xl:mt-10 rounded-lg h-fit xl:row-start-2 xl:col-start-2'>
+					<ReviewForm url={url} />
+					<div className='mt-8 bg-gray-100 rounded-lg p-4'>
+						<p className='text-sm mb-2'>
+							By applying for a free website review you must be the site owner
+							or person responsible for its maintenance.
+						</p>
+
+						<p className='text-sm'>
+							You also agree that the review may be shared online or used for
+							promotional purposes.
+						</p>
+					</div>
+				</div>
+
+				<div className='xl:col-span-2'>
+					<h2 className='subheading'>
+						What Does My 5 Step Free Website Review Cover?
+					</h2>
+				</div>
+
 				<div>
-					<ul className='space-y-8 mt-10'>
+					<ul className='space-y-8'>
 						<li>
 							<h3 className='font-bold'>UX Design</h3>
 							<p>
@@ -76,27 +97,6 @@ const WebsiteReview = props => {
 							</p>
 						</li>
 					</ul>
-				</div>
-				<div className='xl:col-span-2'>
-					<p>
-						Complete the form on this page and I will provide you with a full
-						breakdown of my suggestions in a short video where I will talk you
-						through your website and the improvements I would make.
-					</p>
-				</div>
-				<div className='bg-gray-200 px-8 pb-8 xl:mt-10 rounded-lg h-fit xl:row-start-1 xl:col-start-2'>
-					<ReviewForm url={url} />
-					<div className='mt-8 bg-gray-100 rounded-lg p-4'>
-						<p className='text-sm mb-2'>
-							By applying for a free website review you must be the site owner
-							or person responsible for its maintenance.
-						</p>
-
-						<p className='text-sm'>
-							You also agree that the review may be shared online or used for
-							promotional purposes.
-						</p>
-					</div>
 				</div>
 			</div>
 		</section>

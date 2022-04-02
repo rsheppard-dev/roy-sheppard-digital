@@ -56,11 +56,13 @@ const Contact = () => {
 						the results you hoped for, let me analyse it for you and I’ll give
 						my feedback on what I would do to improve it.
 					</p>
-					<div className='my-10'>
-						<Link href='/free-website-review'>
-							<a className='button-tertiary'>Free Website Review</a>
-						</Link>
-					</div>
+					<Link href='/free-website-review'>
+						<a>
+							<div className='my-10 button-tertiary w-fit'>
+								Free Website Review
+							</div>
+						</a>
+					</Link>
 				</div>
 			</div>
 		</section>
