@@ -40,7 +40,7 @@ module.exports = {
 				bullet: 'url("/images/bullet.svg")',
 			},
 			spacing: {
-				18: '4.3rem',
+				18: '4.1rem',
 			},
 		},
 	},
