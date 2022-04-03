@@ -11,7 +11,6 @@ import OpenCalendar from './OpenCalendar';
 
 const Navbar = () => {
 	const [scrollDown, setScrollDown] = useState(false);
-	const [mobileMenuRef, setMobileMenuRef] = useState();
 
 	const buttonVariants = {
 		topLine: {
@@ -54,21 +53,6 @@ const Navbar = () => {
 			closed: {
 				translateY: 0,
 			},
-		},
-	};
-
-	const menuVariants = {
-		open: {
-			left: 0,
-
-			transition: {
-				delay: 5,
-				x: { type: 'spring', stiffness: 100 },
-				default: { duration: 2 },
-			},
-		},
-		closed: {
-			left: '100vw',
 		},
 	};
 
@@ -148,35 +132,35 @@ const Navbar = () => {
 									</a>
 								</Link>
 							</div>
-							<Popover.Button
-								ref={setMobileMenuRef}
-								className='lg:hidden text-white relative z-50'
-							>
+							<Popover.Button className='group lg:hidden text-white relative z-50 focus:outline-none'>
 								<motion.span
 									variants={buttonVariants.topLine}
 									animate={open ? 'open' : 'closed'}
-									className='block rounded-lg w-10 mb-2 h-1 bg-white'
+									className='block rounded-lg w-10 mb-2 h-1 bg-white group-focus:bg-gray-300'
 								></motion.span>
 								<motion.span
 									variants={buttonVariants.middleLine}
 									animate={open ? 'open' : 'closed'}
-									className='block rounded-lg w-10 mb-2 h-1 bg-white'
+									className='block rounded-lg w-10 mb-2 h-1 bg-white group-focus:bg-gray-300'
 								></motion.span>
 								<motion.span
 									variants={buttonVariants.bottomLine}
 									animate={open ? 'open' : 'closed'}
-									className='block w-10 rounded-lg h-1 bg-white'
+									className='block w-10 rounded-lg h-1 bg-white group-focus:bg-gray-300'
 								></motion.span>
 							</Popover.Button>
 						</nav>
 					</header>
-					<Popover.Panel>
-						<motion.nav
-							variants={menuVariants}
-							animate={open ? 'open' : 'closed'}
-							className='fixed z-30 bg-accent-100 h-full w-full overflow-y-scroll'
+					{open && (
+						<Popover.Panel
+							as={motion.nav}
+							static
+							initial={{ height: 0, opacity: 0 }}
+							animate={{ height: '100vh', opacity: 1 }}
+							transition={{ duration: 0.15 }}
+							className='fixed z-30 bg-accent-100 h-screen w-screen overflow-y-scroll'
 						>
-							<div className='container mt-24 sm:mt-36 flex flex-col space-y-6 text-white'>
+							<div className='container mt-36 sm:mt-24 flex flex-col space-y-6 text-white'>
 								<Popover.Button as='div'>
 									<MyLink
 										href='/'
@@ -195,7 +179,7 @@ const Navbar = () => {
 								</Popover.Button>
 
 								<Menu>
-									{({ open }) => (
+									{({ open: servicesOpen }) => (
 										<>
 											<div className='flex items-center'>
 												<div>
@@ -209,22 +193,31 @@ const Navbar = () => {
 													</Popover.Button>
 												</div>
 												<div>
-													<Menu.Button className='ml-4'>
+													<Menu.Button className='ml-4 focus:outline-none group'>
 														<motion.span
 															variants={buttonVariants.crossHorizontal}
-															animate={open ? 'open' : 'closed'}
-															className='block rounded-lg h-1 w-4 bg-white'
+															initial='closed'
+															animate={servicesOpen ? 'open' : 'closed'}
+															className='block rounded-lg h-1 w-6 bg-white group-focus:bg-gray-300 group-hover:bg-primary-100'
 														></motion.span>
 														<motion.span
 															variants={buttonVariants.crossVertical}
-															animate={open ? 'open' : 'closed'}
-															className='block rounded-lg h-1 w-4 bg-white -translate-y-1'
+															initial='closed'
+															animate={servicesOpen ? 'open' : 'closed'}
+															className='block rounded-lg h-1 w-6 bg-white -translate-y-1 group-focus:bg-gray-300 group-hover:bg-primary-100'
 														></motion.span>
 													</Menu.Button>
 												</div>
 											</div>
-											<Menu.Items>
-												<div className='flex flex-col space-y-6 border-l-8 pl-4 border-secondary-100'>
+											{servicesOpen && (
+												<Menu.Items
+													as={motion.div}
+													static
+													initial={{ height: 0, opacity: 0 }}
+													animate={{ height: 'auto', opacity: 1 }}
+													transition={{ duration: 0.15 }}
+													className='flex flex-col space-y-6 border-l-8 pl-4 border-secondary-100 focus:outline-none focus:bg-secondary-100/10 py-4'
+												>
 													<Menu.Item>
 														{({ active }) => (
 															<Popover.Button as='div'>
@@ -295,8 +288,8 @@ const Navbar = () => {
 															</Popover.Button>
 														)}
 													</Menu.Item>
-												</div>
-											</Menu.Items>
+												</Menu.Items>
+											)}
 										</>
 									)}
 								</Menu>
@@ -318,8 +311,8 @@ const Navbar = () => {
 									</MyLink>
 								</Popover.Button>
 							</div>
-						</motion.nav>
-					</Popover.Panel>
+						</Popover.Panel>
+					)}
 				</>
 			)}
 		</Popover>
