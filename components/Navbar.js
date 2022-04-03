@@ -3,30 +3,56 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { motion } from 'framer-motion';
+import { Menu, Popover } from '@headlessui/react';
 
 import Dropdown from './Dropdown';
+import MyLink from './MyLink';
+import OpenCalendar from './OpenCalendar';
 
 const Navbar = () => {
 	const [scrollDown, setScrollDown] = useState(false);
-	const [isOpen, setIsOpen] = useState(false);
+	const [mobileMenuRef, setMobileMenuRef] = useState();
 
-	const iconVariants = {
-		open: {
-			rotate: 90,
+	const buttonVariants = {
+		topLine: {
+			open: {
+				rotate: 45,
+				translateY: '12px',
+			},
+			closed: {
+				rotate: 0,
+				translateY: 0,
+			},
 		},
-		closed: {
-			rotate: 0,
+		middleLine: {
+			open: {
+				opacity: 0,
+			},
+			closed: {
+				opacity: 1,
+			},
 		},
-	};
-
-	const headerVariants = {
-		open: {
-			height: '100vh',
+		bottomLine: {
+			open: {
+				rotate: -45,
+				translateY: '-12px',
+			},
+			closed: {
+				rotate: 0,
+				translateY: 0,
+			},
 		},
-		closed: {
-			height: '6rem',
-			transition: {
-				delay: 0.5,
+		crossVertical: {
+			open: { rotate: 45, translateY: -4 },
+			closed: {
+				rotate: 90,
+				translateY: -4,
+			},
+		},
+		crossHorizontal: {
+			open: { rotate: -45, translateY: 0 },
+			closed: {
+				translateY: 0,
 			},
 		},
 	};
@@ -34,9 +60,11 @@ const Navbar = () => {
 	const menuVariants = {
 		open: {
 			left: 0,
-			overflow: 'hidden',
+
 			transition: {
-				delay: 0,
+				delay: 5,
+				x: { type: 'spring', stiffness: 100 },
+				default: { duration: 2 },
 			},
 		},
 		closed: {
@@ -74,147 +102,227 @@ const Navbar = () => {
 	}, [scrollDown]);
 
 	return (
-		<>
-			<header
-				className={`${
-					scrollDown && !isOpen && '-translate-y-24'
-				} fixed z-40 w-screen bg-accent-100/90 py-4 transition-transform duration-500 flex flex-col justify-center`}
-			>
-				<nav className='z-30 container flex items-center justify-between'>
-					<div className='z-50 max-w-1/2 w-72'>
-						<Link href='/'>
-							<a onClick={() => setIsOpen(false)}>
-								<Image
-									src='/images/logo.png'
-									alt='Roy Sheppard Digital'
-									layout='intrinsic'
-									width={376}
-									height={88}
-								/>
-							</a>
-						</Link>
-					</div>
-
-					<div className='hidden lg:inline-block text-white font-futura space-x-8 text-2xl'>
-						<Link href='/'>
-							<a className='link-underline link-underline-black'>Home</a>
-						</Link>
-						<Link href='/#about'>
-							<a className='link-underline link-underline-black'>About</a>
-						</Link>
-						<Dropdown scrollDown={scrollDown} />
-						<Link href='/faq'>
-							<a className='link-underline link-underline-black'>FAQ</a>
-						</Link>
-					</div>
-
-					<div className='hidden md:inline-block'>
-						<Link href='/#contact'>
-							<a
-								onClick={() => setIsOpen(false)}
-								className='text-primary-100 hover:text-white border-2 border-primary-100 py-3 px-4 transition button-fill-left'
-							>
-								Let's Talk
-							</a>
-						</Link>
-					</div>
-
-					<button
-						onClick={() => setIsOpen(!isOpen)}
-						className='lg:hidden text-white relative z-50'
+		<Popover>
+			{({ open, close }) => (
+				<>
+					<header
+						className={`${
+							scrollDown && !open && '-translate-y-24'
+						} fixed z-40 w-screen bg-accent-100/90 py-4 transition-transform duration-500 flex flex-col justify-center`}
 					>
-						<motion.span
-							animate={
-								isOpen
-									? { rotate: 45, translateY: '12px' }
-									: { rotate: 0, translateY: 0 }
-							}
-							className='block rounded-lg w-10 mb-2 h-1 bg-white'
-						></motion.span>
-						<motion.span
-							animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
-							className='block rounded-lg w-10 mb-2 h-1 bg-white'
-						></motion.span>
-						<motion.span
-							animate={
-								isOpen
-									? { rotate: -45, translateY: '-12px' }
-									: { rotate: 0, translateY: 0 }
-							}
-							className='block w-10 rounded-lg h-1 bg-white'
-						></motion.span>
-					</button>
-				</nav>
-			</header>
+						<nav className='z-30 container flex items-center justify-between'>
+							<div className='z-50 max-w-1/2 w-72'>
+								<Link href='/'>
+									<a onClick={() => close()}>
+										<Image
+											src='/images/logo.png'
+											alt='Roy Sheppard Digital'
+											layout='intrinsic'
+											width={376}
+											height={88}
+										/>
+									</a>
+								</Link>
+							</div>
 
-			<motion.nav
-				initial={false}
-				variants={menuVariants}
-				animate={isOpen ? 'open' : 'closed'}
-				className='fixed z-30 bg-gray-600 h-screen w-screen'
-			>
-				<div className='container mt-36 flex flex-col space-y-10 text-white'>
-					<Link href='/'>
-						<a
-							onClick={() => setIsOpen(!isOpen)}
-							className='text-2xl w-fit font-futura link-underline link-underline-black'
-						>
-							Home
-						</a>
-					</Link>
-					<Link href='/#about'>
-						<a
-							onClick={() => setIsOpen(!isOpen)}
-							className='text-2xl w-fit font-futura link-underline link-underline-black'
-						>
-							About
-						</a>
-					</Link>
-					<Link href='/#services'>
-						<a
-							onClick={() => setIsOpen(!isOpen)}
-							className='text-2xl w-fit font-futura link-underline link-underline-black'
-						>
-							Services
-							<svg
-								width='24'
-								height='24'
-								viewBox='0 0 24 24'
-								fill='none'
-								xmlns='http://www.w3.org/2000/svg'
+							<div className='hidden lg:inline-block text-white font-futura space-x-8 text-2xl'>
+								<Link href='/'>
+									<a className='link-underline link-underline-black'>Home</a>
+								</Link>
+								<Link href='/#about'>
+									<a className='link-underline link-underline-black'>About</a>
+								</Link>
+								<Dropdown scrollDown={scrollDown} />
+								<Link href='/faq'>
+									<a className='link-underline link-underline-black'>FAQ</a>
+								</Link>
+							</div>
+
+							<div className='hidden md:inline-block'>
+								<Link href='/#contact'>
+									<a
+										onClick={() => close()}
+										className='text-primary-100 hover:text-white border-2 border-primary-100 py-3 px-4 transition button-fill-left'
+									>
+										Let's Talk
+									</a>
+								</Link>
+							</div>
+							<Popover.Button
+								ref={setMobileMenuRef}
+								className='lg:hidden text-white relative z-50'
 							>
-								<path
-									d='M12 6C12.5523 6 13 6.44772 13 7V11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H13V17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17V13H7C6.44772 13 6 12.5523 6 12C6 11.4477 6.44772 11 7 11H11V7C11 6.44772 11.4477 6 12 6Z'
-									fill='currentColor'
-								/>
-								<path
-									fill-rule='evenodd'
-									clip-rule='evenodd'
-									d='M5 22C3.34315 22 2 20.6569 2 19V5C2 3.34315 3.34315 2 5 2H19C20.6569 2 22 3.34315 22 5V19C22 20.6569 20.6569 22 19 22H5ZM4 19C4 19.5523 4.44772 20 5 20H19C19.5523 20 20 19.5523 20 19V5C20 4.44772 19.5523 4 19 4H5C4.44772 4 4 4.44772 4 5V19Z'
-									fill='currentColor'
-								/>
-							</svg>
-						</a>
-					</Link>
-					<Link href='/faq'>
-						<a
-							onClick={() => setIsOpen(!isOpen)}
-							className='text-2xl w-fit font-futura link-underline link-underline-black'
+								<motion.span
+									variants={buttonVariants.topLine}
+									animate={open ? 'open' : 'closed'}
+									className='block rounded-lg w-10 mb-2 h-1 bg-white'
+								></motion.span>
+								<motion.span
+									variants={buttonVariants.middleLine}
+									animate={open ? 'open' : 'closed'}
+									className='block rounded-lg w-10 mb-2 h-1 bg-white'
+								></motion.span>
+								<motion.span
+									variants={buttonVariants.bottomLine}
+									animate={open ? 'open' : 'closed'}
+									className='block w-10 rounded-lg h-1 bg-white'
+								></motion.span>
+							</Popover.Button>
+						</nav>
+					</header>
+					<Popover.Panel>
+						<motion.nav
+							variants={menuVariants}
+							animate={open ? 'open' : 'closed'}
+							className='fixed z-30 bg-accent-100 h-full w-full overflow-y-scroll'
 						>
-							FAQ
-						</a>
-					</Link>
-					<Link href='/#contact'>
-						<a
-							onClick={() => setIsOpen(!isOpen)}
-							className='text-2xl w-fit font-futura link-underline link-underline-black'
-						>
-							Contact
-						</a>
-					</Link>
-				</div>
-			</motion.nav>
-		</>
+							<div className='container mt-24 sm:mt-36 flex flex-col space-y-6 text-white'>
+								<Popover.Button as='div'>
+									<MyLink
+										href='/'
+										className='text-2xl w-fit font-futura link-underline link-underline-black'
+									>
+										Home
+									</MyLink>
+								</Popover.Button>
+								<Popover.Button as='div'>
+									<MyLink
+										href='/#about'
+										className='text-2xl w-fit font-futura link-underline link-underline-black'
+									>
+										About
+									</MyLink>
+								</Popover.Button>
+
+								<Menu>
+									{({ open }) => (
+										<>
+											<div className='flex items-center'>
+												<div>
+													<Popover.Button as='div'>
+														<MyLink
+															href='/#services'
+															className='text-2xl w-fit font-futura link-underline link-underline-black'
+														>
+															Services
+														</MyLink>
+													</Popover.Button>
+												</div>
+												<div>
+													<Menu.Button className='ml-4'>
+														<motion.span
+															variants={buttonVariants.crossHorizontal}
+															animate={open ? 'open' : 'closed'}
+															className='block rounded-lg h-1 w-4 bg-white'
+														></motion.span>
+														<motion.span
+															variants={buttonVariants.crossVertical}
+															animate={open ? 'open' : 'closed'}
+															className='block rounded-lg h-1 w-4 bg-white -translate-y-1'
+														></motion.span>
+													</Menu.Button>
+												</div>
+											</div>
+											<Menu.Items>
+												<div className='flex flex-col space-y-6 border-l-8 pl-4 border-secondary-100'>
+													<Menu.Item>
+														{({ active }) => (
+															<Popover.Button as='div'>
+																<MyLink
+																	href='/web-design-watford'
+																	className={`text-2xl w-fit font-futura link-underline link-underline-black ${
+																		active && 'link-underline-active'
+																	}`}
+																>
+																	Web Design
+																</MyLink>
+															</Popover.Button>
+														)}
+													</Menu.Item>
+													<Menu.Item>
+														{({ active }) => (
+															<Popover.Button as='div'>
+																<MyLink
+																	href='/web-development-watford'
+																	className={`text-2xl w-fit font-futura link-underline link-underline-black ${
+																		active && 'link-underline-active'
+																	}`}
+																>
+																	Web Development
+																</MyLink>
+															</Popover.Button>
+														)}
+													</Menu.Item>
+													<Menu.Item>
+														{({ active }) => (
+															<Popover.Button as='div'>
+																<MyLink
+																	href='/ecommerce-watford'
+																	className={`text-2xl w-fit font-futura link-underline link-underline-black ${
+																		active && 'link-underline-active'
+																	}`}
+																>
+																	E-Commerce
+																</MyLink>
+															</Popover.Button>
+														)}
+													</Menu.Item>
+													<Menu.Item>
+														{({ active }) => (
+															<Popover.Button as='div'>
+																<button
+																	onClick={OpenCalendar}
+																	className={`text-2xl w-fit font-futura link-underline link-underline-black ${
+																		active && 'link-underline-active'
+																	}`}
+																>
+																	Book Strategy Call
+																</button>
+															</Popover.Button>
+														)}
+													</Menu.Item>
+													<Menu.Item>
+														{({ active }) => (
+															<Popover.Button as='div'>
+																<MyLink
+																	href='/free-website-review'
+																	className={`text-2xl w-fit font-futura link-underline link-underline-black ${
+																		active && 'link-underline-active'
+																	}`}
+																>
+																	Free Website Review
+																</MyLink>
+															</Popover.Button>
+														)}
+													</Menu.Item>
+												</div>
+											</Menu.Items>
+										</>
+									)}
+								</Menu>
+
+								<Popover.Button as='div'>
+									<MyLink
+										href='/faq'
+										className='text-2xl w-fit font-futura link-underline link-underline-black'
+									>
+										FAQ
+									</MyLink>
+								</Popover.Button>
+								<Popover.Button as='div'>
+									<MyLink
+										href='/#contact'
+										className='text-2xl w-fit font-futura link-underline link-underline-black'
+									>
+										Contact
+									</MyLink>
+								</Popover.Button>
+							</div>
+						</motion.nav>
+					</Popover.Panel>
+				</>
+			)}
+		</Popover>
 	);
 };
 

@@ -58,7 +58,8 @@
 			linear-gradient(#f49730, #f49730);
 	}
 
-	.link-underline:hover {
+	.link-underline:hover,
+	.link-underline-active {
 		background-size: 100% 5px;
 		background-position: 0 100%;
 	}
