@@ -26,6 +26,7 @@ const Navbar = () => {
 		middleLine: {
 			open: {
 				opacity: 0,
+				width: 0,
 			},
 			closed: {
 				opacity: 1,
@@ -53,6 +54,34 @@ const Navbar = () => {
 			closed: {
 				translateY: 0,
 			},
+		},
+	};
+
+	const menuVariants = {
+		dropdownMenu: {
+			initial: { opacity: 0, translateY: '-80' },
+			animate: {
+				opacity: 1,
+				translateY: 0,
+			},
+			transition: { duration: 0.15 },
+		},
+		mobileMenu: {
+			initial: { height: 0, opacity: 0, translateY: '-100vh' },
+			animate: {
+				height: '100vh',
+				opacity: 1,
+				translateY: 0,
+			},
+			transition: { duration: 0.15 },
+		},
+		subMenu: {
+			initial: { opacity: 0, height: 0 },
+			animate: {
+				opacity: 1,
+				height: 'auto',
+			},
+			transition: { duration: 0.15 },
 		},
 	};
 
@@ -116,7 +145,7 @@ const Navbar = () => {
 								<Link href='/#about'>
 									<a className='link-underline link-underline-black'>About</a>
 								</Link>
-								<Dropdown scrollDown={scrollDown} />
+								<Dropdown scrollDown={scrollDown} menuVariants={menuVariants} />
 								<Link href='/faq'>
 									<a className='link-underline link-underline-black'>FAQ</a>
 								</Link>
@@ -155,9 +184,10 @@ const Navbar = () => {
 						<Popover.Panel
 							as={motion.nav}
 							static
-							initial={{ height: 0, opacity: 0 }}
-							animate={{ height: '100vh', opacity: 1 }}
-							transition={{ duration: 0.15 }}
+							variants={menuVariants.mobileMenu}
+							initial='initial'
+							animate='animate'
+							transition='transition'
 							className='fixed z-30 bg-accent-100 h-screen w-screen overflow-y-scroll'
 						>
 							<div className='container mt-36 sm:mt-24 flex flex-col space-y-6 text-white'>
@@ -213,9 +243,10 @@ const Navbar = () => {
 												<Menu.Items
 													as={motion.div}
 													static
-													initial={{ height: 0, opacity: 0 }}
-													animate={{ height: 'auto', opacity: 1 }}
-													transition={{ duration: 0.15 }}
+													variants={menuVariants.subMenu}
+													initial='initial'
+													animate='animate'
+													transition='transition'
 													className='flex flex-col space-y-6 border-l-8 pl-4 border-secondary-100 focus:outline-none focus:bg-secondary-100/10 py-4'
 												>
 													<Menu.Item>
@@ -269,7 +300,7 @@ const Navbar = () => {
 																		active && 'link-underline-active'
 																	}`}
 																>
-																	Book Strategy Call
+																	Free Strategy Call
 																</button>
 															</Popover.Button>
 														)}

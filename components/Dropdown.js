@@ -1,10 +1,11 @@
-import { Menu, Transition } from '@headlessui/react';
+import { Menu } from '@headlessui/react';
+import { motion } from 'framer-motion';
 
 import { ArrowNav } from './Icons';
 import MyLink from './MyLink';
 import OpenCalendar from './OpenCalendar';
 
-const Dropdown = ({ scrollDown }) => {
+const Dropdown = ({ scrollDown, menuVariants }) => {
 	return (
 		<Menu as='div' className='relative inline-block text-left'>
 			{({ open }) => (
@@ -19,16 +20,14 @@ const Dropdown = ({ scrollDown }) => {
 							} h-6 w-6 inline-block align-sub ml-1 transition-transform`}
 						/>
 					</Menu.Button>
-					<Transition
-						enter='transition duration-500 ease-out'
-						enterFrom='transform -translate-y-18 opacity-0'
-						enterTo='transform -translate-y-0 opacity-100'
-						leave='transition duration-500 ease-out'
-						leaveFrom='transform translate-y-0 opacity-100'
-						leaveTo='transform -translate-y-18 opacity-0'
-					>
+					{open && !scrollDown && (
 						<Menu.Items
-							as='div'
+							as={motion.div}
+							static
+							variants={menuVariants.dropdownMenu}
+							initial='initial'
+							animate='animate'
+							transition='transition'
 							className='absolute left-0 mt-12 flex flex-col space-y-2 bg-accent-100/90 p-4 rounded-md focus:outline-none focus:border-transparent focus:shadow focus:ring-4 focus:ring-gray-400 focus:ring-opacity-30'
 						>
 							<Menu.Item>
@@ -67,7 +66,6 @@ const Dropdown = ({ scrollDown }) => {
 									</MyLink>
 								)}
 							</Menu.Item>
-							<div className='h-1 w-full bg-gray-400 my-10'></div>
 							<Menu.Item>
 								{({ active }) => (
 									<button
@@ -93,7 +91,7 @@ const Dropdown = ({ scrollDown }) => {
 								)}
 							</Menu.Item>
 						</Menu.Items>
-					</Transition>
+					)}
 				</>
 			)}
 		</Menu>
