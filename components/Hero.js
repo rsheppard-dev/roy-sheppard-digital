@@ -46,8 +46,8 @@ const Hero = () => {
 						</motion.h2>
 					</div>
 				</div>
+				<div className='absolute bottom-0 bg-gradient-to-t from-accent-100 via-accent-100 to-transparent h-24 w-full'></div>
 			</div>
-			<div className='absolute bottom-0 bg-gradient-to-t from-accent-100 via-accent-100 to-transparent h-24 w-full'></div>
 		</section>
 	);
 };
