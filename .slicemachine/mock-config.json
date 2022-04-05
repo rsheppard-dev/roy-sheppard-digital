@@ -1,0 +1,12 @@
+{
+  "_cts": {
+    "faq": {
+      "answer": {
+        "config": {
+          "patternType": "STORY",
+          "blocks": 1
+        }
+      }
+    }
+  }
+}

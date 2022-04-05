@@ -1,28 +1,25 @@
-import { motion } from 'framer-motion';
+import Link from 'next/link';
+
+import { PrismicProvider } from '@prismicio/react';
+import { PrismicPreview } from '@prismicio/next';
+import { linkResolver, repositoryName } from '../prismicio';
 
 import '../styles/globals.css';
-import Layout from '../components/Layout';
 
-function MyApp({ Component, pageProps, router }) {
-	const pageVariants = {
-		pageInitial: {
-			opacity: 0,
-		},
-		pageAnimate: {
-			opacity: 1,
-		},
-	};
+function MyApp({ Component, pageProps }) {
 	return (
-		<motion.div
-			key={router.route}
-			variants={pageVariants}
-			initial='pageInitial'
-			animate='pageAnimate'
+		<PrismicProvider
+			linkResolver={linkResolver}
+			internalLinkComponent={({ href, children, ...props }) => (
+				<Link href={href}>
+					<a {...props}>{children}</a>
+				</Link>
+			)}
 		>
-			<Layout>
+			<PrismicPreview repositoryName={repositoryName}>
 				<Component {...pageProps} />
-			</Layout>
-		</motion.div>
+			</PrismicPreview>
+		</PrismicProvider>
 	);
 }
 

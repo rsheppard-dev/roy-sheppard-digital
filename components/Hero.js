@@ -34,7 +34,7 @@ const Hero = () => {
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1 }}
 							transition={{ delay: 1.5, duration: 1 }}
-							className='text-white text-2xl sm:text-3xl md:text-4xl lg:text-6xl leading-normal lg:leading-normal text-shadow font-lato'
+							className='text-white text-2xl xs:text-3xl md:text-4xl lg:text-6xl leading-normal lg:leading-normal text-shadow font-lato'
 						>
 							I create websites
 							<br />
@@ -46,7 +46,6 @@ const Hero = () => {
 						</motion.h2>
 					</div>
 				</div>
-				<div className='absolute bottom-0 bg-gradient-to-t from-accent-100 via-accent-100 to-transparent h-24 w-full'></div>
 			</div>
 		</section>
 	);

@@ -58,14 +58,6 @@ const Navbar = () => {
 	};
 
 	const menuVariants = {
-		dropdownMenu: {
-			initial: { opacity: 0, translateY: '-80' },
-			animate: {
-				opacity: 1,
-				translateY: 0,
-			},
-			transition: { duration: 0.15 },
-		},
 		mobileMenu: {
 			initial: { height: 0, opacity: 0, translateY: '-100vh' },
 			animate: {
@@ -145,7 +137,7 @@ const Navbar = () => {
 								<Link href='/#about'>
 									<a className='link-underline link-underline-black'>About</a>
 								</Link>
-								<Dropdown scrollDown={scrollDown} menuVariants={menuVariants} />
+								<Dropdown scrollDown={scrollDown} />
 								<Link href='/faq'>
 									<a className='link-underline link-underline-black'>FAQ</a>
 								</Link>
@@ -190,7 +182,7 @@ const Navbar = () => {
 							transition='transition'
 							className='fixed z-30 bg-accent-100 h-screen w-screen overflow-y-scroll'
 						>
-							<div className='container mt-36 sm:mt-24 flex flex-col space-y-6 text-white'>
+							<div className='container mt-24 flex flex-col space-y-6 text-white'>
 								<Popover.Button as='div'>
 									<MyLink
 										href='/'
