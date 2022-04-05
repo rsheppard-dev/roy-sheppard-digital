@@ -1,5 +1,74 @@
 {
   "slices": {
-    "components": {}
+    "components": {
+      "faq": {
+        "library": "slices",
+        "id": "faq",
+        "name": "Faq",
+        "description": "Faq",
+        "model": {
+          "id": "faq",
+          "type": "SharedSlice",
+          "name": "Faq",
+          "description": "Faq",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Faq",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "faq",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Reintermediate front-end relationships",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Elit sit culpa mollit exercitation officia adipisicing dolore deserunt deserunt anim. Adipisicing sint veniam est deserunt commodo non consectetur voluptate dolore exercitation aliquip. Fugiat dolore eiusmod in magna.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      }
+    }
   }
 }
