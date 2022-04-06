@@ -1,5 +1,5 @@
 import React from 'react';
-import { PrismicRichText } from '@prismicio/react';
+import { PrismicText, PrismicRichText } from '@prismicio/react';
 import { Disclosure } from '@headlessui/react';
 import { FaArrowCircleDown } from 'react-icons/fa';
 
@@ -9,9 +9,9 @@ const Faq = ({ slice }) => (
 			<>
 				<Disclosure.Button className='flex justify-between items-center w-full px-4 py-2 text-sm font-medium text-left text-secondary-200 bg-secondary-100/20 rounded-lg hover:bg-secondary-100/30 focus:outline-none focus-visible:ring focus-visible:ring-secondary-100 focus-visible:ring-opacity-75'>
 					{slice.primary.title ? (
-						<PrismicRichText field={slice.primary.title} />
+						<PrismicText field={slice.primary.title} />
 					) : (
-						<h2>Template slice, update me!</h2>
+						<span>Ask your question here!</span>
 					)}
 					<FaArrowCircleDown
 						className={`transition-transform w-6 h-6 ml-4 ${
@@ -26,7 +26,7 @@ const Faq = ({ slice }) => (
 					{slice.primary.description ? (
 						<PrismicRichText field={slice.primary.description} />
 					) : (
-						<p>start by editing this slice from inside Slice Machine!</p>
+						<p>Put the answer to the question here!</p>
 					)}
 				</Disclosure.Panel>
 			</>

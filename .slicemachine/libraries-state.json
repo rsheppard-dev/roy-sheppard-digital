@@ -67,7 +67,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/roy/Documents/Web Projects/roy-sheppard-digital/.slicemachine/assets/slices/Faq/default/preview.png",
+            "width": 800,
+            "height": 40
+          }
+        }
       }
     }
   }

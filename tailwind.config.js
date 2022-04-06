@@ -29,7 +29,6 @@ module.exports = {
 				},
 				accent: {
 					100: '#252729',
-					200: '#707070',
 				},
 			},
 			fontFamily: {
@@ -44,5 +43,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require('@tailwindcss/typography')],
 };

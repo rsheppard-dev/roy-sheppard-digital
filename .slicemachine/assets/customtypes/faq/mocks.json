@@ -1,28 +1,18 @@
 {
-  "id": "3066f48d-f89d-47f1-a5b4-d1f485417266",
-  "uid": "ab-molestiae-corporis",
+  "id": "c2083966-6387-41d3-a6a6-628cc33af61f",
+  "uid": "voluptas-quibusdam-beatae",
   "type": "faq",
   "data": {
-    "question": "seize holistic metrics",
+    "question": "What frequently asked question will you ask?",
     "answer": [
       {
-        "type": "heading1",
-        "text": "Drive front-end markets",
+        "type": "heading3",
+        "text": "Visualize wireless niches",
         "spans": []
       },
       {
-        "type": "image",
-        "dimensions": {
-          "width": 900,
-          "height": 500
-        },
-        "alt": "Placeholder image",
-        "copyright": null,
-        "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=900&h=500&fit=crop"
-      },
-      {
         "type": "paragraph",
-        "text": "Tempor magna nisi veniam id dolore reprehenderit. Deserunt occaecat et incididunt tempor dolore occaecat ex do minim labore commodo dolor consequat do.",
+        "text": "Qui dolor nostrud aliquip laborum et id amet ad proident exercitation culpa nulla cillum eiusmod.",
         "spans": []
       }
     ]

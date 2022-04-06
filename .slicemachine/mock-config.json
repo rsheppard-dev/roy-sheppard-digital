@@ -6,6 +6,9 @@
           "patternType": "STORY",
           "blocks": 1
         }
+      },
+      "question": {
+        "content": "What frequently asked question will you ask?"
       }
     }
   },
