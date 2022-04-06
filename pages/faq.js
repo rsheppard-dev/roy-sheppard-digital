@@ -30,7 +30,7 @@ const FAQ = ({ faq }) => {
 						<Disclosure key={item.id}>
 							{({ open }) => (
 								<div>
-									<Disclosure.Button className='flex justify-between items-center w-full px-4 py-2 text-sm font-medium text-left text-secondary-200 bg-secondary-100/20 rounded-lg hover:bg-secondary-100/30 focus:outline-none focus-visible:ring focus-visible:ring-secondary-100 focus-visible:ring-opacity-75'>
+									<Disclosure.Button className='flex justify-between items-center w-full px-4 py-2 font-medium text-left text-secondary-200 bg-secondary-100/20 rounded-lg hover:bg-secondary-100/30 focus:outline-none focus-visible:ring focus-visible:ring-secondary-100 focus-visible:ring-opacity-75'>
 										<span>{item.data.question}</span>
 										<span>
 											<FaArrowCircleDown
