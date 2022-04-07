@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Disclosure } from '@headlessui/react';
 import { createClient } from '../prismicio';
 import { PrismicRichText } from '@prismicio/react';
 import { FaArrowCircleDown } from 'react-icons/fa';
@@ -17,6 +16,16 @@ export async function getStaticProps({ previewData }) {
 }
 
 const FAQ = ({ faq }) => {
+	const [active, setActive] = useState(null);
+
+	const handleClick = uid => {
+		if (active === uid) {
+			return setActive(null);
+		}
+
+		setActive(uid);
+	};
+
 	return (
 		<Layout>
 			<section className='container mt-40 text-accent-100'>
@@ -27,30 +36,26 @@ const FAQ = ({ faq }) => {
 
 				<div className='space-y-4 prose mx-auto'>
 					{faq.map(item => (
-						<Disclosure key={item.id}>
-							{({ open }) => (
-								<div>
-									<Disclosure.Button className='flex justify-between items-center w-full px-4 py-2 font-medium text-left text-secondary-200 bg-secondary-100/20 rounded-lg hover:bg-secondary-100/30 focus:outline-none focus-visible:ring focus-visible:ring-secondary-100 focus-visible:ring-opacity-75'>
-										<span>{item.data.question}</span>
-										<span>
-											<FaArrowCircleDown
-												className={`transition-transform w-6 h-6 ml-4 ${
-													open && 'rotate-180'
-												}`}
-											/>
-										</span>
-									</Disclosure.Button>
-									{open && (
-										<Disclosure.Panel
-											static
-											className='px-4 pt-4 pb-2 text-gray-600 text-lg'
-										>
-											<PrismicRichText field={item.data.answer} />
-										</Disclosure.Panel>
-									)}
+						<div key={item.id}>
+							<button
+								onClick={() => handleClick(item.uid)}
+								className='flex justify-between items-center w-full px-4 py-2 font-medium text-left text-secondary-200 bg-secondary-100/20 rounded-lg hover:bg-secondary-100/30 focus:outline-none focus-visible:ring focus-visible:ring-secondary-100 focus-visible:ring-opacity-75'
+							>
+								<span>{item.data.question}</span>
+								<span>
+									<FaArrowCircleDown
+										className={`transition-transform w-6 h-6 ml-4 ${
+											active === item.uid && 'rotate-180'
+										}`}
+									/>
+								</span>
+							</button>
+							{active === item.uid && (
+								<div className='px-4 my-2 text-gray-600 text-lg'>
+									<PrismicRichText field={item.data.answer} />
 								</div>
 							)}
-						</Disclosure>
+						</div>
 					))}
 				</div>
 			</section>
