@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 import MyLink from './MyLink';
 import OpenCalendar from './OpenCalendar';
@@ -100,59 +100,63 @@ const MobileMenu = ({ isOpen, toggleMobileMenu }) => {
 						</button>
 					</div>
 				</div>
-
-				<motion.div
-					variants={menuVariants.subMenu}
-					initial={false}
-					animate={isSubOpen ? 'open' : 'closed'}
-					transition='transition'
-					className='flex flex-col space-y-6 border-l-8 pl-4 border-secondary-100 focus:outline-none focus:bg-secondary-100/10 py-4'
-				>
-					<div>
-						<MyLink
-							href='/web-design-watford'
-							className={`text-2xl w-fit font-futura link-underline link-underline-black`}
+				<AnimatePresence>
+					{isSubOpen && (
+						<motion.div
+							variants={menuVariants.subMenu}
+							initial='closed'
+							animate='open'
+							exit='closed'
+							transition='transition'
+							className='flex flex-col space-y-6 border-l-8 pl-4 border-secondary-100 focus:outline-none focus:bg-secondary-100/10 py-4'
 						>
-							Web Design
-						</MyLink>
-					</div>
+							<div>
+								<MyLink
+									href='/web-design-watford'
+									className={`text-2xl w-fit font-futura link-underline link-underline-black`}
+								>
+									Web Design
+								</MyLink>
+							</div>
 
-					<div>
-						<MyLink
-							href='/web-development-watford'
-							className={`text-2xl w-fit font-futura link-underline link-underline-black`}
-						>
-							Web Development
-						</MyLink>
-					</div>
+							<div>
+								<MyLink
+									href='/web-development-watford'
+									className={`text-2xl w-fit font-futura link-underline link-underline-black`}
+								>
+									Web Development
+								</MyLink>
+							</div>
 
-					<div>
-						<MyLink
-							href='/ecommerce-watford'
-							className={`text-2xl w-fit font-futura link-underline link-underline-black`}
-						>
-							E-Commerce
-						</MyLink>
-					</div>
+							<div>
+								<MyLink
+									href='/ecommerce-watford'
+									className={`text-2xl w-fit font-futura link-underline link-underline-black`}
+								>
+									E-Commerce
+								</MyLink>
+							</div>
 
-					<div>
-						<button
-							onClick={OpenCalendar}
-							className={`text-2xl w-fit font-futura link-underline link-underline-black`}
-						>
-							Free Strategy Call
-						</button>
-					</div>
+							<div>
+								<button
+									onClick={OpenCalendar}
+									className={`text-2xl w-fit font-futura link-underline link-underline-black`}
+								>
+									Free Strategy Call
+								</button>
+							</div>
 
-					<div>
-						<MyLink
-							href='/free-website-review'
-							className={`text-2xl w-fit font-futura link-underline link-underline-black`}
-						>
-							Free Website Review
-						</MyLink>
-					</div>
-				</motion.div>
+							<div>
+								<MyLink
+									href='/free-website-review'
+									className={`text-2xl w-fit font-futura link-underline link-underline-black`}
+								>
+									Free Website Review
+								</MyLink>
+							</div>
+						</motion.div>
+					)}
+				</AnimatePresence>
 
 				<div onClick={toggleMobileMenu}>
 					<MyLink
