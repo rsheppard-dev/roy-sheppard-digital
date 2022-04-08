@@ -1,6 +1,5 @@
 import Router from 'next/router';
 
-import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
@@ -29,44 +28,9 @@ const Review = () => {
 		});
 	};
 
-	const StrategyCall = ({ url }) => {
-		const onClick = async () => {
-			// dynamically load react-calendly
-			const { openPopupWidget } = await import('react-calendly');
-
-			openPopupWidget({ url });
-		};
-		return (
-			<motion.button
-				variants={buttonVariants}
-				whileTap='tap'
-				whileHover='hover'
-				className='rounded-full bg-secondary-100 w-52 h-52 sm:w-64 sm:h-64 flex p-4 absolute left-[calc(50%-6.5rem)] sm:left-[calc(100%-17rem)] -top-40 sm:-top-52'
-				onClick={onClick}
-			>
-				<span className='font-futura font-medium tracking-wide place-self-center text-white text-xl md:text-2xl text-center leading-snug'>
-					BOOK YOUR FREE WEBSITE STRATEGY CALL TODAY!
-				</span>
-			</motion.button>
-		);
-	};
-
-	const buttonVariants = {
-		hover: {
-			scale: 1.1,
-			transition: {
-				duration: 0.3,
-				yoyo: Infinity,
-			},
-		},
-		tap: {
-			scale: 0.8,
-		},
-	};
 	return (
 		<section className='text-center w-screen bg-accent-100'>
-			<div className='relative container pt-20'>
-				<StrategyCall url='https://calendly.com/roysheppard-digital/30min?hide_gdpr_banner=1' />
+			<div className='container pt-20'>
 				<div className='h-2 w-1/2 bg-primary-100 mx-auto mb-10'></div>
 
 				<h2 className='heading text-white mb-10 leading-snug'>
