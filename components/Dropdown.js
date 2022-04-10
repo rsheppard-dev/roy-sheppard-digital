@@ -7,9 +7,11 @@ import OpenCalendar from './OpenCalendar';
 
 const Dropdown = ({ scrollDown }) => {
 	const [isOpen, setIsOpen] = useState(false);
+
+	const toggleDropdown = () => setIsOpen(!isOpen);
 	return (
 		<Menu as='div' className='relative inline-block text-left'>
-			<button onClick={() => setIsOpen(!isOpen)}>
+			<button onClick={toggleDropdown}>
 				<span className='link-underline link-underline-black'>Services</span>
 				<ArrowNav
 					className={`${

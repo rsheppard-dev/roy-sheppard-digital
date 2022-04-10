@@ -58,7 +58,7 @@ const Hero = () => {
 							transition={{ delay: 1.5, duration: 1 }}
 							className='max-w-full md:max-w-1/2 text-white text-xl lg:text-2xl leading-loose lg:leading-loose text-shadow font-lato'
 						>
-							I create modern JAM stack websites that solve problems, save you
+							I create modern JAM-stack websites that solve problems, save you
 							time and get leads for your business.
 						</motion.h2>
 					</div>
