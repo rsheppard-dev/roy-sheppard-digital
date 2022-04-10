@@ -18,7 +18,7 @@ const Hero = () => {
 	};
 
 	const textVariants = {
-		initial: { opacity: 0, translateY: 10 },
+		initial: { opacity: 0, translateY: 20 },
 		animate: {
 			opacity: 1,
 			translateY: 0,
@@ -43,7 +43,7 @@ const Hero = () => {
 							variants={textVariants}
 							initial='initial'
 							animate='animate'
-							transition={{ delay: 1, duration: 1 }}
+							transition={{ delay: 0.5, duration: 0.5 }}
 							className='max-w-full md:max-w-1/2 text-white text-3xl lg:text-6xl leading-normal lg:leading-normal text-shadow font-futura'
 						>
 							Freelance web designer and full-stack developer based in Watford.
@@ -55,10 +55,10 @@ const Hero = () => {
 							variants={textVariants}
 							initial='initial'
 							animate='animate'
-							transition={{ delay: 1.5, duration: 1 }}
+							transition={{ delay: 1, duration: 0.5 }}
 							className='max-w-full md:max-w-1/2 text-white text-xl lg:text-2xl leading-loose lg:leading-loose text-shadow font-lato'
 						>
-							I create modern JAM-stack websites that solve problems, save you
+							I create modern JAMstack websites that solve problems, save you
 							time and get leads for your business.
 						</motion.h2>
 					</div>

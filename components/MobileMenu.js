@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 import MyLink from './MyLink';
 import OpenCalendar from './OpenCalendar';
@@ -70,12 +70,17 @@ const MobileMenu = ({ isOpen, toggleMobileMenu }) => {
 
 	return (
 		<motion.nav
+			id='menuItems'
 			variants={menuVariants.mobileMenu}
 			animate={isOpen ? 'open' : 'closed'}
 			className='fixed z-30 bg-accent-100 h-screen w-screen overflow-y-scroll'
 		>
-			<div className='container mt-24 flex flex-col space-y-6 text-white'>
-				<motion.div variants={childVariants} onClick={toggleMobileMenu}>
+			<div className='container mt-24 flex flex-col text-white'>
+				<motion.div
+					variants={childVariants}
+					onClick={toggleMobileMenu}
+					className='mb-6'
+				>
 					<MyLink
 						href='/'
 						className='text-2xl w-fit font-futura link-underline link-underline-black'
@@ -83,7 +88,11 @@ const MobileMenu = ({ isOpen, toggleMobileMenu }) => {
 						Home
 					</MyLink>
 				</motion.div>
-				<motion.div variants={childVariants} onClick={toggleMobileMenu}>
+				<motion.div
+					variants={childVariants}
+					onClick={toggleMobileMenu}
+					className='mb-6'
+				>
 					<MyLink
 						href='/#about'
 						className='text-2xl w-fit font-futura link-underline link-underline-black'
@@ -92,7 +101,7 @@ const MobileMenu = ({ isOpen, toggleMobileMenu }) => {
 					</MyLink>
 				</motion.div>
 
-				<motion.div variants={childVariants} className='flex items-center'>
+				<motion.div variants={childVariants} className='flex items-center mb-6'>
 					<div onClick={toggleMobileMenu}>
 						<MyLink
 							href='/#services'
@@ -103,82 +112,88 @@ const MobileMenu = ({ isOpen, toggleMobileMenu }) => {
 					</div>
 					<div>
 						<button
+							id='subMenuButton'
 							onClick={toggleSubMenu}
-							className='ml-4 focus:outline-none group'
+							className='ml-4'
+							aria-expanded={isSubOpen}
+							aria-controls='subMenuItems'
 						>
 							<motion.span
 								variants={buttonVariants.crossHorizontal}
 								initial={false}
 								animate={isSubOpen ? 'open' : 'closed'}
-								className='block rounded-lg h-1 w-6 bg-white group-focus:bg-gray-300 group-hover:bg-primary-100'
+								className='block rounded-lg h-1 w-6 bg-white'
 							></motion.span>
 							<motion.span
 								variants={buttonVariants.crossVertical}
 								initial={false}
 								animate={isSubOpen ? 'open' : 'closed'}
-								className='block rounded-lg h-1 w-6 bg-white -translate-y-1 group-focus:bg-gray-300 group-hover:bg-primary-100'
+								className='block rounded-lg h-1 w-6 bg-white -translate-y-1'
 							></motion.span>
 						</button>
 					</div>
 				</motion.div>
-				<AnimatePresence>
-					{isSubOpen && (
-						<motion.div
-							variants={menuVariants.subMenu}
-							initial='closed'
-							animate='open'
-							exit='closed'
-							className='flex flex-col space-y-6 border-l-8 pl-4 border-secondary-100 focus:outline-none focus:bg-secondary-100/10'
+
+				<motion.div
+					variants={menuVariants.subMenu}
+					initial={false}
+					animate={isSubOpen ? 'open' : 'closed'}
+					id='subMenuItems'
+					className={`${
+						isSubOpen ? 'flex flex-col mb-6' : 'hidden'
+					} space-y-6 border-l-8 pl-4 border-secondary-100`}
+				>
+					<motion.div variants={childVariants} onClick={toggleMobileMenu}>
+						<MyLink
+							href='/web-design-watford'
+							className={`text-2xl w-fit font-futura link-underline link-underline-black`}
 						>
-							<motion.div variants={childVariants} onClick={toggleMobileMenu}>
-								<MyLink
-									href='/web-design-watford'
-									className={`text-2xl w-fit font-futura link-underline link-underline-black`}
-								>
-									Web Design
-								</MyLink>
-							</motion.div>
+							Web Design
+						</MyLink>
+					</motion.div>
 
-							<motion.div variants={childVariants} onClick={toggleMobileMenu}>
-								<MyLink
-									href='/web-development-watford'
-									className={`text-2xl w-fit font-futura link-underline link-underline-black`}
-								>
-									Web Development
-								</MyLink>
-							</motion.div>
+					<motion.div variants={childVariants} onClick={toggleMobileMenu}>
+						<MyLink
+							href='/web-development-watford'
+							className={`text-2xl w-fit font-futura link-underline link-underline-black`}
+						>
+							Web Development
+						</MyLink>
+					</motion.div>
 
-							<motion.div variants={childVariants} onClick={toggleMobileMenu}>
-								<MyLink
-									href='/ecommerce-watford'
-									className={`text-2xl w-fit font-futura link-underline link-underline-black`}
-								>
-									E-Commerce
-								</MyLink>
-							</motion.div>
+					<motion.div variants={childVariants} onClick={toggleMobileMenu}>
+						<MyLink
+							href='/ecommerce-watford'
+							className={`text-2xl w-fit font-futura link-underline link-underline-black`}
+						>
+							E-Commerce
+						</MyLink>
+					</motion.div>
 
-							<motion.div variants={childVariants} onClick={toggleMobileMenu}>
-								<button
-									onClick={OpenCalendar}
-									className={`text-2xl w-fit font-futura link-underline link-underline-black`}
-								>
-									Free Strategy Call
-								</button>
-							</motion.div>
+					<motion.div variants={childVariants} onClick={toggleMobileMenu}>
+						<button
+							onClick={OpenCalendar}
+							className={`text-2xl w-fit font-futura link-underline link-underline-black`}
+						>
+							Free Strategy Call
+						</button>
+					</motion.div>
 
-							<motion.div variants={childVariants} onClick={toggleMobileMenu}>
-								<MyLink
-									href='/free-website-review'
-									className={`text-2xl w-fit font-futura link-underline link-underline-black`}
-								>
-									Free Website Review
-								</MyLink>
-							</motion.div>
-						</motion.div>
-					)}
-				</AnimatePresence>
+					<motion.div variants={childVariants} onClick={toggleMobileMenu}>
+						<MyLink
+							href='/free-website-review'
+							className={`text-2xl w-fit font-futura link-underline link-underline-black`}
+						>
+							Free Website Review
+						</MyLink>
+					</motion.div>
+				</motion.div>
 
-				<motion.div variants={childVariants} onClick={toggleMobileMenu}>
+				<motion.div
+					variants={childVariants}
+					onClick={toggleMobileMenu}
+					className='mb-6'
+				>
 					<MyLink
 						href='/faq'
 						className='text-2xl w-fit font-futura link-underline link-underline-black'

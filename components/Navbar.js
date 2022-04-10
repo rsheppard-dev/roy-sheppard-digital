@@ -120,23 +120,26 @@ const Navbar = () => {
 						</Link>
 					</div>
 					<button
+						id='menuButton'
+						aria-expanded={toggleMobileMenu}
+						aria-controls='menuItems'
 						onClick={toggleMobileMenu}
-						className='group lg:hidden text-white relative z-50 focus:outline-none'
+						className='lg:hidden text-white relative z-50'
 					>
 						<motion.span
 							variants={buttonVariants.topLine}
 							animate={isOpen ? 'open' : 'closed'}
-							className='block rounded-lg w-10 mb-2 h-1 bg-white group-focus:bg-gray-300'
+							className='block rounded-lg w-10 mb-2 h-1 bg-white'
 						></motion.span>
 						<motion.span
 							variants={buttonVariants.middleLine}
 							animate={isOpen ? 'open' : 'closed'}
-							className='block rounded-lg w-10 mb-2 h-1 bg-white group-focus:bg-gray-300'
+							className='block rounded-lg w-10 mb-2 h-1 bg-white'
 						></motion.span>
 						<motion.span
 							variants={buttonVariants.bottomLine}
 							animate={isOpen ? 'open' : 'closed'}
-							className='block w-10 rounded-lg h-1 bg-white group-focus:bg-gray-300'
+							className='block w-10 rounded-lg h-1 bg-white'
 						></motion.span>
 					</button>
 				</nav>
