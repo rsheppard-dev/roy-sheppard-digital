@@ -14,6 +14,7 @@ export async function getStaticProps({ previewData }) {
 
 	return {
 		props: { faq },
+		revalidate: 10,
 	};
 }
 

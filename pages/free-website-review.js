@@ -38,7 +38,7 @@ const WebsiteReview = props => {
 						<div className='mt-8 bg-gray-100 rounded-lg p-4'>
 							<p className='text-sm mb-2'>
 								By applying for a free website review you must be the site owner
-								or person responsible for its maintenance.
+								or authorised by the owner to manage the site.
 							</p>
 
 							<p className='text-sm'>
