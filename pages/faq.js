@@ -4,8 +4,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { createClient } from '../prismicio';
 import { PrismicRichText } from '@prismicio/react';
 import { FaArrowCircleDown } from 'react-icons/fa';
+import useSWR from 'swr';
 
 import Layout from '../components/Layout';
+import fetcher from '../lib/fetcher';
 
 export async function getStaticProps({ previewData }) {
 	const client = createClient({ previewData });
@@ -20,6 +22,19 @@ export async function getStaticProps({ previewData }) {
 
 const FAQ = ({ faq }) => {
 	const [active, setActive] = useState(null);
+
+	const { data, error } = useSWR(
+		'https://roysheppard.prismic.io/api/v2/documents/search?ref=YlNT-hcAACkA5Cum&q=%5B%5Bat(document.type%2C+%22faq%22)%5D%5D#format=json',
+		fetcher,
+		{ fallbackData: faq }
+	);
+
+	if (error)
+		return (
+			<div className='container mt-40 text-accent-100'>failed to load</div>
+		);
+	if (!data)
+		return <div className='container mt-40 text-accent-100'>loading...</div>;
 
 	const textVariants = {
 		hide: {
@@ -51,7 +66,10 @@ const FAQ = ({ faq }) => {
 					FAQ
 				</h1>
 
-				<div id='accordionGroup' className='space-y-4 prose mx-auto'>
+				<div
+					id='accordionGroup'
+					className='space-y-4 prose mx-auto prose-a:text-link'
+				>
 					{faq.map((item, index) => (
 						<div key={item.id}>
 							<button
