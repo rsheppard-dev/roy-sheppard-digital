@@ -16,6 +16,14 @@ const Hero = () => {
 			scale: 0.8,
 		},
 	};
+
+	const textVariants = {
+		initial: { opacity: 0, translateY: 10 },
+		animate: {
+			opacity: 1,
+			translateY: 0,
+		},
+	};
 	return (
 		<section className='bg-cover bg-center h-screen w-screen min-h-[650px] font-lato font-bold bg-[url("https://res.cloudinary.com/roy-sheppard-digital/image/upload/e_blur:1000,f_auto,q_1/v1648761011/roy-sheppard-digital/freelance-web-designer.png")]'>
 			<div className='relative top-0 h-full w-full '>
@@ -32,10 +40,11 @@ const Hero = () => {
 				<div className='absolute space-y-10 -bottom-14 inset-x-0 text-center md:text-left flex flex-col items-center md:items-start container'>
 					<div>
 						<motion.h1
-							initial={{ opacity: 0 }}
-							animate={{ opacity: 1 }}
+							variants={textVariants}
+							initial='initial'
+							animate='animate'
 							transition={{ delay: 1, duration: 1 }}
-							className='max-w-full md:max-w-1/2 text-white text-2xl xs:text-3xl md:text-4xl lg:text-6xl leading-normal lg:leading-normal text-shadow font-futura'
+							className='max-w-full md:max-w-1/2 text-white text-3xl lg:text-6xl leading-normal lg:leading-normal text-shadow font-futura'
 						>
 							Freelance web designer and full-stack developer based in Watford.
 						</motion.h1>
@@ -43,13 +52,14 @@ const Hero = () => {
 
 					<div>
 						<motion.h2
-							initial={{ opacity: 0 }}
-							animate={{ opacity: 1 }}
+							variants={textVariants}
+							initial='initial'
+							animate='animate'
 							transition={{ delay: 1.5, duration: 1 }}
-							className='max-w-full md:max-w-1/2 text-white text-xl md:text-2xl leading-loose text-shadow font-lato'
+							className='max-w-full md:max-w-1/2 text-white text-xl lg:text-2xl leading-loose lg:leading-loose text-shadow font-lato'
 						>
-							I create modern websites with the JAM stack that solve problems,
-							save you time and get leads for your business.
+							I create modern JAM stack websites that solve problems, save you
+							time and get leads for your business.
 						</motion.h2>
 					</div>
 

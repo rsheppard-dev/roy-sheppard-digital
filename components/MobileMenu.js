@@ -16,8 +16,10 @@ const MobileMenu = ({ isOpen, toggleMobileMenu }) => {
 			open: {
 				height: '100vh',
 				opacity: 1,
+				transition: {
+					staggerChildren: 0.5,
+				},
 			},
-			transition: { duration: 0.3 },
 		},
 		subMenu: {
 			closed: { opacity: 0, height: 0 },
@@ -26,6 +28,15 @@ const MobileMenu = ({ isOpen, toggleMobileMenu }) => {
 				height: 'auto',
 			},
 			transition: { duration: 0.15 },
+		},
+	};
+
+	const itemVariants = {
+		initial: {
+			opacity: 0,
+		},
+		animate: {
+			opacity: 1,
 		},
 	};
 
@@ -48,30 +59,28 @@ const MobileMenu = ({ isOpen, toggleMobileMenu }) => {
 	return (
 		<motion.nav
 			variants={menuVariants.mobileMenu}
-			initial={false}
 			animate={isOpen ? 'open' : 'closed'}
-			transition='transition'
 			className='fixed z-30 bg-accent-100 h-screen w-screen overflow-y-scroll'
 		>
 			<div className='container mt-24 flex flex-col space-y-6 text-white'>
-				<div onClick={toggleMobileMenu}>
+				<motion.div variants={itemVariants} onClick={toggleMobileMenu}>
 					<MyLink
 						href='/'
 						className='text-2xl w-fit font-futura link-underline link-underline-black'
 					>
 						Home
 					</MyLink>
-				</div>
-				<div onClick={toggleMobileMenu}>
+				</motion.div>
+				<motion.div variants={itemVariants} onClick={toggleMobileMenu}>
 					<MyLink
 						href='/#about'
 						className='text-2xl w-fit font-futura link-underline link-underline-black'
 					>
 						About
 					</MyLink>
-				</div>
+				</motion.div>
 
-				<div className='flex items-center'>
+				<motion.div variants={itemVariants} className='flex items-center'>
 					<div onClick={toggleMobileMenu}>
 						<MyLink
 							href='/#services'
@@ -99,7 +108,7 @@ const MobileMenu = ({ isOpen, toggleMobileMenu }) => {
 							></motion.span>
 						</button>
 					</div>
-				</div>
+				</motion.div>
 				<AnimatePresence>
 					{isSubOpen && (
 						<motion.div
@@ -158,22 +167,22 @@ const MobileMenu = ({ isOpen, toggleMobileMenu }) => {
 					)}
 				</AnimatePresence>
 
-				<div onClick={toggleMobileMenu}>
+				<motion.div variants={itemVariants} onClick={toggleMobileMenu}>
 					<MyLink
 						href='/faq'
 						className='text-2xl w-fit font-futura link-underline link-underline-black'
 					>
 						FAQ
 					</MyLink>
-				</div>
-				<div onClick={toggleMobileMenu}>
+				</motion.div>
+				<motion.div variants={itemVariants} onClick={toggleMobileMenu}>
 					<MyLink
 						href='/#contact'
 						className='text-2xl w-fit font-futura link-underline link-underline-black'
 					>
 						Contact
 					</MyLink>
-				</div>
+				</motion.div>
 			</div>
 		</motion.nav>
 	);
