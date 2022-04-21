@@ -11,7 +11,7 @@ const Services = () => {
 				<div className='rounded drop-shadow-md hover:drop-shadow-lg flex flex-col items-center bg-white p-6 w-80 group'>
 					<h3 className='subheading'>Web Design</h3>
 					<WebDesign />
-					<p className='font-lato text-center leading-relaxed'>
+					<p className='font-lato text-center'>
 						Whether you want me to design you a brand new website or redesign an
 						existing website.{' '}
 						<Link href='#'>
@@ -25,7 +25,7 @@ const Services = () => {
 				<div className='rounded drop-shadow-md hover:drop-shadow-lg flex flex-col items-center bg-white p-6 w-80 group'>
 					<h3 className='subheading'>Web Development</h3>
 					<WebDevelopment />
-					<p className='font-lato text-center leading-relaxed'>
+					<p className='font-lato text-center'>
 						Do you find yourself repeating the same tasks over and over?{' '}
 						<Link href='#'>
 							<a className='text-link'>
@@ -39,7 +39,7 @@ const Services = () => {
 				<div className='rounded drop-shadow-md hover:drop-shadow-lg flex flex-col items-center bg-white p-6 w-80 group'>
 					<h3 className='subheading'>E-Commerce</h3>
 					<ECommerce />
-					<p className='font-lato text-center leading-relaxed'>
+					<p className='font-lato text-center'>
 						More people are shopping online than ever before.{' '}
 						<Link href='#'>
 							<a className='text-link'>

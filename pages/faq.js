@@ -25,13 +25,16 @@ const FAQ = ({ faq }) => {
 		hide: {
 			opacity: 0,
 			height: 0,
+			transition: {
+				duration: 0.15,
+			},
 		},
 		show: {
 			opacity: 1,
 			height: 'auto',
-		},
-		transition: {
-			duration: 0.15,
+			transition: {
+				duration: 0.15,
+			},
 		},
 	};
 
@@ -72,22 +75,20 @@ const FAQ = ({ faq }) => {
 									/>
 								</span>
 							</button>
-
-							{active === item.uid && (
-								<AnimatePresence>
+							<AnimatePresence>
+								{active === item.uid && (
 									<motion.div
 										variants={textVariants}
 										initial='hide'
 										animate='show'
 										exit='hide'
-										transition='transition'
 										id={`faq-${index}`}
 										className='px-4 my-2 text-gray-600 text-lg'
 									>
 										<PrismicRichText field={item.data.answer} />
 									</motion.div>
-								</AnimatePresence>
-							)}
+								)}
+							</AnimatePresence>
 						</div>
 					))}
 				</div>

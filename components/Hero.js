@@ -37,26 +37,26 @@ const Hero = () => {
 				/>
 				<div className='absolute w-full h-full bg-black/30 mix-blend-hue overflow-y-hidden'></div>
 
-				<div className='absolute space-y-10 -bottom-14 inset-x-0 text-center md:text-left flex flex-col items-center md:items-start container'>
-					<div>
+				<div className='absolute -bottom-14 inset-x-0 text-center md:text-left flex flex-col items-center md:items-start container'>
+					<div className='w-full mb-5'>
 						<motion.h1
 							variants={textVariants}
 							initial='initial'
 							animate='animate'
 							transition={{ delay: 0.5, duration: 0.5 }}
-							className='max-w-full md:max-w-1/2 text-white text-3xl lg:text-6xl leading-normal lg:leading-normal text-shadow font-futura'
+							className='max-w-full md:max-w-1/2 text-white text-xl leading-loose text-shadow font-futura'
 						>
 							Freelance web designer and full-stack developer based in Watford.
 						</motion.h1>
 					</div>
 
-					<div>
+					<div className='mb-10'>
 						<motion.h2
 							variants={textVariants}
 							initial='initial'
 							animate='animate'
 							transition={{ delay: 1, duration: 0.5 }}
-							className='max-w-full md:max-w-1/2 text-white text-xl lg:text-2xl leading-loose lg:leading-loose text-shadow font-lato'
+							className='max-w-full md:max-w-1/2 text-white text-3xl md:text-4xl lg:text-5xl leading-snug md:leading-normal lg:leading-normal text-shadow font-futura'
 						>
 							I create modern JAMstack websites that solve problems, save you
 							time and get leads for your business.

@@ -72,6 +72,7 @@ const MobileMenu = ({ isOpen, toggleMobileMenu }) => {
 		<motion.nav
 			id='menuItems'
 			variants={menuVariants.mobileMenu}
+			initial={false}
 			animate={isOpen ? 'open' : 'closed'}
 			className='fixed z-30 bg-accent-100 h-screen w-screen overflow-y-scroll'
 		>

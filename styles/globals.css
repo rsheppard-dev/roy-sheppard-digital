@@ -31,6 +31,11 @@
 	li {
 		@apply bg-bullet bg-no-repeat pl-16;
 	}
+
+	p,
+	li {
+		@apply leading-loose;
+	}
 }
 
 @layer utilities {

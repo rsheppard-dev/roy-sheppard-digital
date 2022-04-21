@@ -38,7 +38,7 @@ const WebsiteReview = props => {
 						<div className='mt-8 bg-gray-100 rounded-lg p-4'>
 							<p className='text-sm mb-2'>
 								By applying for a free website review you must be the site owner
-								or authorised by the owner to manage the site.
+								or authorised by the owner to act on its behalf.
 							</p>
 
 							<p className='text-sm'>
@@ -57,15 +57,15 @@ const WebsiteReview = props => {
 					<div>
 						<ul className='space-y-8'>
 							<li>
-								<h3 className='font-bold'>UX Design</h3>
+								<h3 className='font-bold text-xl'>UI/UX Design</h3>
 								<p>
-									I will review your website based on the rules of UX design to
-									ensure your visitors and customers are getting the best
-									experience when visiting your site.
+									I will review your website based on the rules of UI and UX
+									design to ensure your visitors and customers are getting the
+									best experience when visiting your site.
 								</p>
 							</li>
 							<li>
-								<h3 className='font-bold'>Performance</h3>
+								<h3 className='font-bold text-xl'>Performance</h3>
 								<p>
 									Did you know performance and page load speeds are a google
 									ranking factor? I will check how your site is currently
@@ -73,7 +73,7 @@ const WebsiteReview = props => {
 								</p>
 							</li>
 							<li>
-								<h3 className='font-bold'>Responsiveness</h3>
+								<h3 className='font-bold text-xl'>Responsiveness</h3>
 								<p>
 									Another google ranking factor is mobile-responsiveness. More
 									people now view websites on their phones than on a desktop and
@@ -81,7 +81,7 @@ const WebsiteReview = props => {
 								</p>
 							</li>
 							<li>
-								<h3 className='font-bold'>Accessibility</h3>
+								<h3 className='font-bold text-xl'>Accessibility</h3>
 								<p>
 									People with disabilities will visit your site and it is
 									important their experience is positive or they will just
@@ -90,7 +90,7 @@ const WebsiteReview = props => {
 								</p>
 							</li>
 							<li>
-								<h3 className='font-bold'>SEO</h3>
+								<h3 className='font-bold text-xl'>SEO</h3>
 								<p>
 									SEO or search-engine-optimisation is the process of optimising
 									your site to be found by search engines such as Google. I will
