@@ -1,7 +1,9 @@
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 import ReviewForm from '../components/ReviewForm';
 import Layout from '../components/Layout';
+import Meta from '../components/Meta';
 
 const WebsiteReview = props => {
 	const router = useRouter();
@@ -10,7 +12,11 @@ const WebsiteReview = props => {
 
 	return (
 		<Layout>
-			<section className='container mt-40 text-accent-100'>
+			<Head>
+				<Meta />
+				<title>Free Website Review || Roy Sheppard Digital</title>
+			</Head>
+			<main className='container mt-40 text-accent-100'>
 				<div className='h-2 w-1/2 bg-primary-100 mx-auto my-10'></div>
 				<h1 className='text-center text-3xl md:text-6xl font-bold mb-10'>
 					Free Website Review
@@ -57,7 +63,9 @@ const WebsiteReview = props => {
 					<div>
 						<ul className='space-y-8'>
 							<li>
-								<h3 className='font-bold text-xl'>UI/UX Design</h3>
+								<h3 className='font-bold text-xl md:text-2xl mb-2'>
+									UI/UX Design
+								</h3>
 								<p>
 									I will review your website based on the rules of UI and UX
 									design to ensure your visitors and customers are getting the
@@ -65,7 +73,9 @@ const WebsiteReview = props => {
 								</p>
 							</li>
 							<li>
-								<h3 className='font-bold text-xl'>Performance</h3>
+								<h3 className='font-bold text-xl md:text-2xl mb-2'>
+									Performance
+								</h3>
 								<p>
 									Did you know performance and page load speeds are a google
 									ranking factor? I will check how your site is currently
@@ -73,7 +83,9 @@ const WebsiteReview = props => {
 								</p>
 							</li>
 							<li>
-								<h3 className='font-bold text-xl'>Responsiveness</h3>
+								<h3 className='font-bold text-xl md:text-2xl mb-2'>
+									Responsiveness
+								</h3>
 								<p>
 									Another google ranking factor is mobile-responsiveness. More
 									people now view websites on their phones than on a desktop and
@@ -81,7 +93,9 @@ const WebsiteReview = props => {
 								</p>
 							</li>
 							<li>
-								<h3 className='font-bold text-xl'>Accessibility</h3>
+								<h3 className='font-bold text-xl md:text-2xl mb-2'>
+									Accessibility
+								</h3>
 								<p>
 									People with disabilities will visit your site and it is
 									important their experience is positive or they will just
@@ -90,7 +104,7 @@ const WebsiteReview = props => {
 								</p>
 							</li>
 							<li>
-								<h3 className='font-bold text-xl'>SEO</h3>
+								<h3 className='font-bold text-xl md:text-2xl mb-2'>SEO</h3>
 								<p>
 									SEO or search-engine-optimisation is the process of optimising
 									your site to be found by search engines such as Google. I will
@@ -102,7 +116,7 @@ const WebsiteReview = props => {
 						</ul>
 					</div>
 				</div>
-			</section>
+			</main>
 		</Layout>
 	);
 };

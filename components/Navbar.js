@@ -78,7 +78,7 @@ const Navbar = () => {
 		<>
 			<header
 				className={`${
-					scrollDown && !isOpen && '-translate-y-24'
+					scrollDown && !isOpen && '-translate-y-28'
 				} fixed z-40 w-screen bg-accent-100/90 py-4 transition-transform duration-500 flex flex-col justify-center`}
 			>
 				<nav className='z-30 container flex items-center justify-between'>

@@ -6,7 +6,7 @@ import OpenCalendar from './OpenCalendar';
 
 const Footer = () => {
 	return (
-		<footer className='bg-accent-100 text-white w-screen pt-16 pb-4 mt-10'>
+		<footer className='bg-accent-100 text-white w-screen pt-16 pb-4'>
 			<div className='container grid grid-cols-2 md:grid-cols-3 gap-6 md:grid-rows-4'>
 				<div className='col-span-2 md:col-span-1 md:row-span-1'>
 					<Link href='/'>

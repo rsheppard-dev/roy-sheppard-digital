@@ -7,12 +7,12 @@ import OpenCalendar from './OpenCalendar';
 const Contact = () => {
 	return (
 		<section id='contact' className='container text-accent-100 scroll-mt-18'>
-			<div className='h-2 w-1/2 bg-primary-100 mx-auto my-10'></div>
+			<div className='h-2 w-1/2 bg-primary-100 mx-auto mt-20 mb-10'></div>
 
 			<h2 className='heading text-center mb-10 leading-snug'>
 				Let's talk about your website project
 			</h2>
-			<div className='grid lg:grid-cols-2 gap-10'>
+			<div className='grid lg:grid-cols-2 gap-10 mb-20'>
 				<div>
 					<p>
 						If you are ready to get started or are just curious please get in

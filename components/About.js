@@ -3,7 +3,7 @@ import Image from 'next/image';
 const About = () => {
 	return (
 		<section id='about' className='container text-accent-100 scroll-mt-18'>
-			<div className='h-2 w-1/2 bg-primary-100 mx-auto my-10'></div>
+			<div className='h-2 w-1/2 bg-primary-100 mx-auto mt-20 mb-10'></div>
 
 			<h2 className='heading text-center mb-10 leading-snug'>
 				Why hire me as your
@@ -21,7 +21,7 @@ const About = () => {
 				/>
 			</div>
 
-			<ul className='space-y-8 mb-10'>
+			<ul className='space-y-8 mb-20'>
 				<li>
 					All my website designs are made custom for you, your business and your
 					brand. I do not use themes, templates or bloated page builders.

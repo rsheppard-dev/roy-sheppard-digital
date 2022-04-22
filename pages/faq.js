@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Head from 'next/head';
 
 import { motion, AnimatePresence } from 'framer-motion';
 import { createClient } from '../prismicio';
@@ -6,6 +7,7 @@ import { PrismicRichText } from '@prismicio/react';
 import { FaArrowCircleDown } from 'react-icons/fa';
 
 import Layout from '../components/Layout';
+import Meta from '../components/Meta';
 
 export async function getStaticProps({ previewData }) {
 	const client = createClient({ previewData });
@@ -48,13 +50,17 @@ const FAQ = ({ faq }) => {
 
 	return (
 		<Layout>
-			<section className='container mt-40 text-accent-100'>
+			<Head>
+				<Meta />
+				<title>Frequently Asked Questions || Roy Sheppard Digital</title>
+			</Head>
+			<main className='container mt-40 text-accent-100'>
 				<div className='h-2 w-1/2 bg-primary-100 mx-auto my-10'></div>
 				<h1 className='text-center text-3xl md:text-6xl font-bold mb-10'>
 					FAQ
 				</h1>
 
-				<div
+				<section
 					id='accordionGroup'
 					className='space-y-4 prose mx-auto prose-a:text-link'
 				>
@@ -91,8 +97,8 @@ const FAQ = ({ faq }) => {
 							</AnimatePresence>
 						</div>
 					))}
-				</div>
-			</section>
+				</section>
+			</main>
 		</Layout>
 	);
 };
