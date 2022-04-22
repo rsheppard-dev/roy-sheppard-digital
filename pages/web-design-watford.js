@@ -14,13 +14,13 @@ const WebDesign = () => {
 				<title>Web Design - Watford || Roy Sheppard Digital</title>
 			</Head>
 			<main className='mt-40 text-accent-100'>
-				<div className='h-2 w-1/2 bg-primary-100 mx-auto my-10'></div>
-				<h1 className='text-center text-3xl md:text-6xl font-bold mb-10'>
-					Web Design - Watford
-				</h1>
 				<section className='container'>
-					<div className='my-20 text-center rounded-lg bg-secondary-100/30 px-10 py-8 text-gray-600 font-futura'>
-						<blockquote className='text-2xl italic'>
+					<div className='h-2 w-1/2 bg-primary-100 mx-auto my-10'></div>
+					<h1 className='text-center text-3xl md:text-6xl font-bold mb-10'>
+						Web Design - Watford
+					</h1>
+					<div className='shadow-md my-20 text-center rounded-lg bg-secondary-100/30 px-10 py-8 text-gray-600 font-futura'>
+						<blockquote className='text-2xl'>
 							Website design is an important factor for determining credibility
 							for 48% of visitors.
 						</blockquote>
@@ -87,7 +87,7 @@ const WebDesign = () => {
 					</ul>
 				</section>
 
-				<section>
+				<section className='container'>
 					<h2 className='subheading my-10'>My web design process</h2>
 
 					<div className=''>

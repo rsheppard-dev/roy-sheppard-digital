@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 import MyLink from './MyLink';
@@ -7,6 +8,8 @@ import OpenCalendar from './OpenCalendar';
 
 const MobileMenu = ({ isOpen, toggleMobileMenu }) => {
 	const [isSubOpen, setSubIsOpen] = useState(false);
+
+	useEffect(() => !isOpen && setSubIsOpen(false), [isOpen]);
 
 	const toggleSubMenu = () => setSubIsOpen(!isSubOpen);
 

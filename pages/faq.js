@@ -54,7 +54,7 @@ const FAQ = ({ faq }) => {
 				<Meta />
 				<title>Frequently Asked Questions || Roy Sheppard Digital</title>
 			</Head>
-			<main className='container mt-40 text-accent-100'>
+			<main className='container mt-40 text-accent-100 mb-20'>
 				<div className='h-2 w-1/2 bg-primary-100 mx-auto my-10'></div>
 				<h1 className='text-center text-3xl md:text-6xl font-bold mb-10'>
 					FAQ

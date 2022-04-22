@@ -55,7 +55,7 @@ const Portfolio = () => {
 								Instagram account.
 							</p>
 							<a
-								className='block w-fit text-white bg-secondary-100 py-3 px-6 rounded-lg hover:bg-secondary-200 transition-colors duration-500 ease-in-out'
+								className='block w-fit mx-auto lg:mx-0 text-white bg-secondary-100 py-3 px-6 rounded-lg hover:bg-secondary-200 transition-colors duration-500 ease-in-out'
 								href='https://www.studio120barbering.com'
 								target='_blank'
 							>
