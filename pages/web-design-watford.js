@@ -96,72 +96,72 @@ const WebDesign = () => {
 							My web design process
 						</h2>
 
-						<div className='flex flex-wrap justify-center gap-10'>
-							<div className='relative mt-10 rounded flex flex-col items-center bg-gray-100 p-6 w-80 text-accent-100'>
+						<div className='flex flex-wrap justify-center gap-20'>
+							<div className='relative mt-10 rounded flex flex-col items-center bg-secondary-100/30 p-10 w-80 text-white'>
 								<div className='absolute -top-8 left-[calc(50%-2rem)] flex justify-center items-center text-center bg-accent-100 rounded-full w-18 h-18 font-futura font-bold text-5xl text-primary-100'>
 									1
 								</div>
-								<h3 className='subheading my-5'>Wireframing</h3>
+								<h3 className='subheading my-10'>Wireframing</h3>
 								<Image
 									src='/images/wireframe.svg'
 									alt='Wireframe'
 									width={100}
 									height={100}
 								/>
-								<p className='mt-5'>
+								<p className='mt-10 text-xl leading-loose'>
 									A basic wireframe is drawn up to begin with, to determine what
 									the basic structure of your website will be.
 								</p>
 							</div>
 
-							<div className='relative mt-10 rounded flex flex-col items-center bg-gray-100 p-6 w-80 text-accent-100'>
+							<div className='relative mt-10 rounded flex flex-col items-center bg-secondary-100/30 p-6 w-80 text-white-100'>
 								<div className='absolute -top-8 left-[calc(50%-2rem)] flex justify-center items-center text-center bg-accent-100 rounded-full w-18 h-18 font-futura font-bold text-5xl text-primary-100'>
 									2
 								</div>
-								<h3 className='subheading my-5'>Prototyping</h3>
+								<h3 className='subheading my-10'>Prototyping</h3>
 								<Image
 									src='/images/mockup.svg'
 									alt='Mockup'
 									width={100}
 									height={100}
 								/>
-								<p className='mt-5'>
+								<p className='mt-10 text-xl leading-loose'>
 									A prototype of the home page is created with the content you
 									supplied. This is submitted to you for review. Now you can let
 									me know about any revisions or additions you wish to make.
 								</p>
 							</div>
 
-							<div className='relative mt-10 rounded flex flex-col items-center bg-gray-100 p-6 w-80 text-accent-100'>
+							<div className='relative mt-10 rounded flex flex-col items-center bg-secondary-100/30 p-6 w-80 text-white'>
 								<div className='absolute -top-8 left-[calc(50%-2rem)] flex justify-center items-center text-center bg-accent-100 rounded-full w-18 h-18 font-futura font-bold text-5xl text-primary-100'>
 									3
 								</div>
-								<h3 className='subheading my-5'>Coding</h3>
+								<h3 className='subheading my-10'>Coding</h3>
 								<Image
 									src='/images/code.svg'
 									alt='Code'
 									width={100}
 									height={100}
 								/>
-								<p className='mt-5'>
+								<p className='mt-10 text-xl leading-loose'>
 									Once you have signed off on the design mockup, I will begin
 									coding your site and integrating any features you have
 									requested.
 								</p>
 							</div>
 
-							<div className='relative mt-10 rounded flex flex-col items-center bg-gray-100 p-6 w-80 text-accent-100'>
+							<div className='relative mt-10 rounded flex flex-col items-center bg-secondary-100/30 p-6 w-80 text-white'>
 								<div className='absolute -top-8 left-[calc(50%-2rem)] flex justify-center items-center text-center bg-accent-100 rounded-full w-18 h-18 font-futura font-bold text-5xl text-primary-100'>
 									4
 								</div>
-								<h3 className='subheading my-5'>Testing</h3>
+								<h3 className='subheading my-10'>Testing</h3>
 								<Image
 									src='/images/test.svg'
 									alt='Testing'
 									width={100}
 									height={100}
 								/>
-								<p className='mt-5'>
+								<p className='mt-10 text-xl leading-loose'>
 									Once your website is complete it is reviewed and tested to
 									ensure it operates correctly on different browsers and
 									operating systems. As well as ensuring it is responsive on all
@@ -169,18 +169,18 @@ const WebDesign = () => {
 								</p>
 							</div>
 
-							<div className='relative mt-10 rounded flex flex-col items-center bg-gray-100 p-6 w-80 text-accent-100'>
+							<div className='relative mt-10 rounded flex flex-col items-center bg-secondary-100/30 p-6 w-80 text-white'>
 								<div className='absolute -top-8 left-[calc(50%-2rem)] flex justify-center items-center text-center bg-accent-100 rounded-full w-18 h-18 font-futura font-bold text-5xl text-primary-100'>
 									5
 								</div>
-								<h3 className='subheading my-5'>Deployment</h3>
+								<h3 className='subheading my-10'>Deployment</h3>
 								<Image
 									src='/images/deploy.svg'
 									alt='Deployment'
 									width={100}
 									height={100}
 								/>
-								<p className='mt-5'>
+								<p className='mt-10 text-xl leading-loose'>
 									Once everything has been checked and you are satisfied, your
 									site is deployed and handed over to you. Time to reap the
 									benefits of having a lead generating website.
