@@ -30,6 +30,9 @@ const LetsTalk = () => {
 						Let's Talk
 					</a>
 				</div>
+				<div className='absolute bottom-0 z-20'>
+					<Seperator rotate={true} dark={true} />
+				</div>
 			</div>
 		</section>
 	);

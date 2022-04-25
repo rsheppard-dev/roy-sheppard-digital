@@ -87,83 +87,93 @@ const WebDesign = () => {
 					</ul>
 				</section>
 
-				<section className='container'>
-					<h2 className='subheading my-10'>My web design process</h2>
+				<section className='container mb-20'>
+					<h2 className='subheading my-20'>My web design process</h2>
 
-					<div className=''>
-						<div className=''>
-							<div className=''>1</div>
-							<h3 className='subHeading'>Wireframe</h3>
+					<div className='flex flex-wrap justify-center gap-10'>
+						<div className='relative mt-10 rounded drop-shadow-md flex flex-col items-center bg-white p-6 w-80'>
+							<div className='absolute -top-8 left-[calc(50%-2rem)] flex justify-center items-center text-center bg-accent-100 rounded-full w-18 h-18 font-futura font-bold text-5xl text-primary-100'>
+								1
+							</div>
+							<h3 className='subheading my-5'>Wireframing</h3>
 							<Image
 								src='/images/wireframe.svg'
 								alt='Wireframe'
 								width={100}
 								height={100}
 							/>
-							<p>
+							<p className='mt-5'>
 								A basic wireframe is drawn up to begin with, to determine what
 								the basic structure of your website will be.
 							</p>
 						</div>
 
-						<div className=''>
-							<div className=''>2</div>
-							<h3 className='subHeading'>Mockup</h3>
+						<div className='relative mt-10 rounded drop-shadow-md flex flex-col items-center bg-white p-6 w-80'>
+							<div className='absolute -top-8 left-[calc(50%-2rem)] flex justify-center items-center text-center bg-accent-100 rounded-full w-18 h-18 font-futura font-bold text-5xl text-primary-100'>
+								2
+							</div>
+							<h3 className='subheading my-5'>Prototyping</h3>
 							<Image
 								src='/images/mockup.svg'
 								alt='Mockup'
 								width={100}
 								height={100}
 							/>
-							<p>
+							<p className='mt-5'>
 								A prototype of the home page is created with the content you
 								supplied. This is submitted to you for review. Now you can let
 								me know about any revisions or additions you wish to make.
 							</p>
 						</div>
 
-						<div className=''>
-							<div className=''>3</div>
-							<h3 className='subHeading'>Code</h3>
+						<div className='relative mt-10 rounded drop-shadow-md flex flex-col items-center bg-white p-6 w-80'>
+							<div className='absolute -top-8 left-[calc(50%-2rem)] flex justify-center items-center text-center bg-accent-100 rounded-full w-18 h-18 font-futura font-bold text-5xl text-primary-100'>
+								3
+							</div>
+							<h3 className='subheading my-5'>Coding</h3>
 							<Image
 								src='/images/code.svg'
 								alt='Code'
 								width={100}
 								height={100}
 							/>
-							<p>
+							<p className='mt-5'>
 								Once you have signed off on the design mockup, I will begin
 								coding your site and integrating any features you have
 								requested.
 							</p>
 						</div>
 
-						<div className=''>
-							<div className=''>4</div>
-							<h3 className='subHeading'>Test</h3>
+						<div className='relative mt-10 rounded drop-shadow-md flex flex-col items-center bg-white p-6 w-80'>
+							<div className='absolute -top-8 left-[calc(50%-2rem)] flex justify-center items-center text-center bg-accent-100 rounded-full w-18 h-18 font-futura font-bold text-5xl text-primary-100'>
+								4
+							</div>
+							<h3 className='subheading my-5'>Test</h3>
 							<Image
 								src='/images/test.svg'
-								alt='Test'
+								alt='Testing'
 								width={100}
 								height={100}
 							/>
-							<p>
+							<p className='mt-5'>
 								Once your website is complete it is reviewed and tested to
 								ensure it operates correctly on different browsers and operating
 								systems. As well as ensuring it is responsive on all devices.
 							</p>
 						</div>
 
-						<div className=''>
-							<div className=''>5</div>
-							<h3 className='subHeading'>Deploy</h3>
+						<div className='relative mt-10 rounded drop-shadow-md flex flex-col items-center bg-white p-6 w-80'>
+							<div className='absolute -top-8 left-[calc(50%-2rem)] flex justify-center items-center text-center bg-accent-100 rounded-full w-18 h-18 font-futura font-bold text-5xl text-primary-100'>
+								5
+							</div>
+							<h3 className='subheading my-5'>Deploy</h3>
 							<Image
 								src='/images/deploy.svg'
-								alt='Deploy'
+								alt='Deployment'
 								width={100}
 								height={100}
 							/>
-							<p>
+							<p className='mt-5'>
 								Once everything has been checked and you are satisfied, your
 								site is deployed and handed over to you. Time to reap the
 								benefits of having a lead generating website.
