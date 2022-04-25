@@ -7,7 +7,7 @@ const LetsTalk = () => {
 		<section className='w-screen'>
 			<div className='relative'>
 				<div className='absolute top-0 z-20'>
-					<Seperator />
+					<Seperator dark={true} />
 				</div>
 				<div>
 					<Image
