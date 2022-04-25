@@ -97,7 +97,7 @@ const WebDesign = () => {
 						</h2>
 
 						<div className='flex flex-wrap justify-center gap-10'>
-							<div className='relative mt-10 rounded flex flex-col items-center bg-white p-6 w-80 text-accent-100'>
+							<div className='relative mt-10 rounded flex flex-col items-center bg-gray-100 p-6 w-80 text-accent-100'>
 								<div className='absolute -top-8 left-[calc(50%-2rem)] flex justify-center items-center text-center bg-accent-100 rounded-full w-18 h-18 font-futura font-bold text-5xl text-primary-100'>
 									1
 								</div>
@@ -114,7 +114,7 @@ const WebDesign = () => {
 								</p>
 							</div>
 
-							<div className='relative mt-10 rounded flex flex-col items-center bg-white p-6 w-80 text-accent-100'>
+							<div className='relative mt-10 rounded flex flex-col items-center bg-gray-100 p-6 w-80 text-accent-100'>
 								<div className='absolute -top-8 left-[calc(50%-2rem)] flex justify-center items-center text-center bg-accent-100 rounded-full w-18 h-18 font-futura font-bold text-5xl text-primary-100'>
 									2
 								</div>
@@ -132,7 +132,7 @@ const WebDesign = () => {
 								</p>
 							</div>
 
-							<div className='relative mt-10 rounded flex flex-col items-center bg-white p-6 w-80 text-accent-100'>
+							<div className='relative mt-10 rounded flex flex-col items-center bg-gray-100 p-6 w-80 text-accent-100'>
 								<div className='absolute -top-8 left-[calc(50%-2rem)] flex justify-center items-center text-center bg-accent-100 rounded-full w-18 h-18 font-futura font-bold text-5xl text-primary-100'>
 									3
 								</div>
@@ -150,7 +150,7 @@ const WebDesign = () => {
 								</p>
 							</div>
 
-							<div className='relative mt-10 rounded flex flex-col items-center bg-white p-6 w-80 text-accent-100'>
+							<div className='relative mt-10 rounded flex flex-col items-center bg-gray-100 p-6 w-80 text-accent-100'>
 								<div className='absolute -top-8 left-[calc(50%-2rem)] flex justify-center items-center text-center bg-accent-100 rounded-full w-18 h-18 font-futura font-bold text-5xl text-primary-100'>
 									4
 								</div>
@@ -169,7 +169,7 @@ const WebDesign = () => {
 								</p>
 							</div>
 
-							<div className='relative mt-10 rounded flex flex-col items-center bg-white p-6 w-80 text-accent-100'>
+							<div className='relative mt-10 rounded flex flex-col items-center bg-gray-100 p-6 w-80 text-accent-100'>
 								<div className='absolute -top-8 left-[calc(50%-2rem)] flex justify-center items-center text-center bg-accent-100 rounded-full w-18 h-18 font-futura font-bold text-5xl text-primary-100'>
 									5
 								</div>
