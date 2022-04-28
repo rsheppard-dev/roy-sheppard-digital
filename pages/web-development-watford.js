@@ -48,7 +48,7 @@ const WebDevelopment = () => {
 					<ul className='space-y-8 mb-20'>
 						<li>
 							<h3 className='font-bold text-xl md:text-2xl mb-2'>Speed</h3>
-							<p>
+							<p className='text-gray-300'>
 								JAMstack sites are exceptionally fast as the pages are prebuilt
 								and stored on a global CDN. This results in pages loading up to
 								10 times faster than conventional sites.
@@ -56,14 +56,14 @@ const WebDevelopment = () => {
 						</li>
 						<li>
 							<h3 className='font-bold text-xl md:text-2xl mb-2'>Security</h3>
-							<p>
+							<p className='text-gray-300'>
 								No databases or third-party plugins for hackers to target means
 								your business and customer data will be remain safe and secure.
 							</p>
 						</li>
 						<li>
 							<h3 className='font-bold text-xl md:text-2xl mb-2'>SEO</h3>
-							<p>
+							<p className='text-gray-300'>
 								Having your pages prebuilt means web crawlers can easily explore
 								their content. Website performance is a Google ranking factor
 								and as JAMstack websites are highly performant this will also
@@ -74,7 +74,7 @@ const WebDevelopment = () => {
 							<h3 className='font-bold text-xl md:text-2xl mb-2'>
 								Scalability
 							</h3>
-							<p>
+							<p className='text-gray-300'>
 								JAMstack websites scale as your business grows. Because JAMstack
 								sites decouple the visual front end part of the site from the
 								technical back end of your site, you can easily add, remove and
