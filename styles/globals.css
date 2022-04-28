@@ -28,13 +28,22 @@
 		@apply font-lato text-lg tracking-wider md:text-2xl;
 	}
 
+	ul {
+		@apply list-none;
+	}
+
 	li {
-		@apply bg-bullet bg-no-repeat pl-16;
+		@apply pl-10 bg-bullet bg-no-repeat bg-left-top bg-[length:1.6rem_1.6rem] md:bg-[length:2.6rem_2.6rem] md:pl-16;
 	}
 
 	p,
 	li {
 		@apply leading-loose;
+	}
+
+	input,
+	textarea {
+		@apply shadow-inner shadow-gray-400;
 	}
 }
 
