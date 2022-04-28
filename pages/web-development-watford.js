@@ -36,7 +36,7 @@ const WebDevelopment = () => {
 					<h1 className='text-center text-3xl md:text-6xl font-bold mb-10'>
 						Benefits of JAMstack development
 					</h1>
-					<p className='mb-10 text-gray-300'>
+					<p className='mb-20 text-gray-300'>
 						The JAMstack is a modern way of building websites. It takes away the
 						need for traditional databases and prebuilds your pages with the
 						most up-to-date data, so this can be served to visitors of your site
