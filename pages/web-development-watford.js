@@ -31,7 +31,7 @@ const WebDevelopment = () => {
 				</div>
 			</header>
 			<section className='container text-accent-100 relative'>
-				<div className='my-10 shadow-md shadow-secondary-200 text-center rounded-lg bg-secondary-100 px-10 py-8 text-white font-futura'>
+				<div className='my-10 shadow-md shadow-secondary-200 text-center rounded-lg bg-secondary-100/30 px-10 py-8 text-secondary-200 font-futura'>
 					<blockquote className='text-2xl'>
 						42% of people will leave a website because of poor functionality.
 					</blockquote>
