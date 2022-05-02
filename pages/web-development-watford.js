@@ -30,11 +30,10 @@ const WebDevelopment = () => {
 					back time to focus on your business.
 				</p>
 			</section>
-
-			<section className='bg-accent-100 mt-20'>
-				<Seperator />
+			<Seperator dark={true} rotate={true} />
+			<section className='bg-accent-100 py-20'>
 				<div className='container text-white'>
-					<div className='h-2 w-1/2 bg-primary-100 mx-auto mt-20 mb-10'></div>
+					<div className='h-2 w-1/2 bg-primary-100 mx-auto mb-10'></div>
 					<h1 className='text-center text-3xl md:text-6xl font-bold mb-10'>
 						Benefits of JAMstack development
 					</h1>
@@ -47,7 +46,7 @@ const WebDevelopment = () => {
 						for any size of business.
 					</p>
 
-					<ul className='space-y-8 mb-20'>
+					<ul className='space-y-8'>
 						<li>
 							<h3 className='font-bold text-xl md:text-2xl mb-2'>Speed</h3>
 							<p className='text-gray-300'>
@@ -86,8 +85,8 @@ const WebDevelopment = () => {
 						</li>
 					</ul>
 				</div>
-				<Seperator rotate={true} />
 			</section>
+			<Seperator dark={true} />
 
 			<section className='container'></section>
 		</Layout>
