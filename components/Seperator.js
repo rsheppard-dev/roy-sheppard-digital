@@ -6,7 +6,7 @@ const Seperator = ({ dark = false, rotate = false }) => {
 				viewBox='0 0 1962 61'
 				width='1962'
 				height='61'
-				className={`z-30 top-0 left-0 min-w-screen ${
+				className={`z-30 -top-1 left-0 min-w-screen ${
 					dark ? 'text-accent-100' : 'text-white'
 				} ${rotate && 'rotate-180'}`}
 			>
