@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Layout from '../components/Layout';
 import Meta from '../components/Meta';
 import Seperator from '../components/Seperator';
+import PageBanner from '../components/PageBanner';
 
 const WebDevelopment = () => {
 	return (
@@ -12,24 +13,10 @@ const WebDevelopment = () => {
 				<Meta />
 				<title>Web Development - Watford || Roy Sheppard Digital</title>
 			</Head>
-			<header>
-				<div className='relative aspect-h-3 sm:aspect-h-2 aspect-w-4 z-10 inset-0 bg-cover bg-center bg-[url("https://res.cloudinary.com/roy-sheppard-digital/image/upload/e_pixelate:5,f_auto,q_0/v1643532339/roy-sheppard-digital/freelance-web-designer-watford.jpg")]'>
-					<Image
-						src='https://res.cloudinary.com/roy-sheppard-digital/image/upload/f_auto,q_auto/v1643532339/roy-sheppard-digital/freelance-web-designer-watford.jpg'
-						alt='Freelance web developer in Watford'
-						layout='fill'
-						objectFit='cover'
-						objectPosition='center'
-						priority={true}
-					/>
-					<div className='absolute z-20  inset-0 h-full w-full bg-black/30 mix-blend-hue'></div>
-					<div className='container absolute inset-0 justify-center items-center flex flex-col text-center z-20'>
-						<h1 className='mt-20 block font-futura font-bold text-white text-shadow text-3xl md:text-6xl'>
-							Web Development - Watford
-						</h1>
-					</div>
-				</div>
-			</header>
+			<PageBanner
+				title='Web Development - Watford'
+				alt='Freelance web developer in Watford.'
+			/>
 			<section className='container text-accent-100 relative'>
 				<div className='my-10 shadow-md shadow-secondary-200 text-center rounded-lg bg-secondary-100/30 px-10 py-8 text-secondary-200 font-futura'>
 					<blockquote className='text-2xl'>
