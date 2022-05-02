@@ -76,7 +76,7 @@ const Navbar = () => {
 
 	return (
 		<>
-			<header
+			<div
 				className={`${
 					scrollDown && !isOpen && '-translate-y-28'
 				} fixed z-40 w-screen bg-accent-100/90 py-4 transition-transform duration-500 flex flex-col justify-center`}
@@ -143,7 +143,7 @@ const Navbar = () => {
 						></motion.span>
 					</button>
 				</nav>
-			</header>
+			</div>
 			<MobileMenu isOpen={isOpen} toggleMobileMenu={toggleMobileMenu} />
 		</>
 	);

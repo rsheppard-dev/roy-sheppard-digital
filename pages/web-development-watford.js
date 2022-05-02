@@ -31,7 +31,7 @@ const WebDevelopment = () => {
 				</p>
 			</section>
 
-			<section className='bg-accent-100'>
+			<section className='bg-accent-100 mt-20'>
 				<Seperator />
 				<div className='container text-white'>
 					<div className='h-2 w-1/2 bg-primary-100 mx-auto mt-20 mb-10'></div>
