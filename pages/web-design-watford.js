@@ -4,7 +4,6 @@ import Image from 'next/image';
 
 import Layout from '../components/Layout';
 import Meta from '../components/Meta';
-import LetsTalk from '../components/LetsTalk';
 import Seperator from '../components/Seperator';
 import PageBanner from '../components/PageBanner';
 
