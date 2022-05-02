@@ -2,6 +2,7 @@ import Head from 'next/head';
 
 import Layout from '../components/Layout';
 import Meta from '../components/Meta';
+import PageBanner from '../components/PageBanner';
 
 const Ecommerce = () => {
 	return (
@@ -10,12 +11,11 @@ const Ecommerce = () => {
 				<Meta />
 				<title>E-Commerce - Watford || Roy Sheppard Digital</title>
 			</Head>
-			<section className='container mt-40 text-accent-100'>
-				<div className='h-2 w-1/2 bg-primary-100 mx-auto my-10'></div>
-				<h1 className='text-center text-3xl md:text-6xl font-bold mb-10'>
-					E-Commerce - Watford
-				</h1>
-
+			<PageBanner
+				title='E-Commerce - Watford'
+				alt='E-Commerce specialist in Watford.'
+			/>
+			<section className='container text-accent-100'>
 				<div className='shadow-md my-20 text-center rounded-lg bg-secondary-100/30 px-10 py-8 text-gray-600 font-futura'>
 					<blockquote className='text-2xl'>
 						60% of people said that usability is the most important web design
