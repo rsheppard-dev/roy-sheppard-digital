@@ -20,7 +20,7 @@ const WebDesign = () => {
 				alt='Freelance web designer in Watford.'
 			/>
 			<section className='container text-accent-100'>
-				<div className='shadow-md my-20 text-center rounded-lg bg-secondary-100/30 px-10 py-8 text-gray-600 font-futura'>
+				<div className='shadow-md mb-20 text-center rounded-lg bg-secondary-100/30 px-10 py-8 text-gray-600 font-futura'>
 					<blockquote className='text-2xl'>
 						Website design is an important factor for determining credibility
 						for 48% of visitors.

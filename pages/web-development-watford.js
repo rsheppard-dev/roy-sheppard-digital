@@ -18,7 +18,7 @@ const WebDevelopment = () => {
 				alt='Freelance web developer in Watford.'
 			/>
 			<section className='container text-accent-100 relative'>
-				<div className='my-10 shadow-md shadow-gray-300 text-center rounded-lg bg-secondary-100/30 px-10 py-8 text-gray-600 font-futura'>
+				<div className='mb-20 shadow-md shadow-gray-300 text-center rounded-lg bg-secondary-100/30 px-10 py-8 text-gray-600 font-futura'>
 					<blockquote className='text-2xl'>
 						42% of people will leave a website because of poor functionality.
 					</blockquote>
