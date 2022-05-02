@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Layout from '../components/Layout';
 import Meta from '../components/Meta';
 import PageBanner from '../components/PageBanner';
+import QuoteBox from '../components/QuoteBox';
 
 const Ecommerce = () => {
 	return (
@@ -16,12 +17,10 @@ const Ecommerce = () => {
 				alt='E-Commerce specialist in Watford.'
 			/>
 			<section className='container text-accent-100'>
-				<div className='shadow-md mb-20 text-center rounded-lg bg-secondary-100/30 px-10 py-8 text-gray-600 font-futura'>
-					<blockquote className='text-2xl'>
-						60% of people said that usability is the most important web design
-						characteristic when it comes to online shopping.
-					</blockquote>
-				</div>
+				<QuoteBox
+					quote='60% of people said that usability is the most important web design
+						characteristic when it comes to online shopping.'
+				/>
 
 				<p className='mb-10'>
 					There are many options when deciding to start an e-commerce business

@@ -1,10 +1,12 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import Layout from '../components/Layout';
 import Meta from '../components/Meta';
 import Seperator from '../components/Seperator';
 import PageBanner from '../components/PageBanner';
+import QuoteBox from '../components/QuoteBox';
 
 const WebDevelopment = () => {
 	return (
@@ -18,11 +20,7 @@ const WebDevelopment = () => {
 				alt='Freelance web developer in Watford.'
 			/>
 			<section className='container text-accent-100 relative'>
-				<div className='mb-20 shadow-md shadow-gray-300 text-center rounded-lg bg-secondary-100/30 px-10 py-8 text-gray-600 font-futura'>
-					<blockquote className='text-2xl'>
-						42% of people will leave a website because of poor functionality.
-					</blockquote>
-				</div>
+				<QuoteBox quote='42% of people will leave a website because of poor functionality.' />
 				<p className='mb-10'>
 					I specialise in making bespoke functionality for your website. I
 					understand that every business is unique and has unique needs. A good
@@ -88,7 +86,17 @@ const WebDevelopment = () => {
 			</section>
 			<Seperator dark={true} />
 
-			<section className='container'></section>
+			<section className='container mb-20'>
+				<div className='h-2 w-1/2 bg-primary-100 mx-auto mt-20 mb-10'></div>
+				<h2 className='heading mb-20 text-center'>Web Development Packages</h2>
+				<div className='rounded drop-shadow-md hover:drop-shadow-lg flex flex-col items-center bg-white p-6 w-80 group'>
+					<h3 className='subheading mb-10'>Brochure</h3>
+					<p className='inline-block mb-10 text-sm text-gray-600'>
+						from <span className='mb-10 text-2xl text-accent-100'>£750</span>
+					</p>
+					<p className='font-lato text-center'>A brochure site.</p>
+				</div>
+			</section>
 		</Layout>
 	);
 };

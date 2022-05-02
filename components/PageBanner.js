@@ -17,11 +17,11 @@ const PageBanner = ({ title = '', imageUrl = url, alt }) => {
 				/>
 				<div className='absolute z-20  inset-0 h-full w-full bg-black/30 mix-blend-hue'></div>
 				<div className='container absolute inset-0 justify-center items-center flex flex-col text-center z-20'>
-					<h1 className='mt-20 block font-futura font-bold text-white text-shadow text-3xl md:text-6xl'>
+					<h1 className='my-20 block font-futura font-bold text-white text-shadow text-3xl md:text-6xl'>
 						{title}
 					</h1>
 				</div>
-				<div className='h-20 w-full bg-gradient-to-t from-white via-white/80 to-transparent absolute top-[calc(100%-5rem)]'></div>
+				<div className='h-[30%] w-full bg-gradient-to-t from-white to-transparent absolute top-[70%]'></div>
 			</div>
 		</header>
 	);

@@ -6,6 +6,7 @@ import Layout from '../components/Layout';
 import Meta from '../components/Meta';
 import Seperator from '../components/Seperator';
 import PageBanner from '../components/PageBanner';
+import QuoteBox from '../components/QuoteBox';
 
 const WebDesign = () => {
 	return (
@@ -19,12 +20,10 @@ const WebDesign = () => {
 				alt='Freelance web designer in Watford.'
 			/>
 			<section className='container text-accent-100'>
-				<div className='shadow-md mb-20 text-center rounded-lg bg-secondary-100/30 px-10 py-8 text-gray-600 font-futura'>
-					<blockquote className='text-2xl'>
-						Website design is an important factor for determining credibility
-						for 48% of visitors.
-					</blockquote>
-				</div>
+				<QuoteBox
+					quote='Website design is an important factor for determining credibility
+						for 48% of visitors.'
+				/>
 
 				<p className='mb-10'>
 					I design websites that are tailor made with your business in mind. All
@@ -86,9 +85,8 @@ const WebDesign = () => {
 					</li>
 				</ul>
 			</section>
-
+			<Seperator rotate={true} dark={true} />
 			<section className='bg-accent-100 pb-20'>
-				<Seperator />
 				<div className='container pt-10 text-white'>
 					<div className='h-2 w-1/2 bg-primary-100 mx-auto my-10'></div>
 					<h2 className='text-center text-3xl md:text-6xl font-bold mb-20'>
