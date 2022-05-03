@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import { HiArrowNarrowRight } from 'react-icons/hi';
+
 const PriceGuide = () => {
 	return (
 		<section className='container mb-20 text-accent-100'>
@@ -46,6 +48,7 @@ const PriceGuide = () => {
 							<a>
 								<div className='mt-10 button-tertiary w-fit text-lg'>
 									Enquire about my JAMstack brochure websites
+									<HiArrowNarrowRight className='inline-block ml-2' />
 								</div>
 							</a>
 						</Link>
@@ -94,6 +97,7 @@ const PriceGuide = () => {
 							<a>
 								<div className='mt-10 button-tertiary w-fit text-lg'>
 									Enquire about my JAMstack marketing websites
+									<HiArrowNarrowRight className='inline-block ml-2' />
 								</div>
 							</a>
 						</Link>
@@ -145,6 +149,7 @@ const PriceGuide = () => {
 							<a>
 								<div className='mt-10 button-tertiary w-fit text-lg'>
 									Enquire about my JAMstack e-commerce websites
+									<HiArrowNarrowRight className='inline-block ml-2' />
 								</div>
 							</a>
 						</Link>
