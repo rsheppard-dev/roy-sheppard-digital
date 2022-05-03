@@ -5,7 +5,7 @@ const url =
 
 const PageBanner = ({ title = '', imageUrl = url, alt }) => {
 	return (
-		<header>
+		<header className='mb-10'>
 			<div className='relative aspect-h-3 sm:aspect-h-2 aspect-w-4 z-10 inset-0 bg-cover bg-center bg-[url("https://res.cloudinary.com/roy-sheppard-digital/image/upload/e_pixelate:5,f_auto,q_0/v1643532339/roy-sheppard-digital/freelance-web-designer-watford.jpg")]'>
 				<Image
 					src={imageUrl}
