@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Layout from '../components/Layout';
 import Meta from '../components/Meta';
 import PageBanner from '../components/PageBanner';
+import PriceGuide from '../components/PriceGuide';
 import QuoteBox from '../components/QuoteBox';
 
 const Ecommerce = () => {
@@ -29,6 +30,7 @@ const Ecommerce = () => {
 					market.
 				</p>
 			</section>
+			<PriceGuide />
 		</Layout>
 	);
 };

@@ -7,6 +7,7 @@ import Meta from '../components/Meta';
 import Seperator from '../components/Seperator';
 import PageBanner from '../components/PageBanner';
 import QuoteBox from '../components/QuoteBox';
+import PriceGuide from '../components/PriceGuide';
 
 const WebDesign = () => {
 	return (
@@ -185,6 +186,8 @@ const WebDesign = () => {
 					</div>
 				</div>
 			</section>
+			<Seperator dark={true} />
+			<PriceGuide />
 		</Layout>
 	);
 };

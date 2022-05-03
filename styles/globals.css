@@ -33,7 +33,7 @@
 	}
 
 	li {
-		@apply pl-10 bg-bullet bg-no-repeat bg-left-top bg-[length:1.6rem_1.6rem] md:bg-[length:2.6rem_2.6rem] md:pl-16;
+		@apply pl-10 bg-bullet bg-no-repeat bg-left-top bg-[length:1.6rem_1.6rem];
 	}
 
 	p,

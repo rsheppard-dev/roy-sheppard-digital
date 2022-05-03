@@ -21,7 +21,7 @@ const PageBanner = ({ title = '', imageUrl = url, alt }) => {
 						{title}
 					</h1>
 				</div>
-				<div className='h-[30%] w-full bg-gradient-to-t from-white to-transparent absolute top-[70%]'></div>
+				<div className='h-[10%] w-full bg-gradient-to-t from-white to-transparent absolute top-[90%]'></div>
 			</div>
 		</header>
 	);

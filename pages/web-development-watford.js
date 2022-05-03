@@ -7,6 +7,7 @@ import Meta from '../components/Meta';
 import Seperator from '../components/Seperator';
 import PageBanner from '../components/PageBanner';
 import QuoteBox from '../components/QuoteBox';
+import PriceGuide from '../components/PriceGuide';
 
 const WebDevelopment = () => {
 	return (
@@ -86,17 +87,7 @@ const WebDevelopment = () => {
 			</section>
 			<Seperator dark={true} />
 
-			<section className='container mb-20'>
-				<div className='h-2 w-1/2 bg-primary-100 mx-auto mt-20 mb-10'></div>
-				<h2 className='heading mb-20 text-center'>Web Development Packages</h2>
-				<div className='rounded drop-shadow-md hover:drop-shadow-lg flex flex-col items-center bg-white p-6 w-80 group'>
-					<h3 className='subheading mb-10'>Brochure</h3>
-					<p className='inline-block mb-10 text-sm text-gray-600'>
-						from <span className='mb-10 text-2xl text-accent-100'>£750</span>
-					</p>
-					<p className='font-lato text-center'>A brochure site.</p>
-				</div>
-			</section>
+			<PriceGuide />
 		</Layout>
 	);
 };
