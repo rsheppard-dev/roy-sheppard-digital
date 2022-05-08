@@ -25,20 +25,15 @@
 	input,
 	textarea,
 	button {
-		@apply font-lato text-lg tracking-wider md:text-2xl;
+		@apply font-lato tracking-wider leading-loose md:leading-loose text-lg md:text-2xl;
 	}
 
-	ul {
+	.list-tick ul {
 		@apply list-none;
 	}
 
-	li {
+	.list-tick li {
 		@apply pl-10 bg-bullet bg-no-repeat bg-left-top bg-[length:1.6rem_1.6rem];
-	}
-
-	p,
-	li {
-		@apply leading-loose;
 	}
 
 	input,

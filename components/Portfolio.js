@@ -38,12 +38,12 @@ const Portfolio = () => {
 						</div>
 					</div>
 					<div className='text-white lg:col-start-1 lg:row-start-2 mt-10 lg:mt-0'>
-						<p className='text-gray-100 mb-10 leading-loose'>
+						<p className='text-gray-300 mb-10 leading-loose'>
 							Studio120 is a modern barber shop based in Bushey Heath, Watford.
 							They needed a new website to integrate with their existing booking
 							system to help increase sales and attract more clients.
 						</p>
-						<p className='text-gray-100 mb-10 leading-loose'>
+						<p className='text-gray-300 mb-10 leading-loose'>
 							The site is also hooked up to a live feed from the shop's
 							Instagram account.
 						</p>

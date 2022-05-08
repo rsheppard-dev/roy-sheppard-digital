@@ -33,17 +33,17 @@ const WebDesign = () => {
 					title='Web design that turns visitors into customers'
 				/>
 
-				<p className='mb-10'>
+				<p className='mb-10 text-gray-600'>
 					I design websites that are tailor made with your business in mind. All
-					my websites are included with the following as standard…
+					my websites include the following as standard…
 				</p>
 
-				<ul className='space-y-8 mb-20'>
+				<ul className='space-y-8 mb-20 list-tick'>
 					<li>
 						<h3 className='font-bold text-xl md:text-2xl mb-2'>
 							UI/UX web design
 						</h3>
-						<p>
+						<p className='text-gray-600'>
 							Understanding user experience and user interface design are
 							important concepts when designing any website but especially when
 							working with business websites where customer interaction and
@@ -54,7 +54,7 @@ const WebDesign = () => {
 						<h3 className='font-bold text-xl md:text-2xl mb-2'>
 							Responsive web design
 						</h3>
-						<p>
+						<p className='text-gray-600'>
 							My websites are made to respond to whatever device your users
 							choose to use, whether that’s a mobile, tablet, laptop or a
 							widescreen monitor.
@@ -64,7 +64,7 @@ const WebDesign = () => {
 						<h3 className='font-bold text-xl md:text-2xl mb-2'>
 							Accessibility
 						</h3>
-						<p>
+						<p className='text-gray-600'>
 							People with different disabilities will use your site and it is
 							important their experience is a positive one. My sites use best
 							practice methods to ensure everyone can navigate your website
@@ -75,7 +75,7 @@ const WebDesign = () => {
 						<h3 className='font-bold text-xl md:text-2xl mb-2'>
 							SEO optimisation
 						</h3>
-						<p>
+						<p className='text-gray-600'>
 							There is no point having an amazing website if no-one can find it.
 							My websites are optimised to stand the best chance of being found
 							by your intended users.
@@ -85,7 +85,7 @@ const WebDesign = () => {
 						<h3 className='font-bold text-xl md:text-2xl mb-2'>
 							Google analytics
 						</h3>
-						<p>
+						<p className='text-gray-600'>
 							Analytics data helps you learn who is visiting your site and how
 							they are using it to help you improve your users’ experience as
 							well as improving your conversions and sales.
@@ -110,7 +110,7 @@ const WebDesign = () => {
 								width={100}
 								height={100}
 							/>
-							<p className='mt-10 text-xl leading-loose'>
+							<p className='mt-10 text-xl leading-loose text-gray-300'>
 								A basic wireframe is drawn up to begin with, to determine what
 								the basic structure of your website will be.
 							</p>
@@ -127,7 +127,7 @@ const WebDesign = () => {
 								width={100}
 								height={100}
 							/>
-							<p className='mt-10 text-xl leading-loose'>
+							<p className='mt-10 text-xl leading-loose text-gray-300'>
 								A prototype of the home page is created with the content you
 								supplied. This is submitted to you for review. Now you can let
 								me know about any revisions or additions you wish to make.
@@ -145,7 +145,7 @@ const WebDesign = () => {
 								width={100}
 								height={100}
 							/>
-							<p className='mt-10 text-xl leading-loose'>
+							<p className='mt-10 text-xl leading-loose text-gray-300'>
 								Once you have signed off on the design mockup, I will begin
 								coding your site and integrating any features you have
 								requested.
@@ -163,7 +163,7 @@ const WebDesign = () => {
 								width={100}
 								height={100}
 							/>
-							<p className='mt-10 text-xl leading-loose'>
+							<p className='mt-10 text-xl leading-loose text-gray-300'>
 								Once your website is complete it is reviewed and tested to
 								ensure it operates correctly on different browsers and operating
 								systems. As well as ensuring it is responsive on all devices.
@@ -181,7 +181,7 @@ const WebDesign = () => {
 								width={100}
 								height={100}
 							/>
-							<p className='mt-10 text-xl leading-loose'>
+							<p className='mt-10 text-xl leading-loose text-gray-300'>
 								Once everything has been checked and you are satisfied, your
 								site is deployed and handed over to you. Time to reap the
 								benefits of having a lead generating website.

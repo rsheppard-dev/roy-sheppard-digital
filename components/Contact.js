@@ -17,14 +17,14 @@ const Contact = () => {
 				tag='h2'
 			/>
 			<div className='grid lg:grid-cols-2 gap-10 mb-20'>
-				<div>
+				<div className='text-gray-600'>
 					<p>
 						If you are ready to get started or are just curious please get in
 						touch so we can discuss your ideal website.
 					</p>
 				</div>
 
-				<div>
+				<div className='text-gray-600'>
 					<a href='tel:07883066944' className='group'>
 						<div className='flex items-center space-x-4 mb-2'>
 							<Phone className='h-6 w-6 text-secondary-100 group-hover:text-secondary-200' />
@@ -45,7 +45,7 @@ const Contact = () => {
 
 				<div>
 					<h3 className='subheading mb-10'>Still not sure?</h3>
-					<p>
+					<p className='text-gray-600'>
 						I offer a <span className='underline'>FREE</span> 30 minute strategy
 						call to anyone planning a new website. I can advise you on the best
 						methods to get your business online, even if you don’t end up
@@ -54,7 +54,7 @@ const Contact = () => {
 					<button className='my-10 button-tertiary' onClick={OpenCalendar}>
 						Book Free Strategy Call
 					</button>
-					<p>
+					<p className='text-gray-600'>
 						I am also currently offering <span className='underline'>FREE</span>{' '}
 						website reviews. If you already have a website but aren’t getting
 						the results you hoped for, let me analyse it for you and I’ll give

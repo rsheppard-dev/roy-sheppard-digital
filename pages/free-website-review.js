@@ -19,7 +19,7 @@ const WebsiteReview = props => {
 			</Head>
 			<section className='container mt-40 text-accent-100 mb-20'>
 				<Heading dark={true} tag='h1' title='Free Website Review' />
-				<p className='mb-10'>
+				<p className='mb-10 text-gray-600'>
 					Are you struggling to get leads or gain conversations through{' '}
 					{url ? (
 						<span className='font-bold text-secondary-100'>{url}</span>
@@ -59,7 +59,7 @@ const WebsiteReview = props => {
 					</div>
 
 					<div>
-						<ul className='space-y-8'>
+						<ul className='space-y-8 list-tick text-gray-600'>
 							<li>
 								<h3 className='font-bold text-xl md:text-2xl mb-2'>
 									UI/UX Design

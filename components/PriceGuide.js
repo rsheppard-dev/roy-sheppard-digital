@@ -13,7 +13,7 @@ const PriceGuide = () => {
 					<span>
 						<h3 className='subheading mb-2'>Brochure</h3>
 						<h4 className='text-base text-gray-600 mb-5'>
-							JAMstack brochure website for new or small businesses.
+							JAMstack brochure website for new and small businesses.
 						</h4>
 						<p className='mb-10 text-sm text-gray-600'>
 							from
@@ -21,26 +21,16 @@ const PriceGuide = () => {
 								£750
 							</span>
 						</p>
-						<ul className='space-y-4'>
-							<li className='font-lato text-lg text-accent-100'>
-								1 - 5 page website.
-							</li>
-							<li className='font-lato text-lg text-accent-100'>
-								Bespoke website design.
-							</li>
-							<li className='font-lato text-lg text-accent-100'>SEO setup.</li>
-							<li className='font-lato text-lg text-accent-100'>
+						<ul className='space-y-4 text-gray-600 list-tick'>
+							<li className='font-lato text-lg'>1 - 5 page website.</li>
+							<li className='font-lato text-lg'>Bespoke website design.</li>
+							<li className='font-lato text-lg'>SEO setup.</li>
+							<li className='font-lato text-lg'>
 								Google Tag Manager and Analytics setup.
 							</li>
-							<li className='font-lato text-lg text-accent-100'>
-								Content management system.
-							</li>
-							<li className='font-lato text-lg text-accent-100'>
-								Contact form.
-							</li>
-							<li className='font-lato text-lg text-accent-100'>
-								Social media integration.
-							</li>
+							<li className='font-lato text-lg'>Content management system.</li>
+							<li className='font-lato text-lg'>Contact form.</li>
+							<li className='font-lato text-lg'>Social media integration.</li>
 						</ul>
 					</span>
 					<span>
@@ -67,29 +57,17 @@ const PriceGuide = () => {
 								£1200
 							</span>
 						</p>
-						<ul className='space-y-4'>
-							<li className='font-lato text-lg text-accent-100'>
-								5 or more pages.
-							</li>
-							<li className='font-lato text-lg text-accent-100'>
-								Bespoke website design.
-							</li>
-							<li className='font-lato text-lg text-accent-100'>SEO setup.</li>
-							<li className='font-lato text-lg text-accent-100'>
+						<ul className='space-y-4 text-gray-600 list-tick'>
+							<li className='font-lato text-lg'>5 or more pages.</li>
+							<li className='font-lato text-lg'>Bespoke website design.</li>
+							<li className='font-lato text-lg'>SEO setup.</li>
+							<li className='font-lato text-lg'>
 								Google Tag Manager and Analytics setup.
 							</li>
-							<li className='font-lato text-lg text-accent-100'>
-								Content management system.
-							</li>
-							<li className='font-lato text-lg text-accent-100'>
-								Contact form.
-							</li>
-							<li className='font-lato text-lg text-accent-100'>
-								Social media integration.
-							</li>
-							<li className='font-lato text-lg text-accent-100'>
-								Blog or custom feature.
-							</li>
+							<li className='font-lato text-lg'>Content management system.</li>
+							<li className='font-lato text-lg'>Contact form.</li>
+							<li className='font-lato text-lg'>Social media integration.</li>
+							<li className='font-lato text-lg'>Blog or custom feature.</li>
 						</ul>
 					</span>
 					<span>
@@ -116,32 +94,20 @@ const PriceGuide = () => {
 								£2800
 							</span>
 						</p>
-						<ul className='space-y-4'>
-							<li className='font-lato text-lg text-accent-100'>
+						<ul className='space-y-4 text-gray-600 list-tick'>
+							<li className='font-lato text-lg'>
 								5 or more pages (plus unlimited product pages).
 							</li>
-							<li className='font-lato text-lg text-accent-100'>
-								Bespoke website design.
-							</li>
-							<li className='font-lato text-lg text-accent-100'>SEO setup.</li>
-							<li className='font-lato text-lg text-accent-100'>
+							<li className='font-lato text-lg'>Bespoke website design.</li>
+							<li className='font-lato text-lg'>SEO setup.</li>
+							<li className='font-lato text-lg'>
 								Google Tag Manager and Analytics setup.
 							</li>
-							<li className='font-lato text-lg text-accent-100'>
-								Content management system.
-							</li>
-							<li className='font-lato text-lg text-accent-100'>
-								Contact form.
-							</li>
-							<li className='font-lato text-lg text-accent-100'>
-								Social media integration.
-							</li>
-							<li className='font-lato text-lg text-accent-100'>
-								Shopping cart.
-							</li>
-							<li className='font-lato text-lg text-accent-100'>
-								Payment proccessor.
-							</li>
+							<li className='font-lato text-lg'>Content management system.</li>
+							<li className='font-lato text-lg'>Contact form.</li>
+							<li className='font-lato text-lg'>Social media integration.</li>
+							<li className='font-lato text-lg'>Shopping cart.</li>
+							<li className='font-lato text-lg'>Payment proccessor.</li>
 						</ul>
 					</span>
 					<span>

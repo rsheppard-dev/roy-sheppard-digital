@@ -120,7 +120,7 @@ const ContactForm = () => {
 				netlify-honeypot='bot-field'
 				data-netlify='true'
 				onSubmit={handleSubmit(onSubmit)}
-				className='space-y-6'
+				className='space-y-6 text-gray-600'
 			>
 				<input type='hidden' name='form-name' value='contact' />
 				<input
@@ -142,9 +142,9 @@ const ContactForm = () => {
 						{...register('firstName')}
 						className={`${
 							errors.firstName && 'border-4 border-primary-200'
-						} text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
+						} text-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
 					/>
-					<p className='text-sm text-gray-700'>
+					<p className='text-sm text-gray-600'>
 						{errors.firstName && 'Please enter your first name above.'}
 					</p>
 				</div>
@@ -157,9 +157,9 @@ const ContactForm = () => {
 						{...register('lastName')}
 						className={`${
 							errors.lastName && 'border-4 border-primary-200'
-						} text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
+						} text-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
 					/>
-					<p className='text-sm text-gray-700'>
+					<p className='text-sm text-gray-600'>
 						{errors.lastName && 'Please enter your last name above.'}
 					</p>
 				</div>
@@ -172,9 +172,9 @@ const ContactForm = () => {
 						{...register('phone')}
 						className={`${
 							errors.phone && 'border-4 border-primary-200'
-						} text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
+						} text-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
 					/>
-					<p className='text-sm text-gray-700'>
+					<p className='text-sm text-gray-600'>
 						{errors.phone && 'Please enter a valid phone number.'}
 					</p>
 				</div>
@@ -187,9 +187,9 @@ const ContactForm = () => {
 						{...register('email')}
 						className={`${
 							errors.email && 'border-4 border-primary-200'
-						} text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
+						} text-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
 					/>
-					<p className='text-sm text-gray-700'>
+					<p className='text-sm text-gray-600'>
 						{errors.email && 'Please enter a valid email address.'}
 					</p>
 				</div>
@@ -202,9 +202,9 @@ const ContactForm = () => {
 						{...register('message')}
 						className={`${
 							errors.message && 'border-4 border-primary-200'
-						} text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
+						} text-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
 					/>
-					<p className='text-sm text-gray-700'>
+					<p className='text-sm text-gray-600'>
 						{errors.message &&
 							'Come on, you must tell me a little bit about your project.'}
 					</p>

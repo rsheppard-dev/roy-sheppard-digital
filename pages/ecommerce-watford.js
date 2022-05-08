@@ -34,7 +34,7 @@ const Ecommerce = () => {
 					dark={true}
 				/>
 
-				<p className='mb-20'>
+				<p className='mb-20 text-gray-600'>
 					There are many options when deciding to start an e-commerce business
 					or when extending an existing business to include online sales. I can
 					help you decide what are the best options for you and your target
@@ -70,7 +70,7 @@ const Ecommerce = () => {
 			<section className='bg-accent-100 w-full'>
 				<div className='container py-20'>
 					<Heading tag='h2' title='How e-commerce can help your business' />
-					<ul className='space-y-4 text-white mt-20'>
+					<ul className='space-y-4 text-gray-300 mt-20 list-tick'>
 						<li>Reason #1</li>
 						<li>Reason #2</li>
 						<li>Reason #3</li>

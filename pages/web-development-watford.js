@@ -28,7 +28,7 @@ const WebDevelopment = () => {
 					title='Web development that makes running your business easier'
 					dark={true}
 				/>
-				<p className='mb-10'>
+				<p className='mb-10 text-gray-600'>
 					I specialise in making bespoke functionality for your website. I
 					understand that every business is unique and has unique needs. A good
 					developer can come up with solutions that solve problems - giving you
@@ -48,7 +48,7 @@ const WebDevelopment = () => {
 						for any size of business.
 					</p>
 
-					<ul className='space-y-8'>
+					<ul className='space-y-8 list-tick'>
 						<li>
 							<h3 className='font-bold text-xl md:text-2xl mb-2'>Speed</h3>
 							<p className='text-gray-300'>

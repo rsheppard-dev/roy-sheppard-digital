@@ -3,10 +3,7 @@ import Heading from './Heading';
 
 const About = () => {
 	return (
-		<section
-			id='about'
-			className='container text-accent-100 scroll-mt-18 pt-20'
-		>
+		<section id='about' className='container scroll-mt-18 pt-20'>
 			<Heading
 				title='Why hire me as your<br />freelance web designer?'
 				dark={true}
@@ -23,7 +20,7 @@ const About = () => {
 				/>
 			</div>
 
-			<ul className='space-y-8 mb-20'>
+			<ul className='space-y-8 mb-20 list-tick text-gray-600'>
 				<li>
 					All my website designs are made custom for you, your business and your
 					brand. I do not use themes, templates or bloated page builders.

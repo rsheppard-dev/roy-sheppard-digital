@@ -120,7 +120,7 @@ const ReviewForm = ({ url = '' }) => {
 				netlify-honeypot='bot-field'
 				data-netlify='true'
 				onSubmit={handleSubmit(onSubmit)}
-				className='space-y-6'
+				className='space-y-6 text-gray-600'
 			>
 				<input type='hidden' name='form-name' value='website-review' />
 				<input
@@ -144,10 +144,10 @@ const ReviewForm = ({ url = '' }) => {
 						{...register('url')}
 						className={`${
 							errors.url && 'border-4 border-primary-200'
-						} text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
+						} text-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
 					/>
 					{errors.url && (
-						<span className='w-full mb-4 text-sm text-gray-700'>
+						<span className='w-full mb-4 text-sm text-gray-600'>
 							Please enter a valid URL. Remember to start it with{' '}
 							<span className='font-bold text-sm'>http://</span> or{' '}
 							<span className='font-bold text-sm'>https://</span>
@@ -163,10 +163,10 @@ const ReviewForm = ({ url = '' }) => {
 						{...register('firstName')}
 						className={`${
 							errors.firstName && 'border-4 border-primary-200'
-						} text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
+						} text-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
 					/>
 					{errors.firstName && (
-						<span className='w-full mb-4 text-sm text-gray-700'>
+						<span className='w-full mb-4 text-sm text-gray-600'>
 							Please enter your first name above.
 						</span>
 					)}
@@ -180,10 +180,10 @@ const ReviewForm = ({ url = '' }) => {
 						{...register('lastName')}
 						className={`${
 							errors.lastName && 'border-4 border-primary-200'
-						} text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
+						} text-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
 					/>
 					{errors.lastName && (
-						<span className='w-full mb-4 text-sm text-gray-700'>
+						<span className='w-full mb-4 text-sm text-gray-600'>
 							Please enter your last name above.
 						</span>
 					)}
@@ -197,10 +197,10 @@ const ReviewForm = ({ url = '' }) => {
 						{...register('phone')}
 						className={`${
 							errors.phone && 'border-4 border-primary-200'
-						} text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
+						} text-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
 					/>
 					{errors.phone && (
-						<span className='w-full mb-4 text-sm text-gray-700'>
+						<span className='w-full mb-4 text-sm text-gray-600'>
 							Please enter a valid phone number.
 						</span>
 					)}
@@ -214,10 +214,10 @@ const ReviewForm = ({ url = '' }) => {
 						{...register('email')}
 						className={`${
 							errors.email && 'border-4 border-primary-200'
-						} text-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
+						} text-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-gray-100 p-2`}
 					/>
 					{errors.email && (
-						<span className='w-full mb-4 text-sm text-gray-700'>
+						<span className='w-full mb-4 text-sm text-gray-600'>
 							Please enter a valid email address.
 						</span>
 					)}
