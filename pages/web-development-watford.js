@@ -38,10 +38,7 @@ const WebDevelopment = () => {
 			<Seperator dark={true} rotate={true} />
 			<article className='bg-accent-100 py-20'>
 				<div className='container text-white'>
-					<div className='h-2 w-1/2 bg-primary-100 mx-auto mb-10'></div>
-					<h2 className='text-center text-3xl md:text-6xl font-bold mb-10'>
-						Benefits of JAMstack development
-					</h2>
+					<Heading title='Benefits of JAMstack development' tag='h2' />
 					<p className='mb-20 text-gray-300'>
 						The JAMstack is a modern way of building websites. It takes away the
 						need for traditional databases and prebuilds your pages with the

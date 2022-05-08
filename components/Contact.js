@@ -9,7 +9,7 @@ const Contact = () => {
 	return (
 		<section
 			id='contact'
-			className='container text-accent-100 scroll-mt-18 py-20'
+			className='container text-accent-100 scroll-mt-18 pt-20'
 		>
 			<Heading
 				title='Let&#39s talk about your website project'
