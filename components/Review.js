@@ -5,6 +5,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
 import { Arrow } from './Icons';
+import Heading from './Heading';
 
 const Review = () => {
 	const schema = yup
@@ -30,14 +31,13 @@ const Review = () => {
 
 	return (
 		<section className='text-center w-screen bg-accent-100'>
-			<div className='container pt-20'>
-				<div className='h-2 w-1/2 bg-primary-100 mx-auto mb-10'></div>
-
-				<h2 className='heading text-white mb-10 leading-snug'>
-					Already have a website?
+			<div className='container py-20'>
+				<Heading
+					title='Already have a website?
 					<br />
-					Apply for your free website review.
-				</h2>
+					Apply for your free website review.'
+					tag='h2'
+				/>
 
 				<div className='flex justify-center'>
 					<div className='md:ml-[100px]'>

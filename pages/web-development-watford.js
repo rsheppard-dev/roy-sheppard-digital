@@ -8,6 +8,7 @@ import Seperator from '../components/Seperator';
 import PageBanner from '../components/PageBanner';
 import QuoteBox from '../components/QuoteBox';
 import PriceGuide from '../components/PriceGuide';
+import Heading from '../components/Heading';
 
 const WebDevelopment = () => {
 	return (
@@ -22,6 +23,11 @@ const WebDevelopment = () => {
 			/>
 			<section className='container text-accent-100 relative'>
 				<QuoteBox quote='42% of people will leave a website because of poor functionality.' />
+				<Heading
+					tag='h2'
+					title='Web development that makes running your business easier'
+					dark={true}
+				/>
 				<p className='mb-10'>
 					I specialise in making bespoke functionality for your website. I
 					understand that every business is unique and has unique needs. A good
@@ -30,12 +36,12 @@ const WebDevelopment = () => {
 				</p>
 			</section>
 			<Seperator dark={true} rotate={true} />
-			<section className='bg-accent-100 py-20'>
+			<article className='bg-accent-100 py-20'>
 				<div className='container text-white'>
 					<div className='h-2 w-1/2 bg-primary-100 mx-auto mb-10'></div>
-					<h1 className='text-center text-3xl md:text-6xl font-bold mb-10'>
+					<h2 className='text-center text-3xl md:text-6xl font-bold mb-10'>
 						Benefits of JAMstack development
-					</h1>
+					</h2>
 					<p className='mb-20 text-gray-300'>
 						The JAMstack is a modern way of building websites. It takes away the
 						need for traditional databases and prebuilds your pages with the
@@ -84,7 +90,7 @@ const WebDevelopment = () => {
 						</li>
 					</ul>
 				</div>
-			</section>
+			</article>
 			<Seperator dark={true} />
 
 			<PriceGuide />

@@ -8,6 +8,7 @@ import Seperator from '../components/Seperator';
 import PageBanner from '../components/PageBanner';
 import QuoteBox from '../components/QuoteBox';
 import PriceGuide from '../components/PriceGuide';
+import Heading from '../components/Heading';
 
 const WebDesign = () => {
 	return (
@@ -24,6 +25,12 @@ const WebDesign = () => {
 				<QuoteBox
 					quote='Website design is an important factor for determining credibility
 						for 48% of visitors.'
+				/>
+
+				<Heading
+					tag='h2'
+					dark={true}
+					title='Web design that turns visitors into customers'
 				/>
 
 				<p className='mb-10'>
@@ -88,11 +95,8 @@ const WebDesign = () => {
 			</section>
 			<Seperator rotate={true} dark={true} />
 			<section className='bg-accent-100 pb-20'>
-				<div className='container pt-10 text-white'>
-					<div className='h-2 w-1/2 bg-primary-100 mx-auto my-10'></div>
-					<h2 className='text-center text-3xl md:text-6xl font-bold mb-20'>
-						My web design process
-					</h2>
+				<div className='container pt-20 text-white'>
+					<Heading tag='h2' title='My web design process' />
 
 					<div className='flex flex-wrap justify-center gap-20'>
 						<div className='relative mt-10 rounded flex flex-col items-center bg-secondary-100/30 p-10 w-80 text-white'>

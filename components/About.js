@@ -1,15 +1,17 @@
 import Image from 'next/image';
+import Heading from './Heading';
 
 const About = () => {
 	return (
-		<section id='about' className='container text-accent-100 scroll-mt-18'>
-			<div className='h-2 w-1/2 bg-primary-100 mx-auto mt-20 mb-10'></div>
-
-			<h2 className='heading text-center mb-10 leading-snug'>
-				Why hire me as your
-				<br />
-				freelance web designer?
-			</h2>
+		<section
+			id='about'
+			className='container text-accent-100 scroll-mt-18 pt-20'
+		>
+			<Heading
+				title='Why hire me as your<br />freelance web designer?'
+				dark={true}
+				tag='h2'
+			/>
 
 			<div className='mb-10 lg:mb-0 flex justify-center md:block md:float-right shape-outside-circle md:ml-2'>
 				<Image

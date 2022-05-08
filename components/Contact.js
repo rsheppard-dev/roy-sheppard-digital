@@ -1,17 +1,21 @@
 import Link from 'next/link';
 
 import ContactForm from './ContactForm';
+import Heading from './Heading';
 import { Phone, Email } from './Icons';
 import OpenCalendar from './OpenCalendar';
 
 const Contact = () => {
 	return (
-		<section id='contact' className='container text-accent-100 scroll-mt-18'>
-			<div className='h-2 w-1/2 bg-primary-100 mx-auto mt-20 mb-10'></div>
-
-			<h2 className='heading text-center mb-10 leading-snug'>
-				Let's talk about your website project
-			</h2>
+		<section
+			id='contact'
+			className='container text-accent-100 scroll-mt-18 py-20'
+		>
+			<Heading
+				title='Let&#39s talk about your website project'
+				dark={true}
+				tag='h2'
+			/>
 			<div className='grid lg:grid-cols-2 gap-10 mb-20'>
 				<div>
 					<p>

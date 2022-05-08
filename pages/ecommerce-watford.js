@@ -2,6 +2,7 @@ import Head from 'next/head';
 
 import { FaShopify, FaStripe, FaCcPaypal, FaGooglePay } from 'react-icons/fa';
 
+import { Snipcart } from '../components/Icons';
 import Heading from '../components/Heading';
 import Layout from '../components/Layout';
 import Meta from '../components/Meta';
@@ -27,6 +28,12 @@ const Ecommerce = () => {
 						characteristic when it comes to online shopping.'
 				/>
 
+				<Heading
+					tag='h2'
+					title='Use e-commerce to future-proof your business'
+					dark={true}
+				/>
+
 				<p className='mb-20'>
 					There are many options when deciding to start an e-commerce business
 					or when extending an existing business to include online sales. I can
@@ -34,18 +41,27 @@ const Ecommerce = () => {
 					market.
 				</p>
 
-				<div className='mb-20 text-white grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 justify-center items-center gap-10'>
+				<div className='mb-20 text-white grid grid-cols-4 gap-10 justify-center items-center'>
 					<span className='flex justify-center'>
-						<FaShopify className='h-24 w-24 text-gray-300' />
+						<FaShopify
+							className='h-12 w-12 md:h-24 md:w-24 text-gray-300'
+							title='Shopify'
+						/>
 					</span>
 					<span className='flex justify-center'>
-						<FaCcPaypal className='h-24 w-24 text-gray-300' />
+						<Snipcart className='h-12 w-12 md:h-24 md:w-24 text-gray-300' />
 					</span>
 					<span className='flex justify-center'>
-						<FaStripe className='h-24 w-24 text-gray-300' />
+						<FaCcPaypal
+							className='h-12 w-12 md:h-24 md:w-24 text-gray-300'
+							title='Paypal'
+						/>
 					</span>
 					<span className='flex justify-center'>
-						<FaGooglePay className='h-24 w-24 text-gray-300' />
+						<FaStripe
+							className='h-12 w-12 md:h-24 md:w-24 text-gray-300'
+							title='Stripe'
+						/>
 					</span>
 				</div>
 			</section>
@@ -53,7 +69,7 @@ const Ecommerce = () => {
 			<Seperator dark={true} rotate={true} />
 			<section className='bg-accent-100 w-full'>
 				<div className='container py-20'>
-					<Heading heading={2} title='How e-commerce can help your business' />
+					<Heading tag='h2' title='How e-commerce can help your business' />
 					<ul className='space-y-4 text-white mt-20'>
 						<li>Reason #1</li>
 						<li>Reason #2</li>

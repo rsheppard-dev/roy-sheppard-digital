@@ -1,12 +1,12 @@
 import Link from 'next/link';
 
 import { HiArrowNarrowRight } from 'react-icons/hi';
+import Heading from './Heading';
 
 const PriceGuide = () => {
 	return (
-		<section className='container mb-20 text-accent-100'>
-			<div className='h-2 w-1/2 bg-primary-100 mx-auto mt-20 mb-10'></div>
-			<h2 className='heading mb-20 text-center'>Website price guide</h2>
+		<section className='container my-20 text-accent-100'>
+			<Heading tag='h2' dark={true} title='Website price guide' />
 
 			<div className='flex flex-wrap gap-10 justify-center'>
 				<div className='rounded drop-shadow-md hover:drop-shadow-lg flex flex-col justify-between bg-white p-6 w-80 group'>
@@ -108,7 +108,7 @@ const PriceGuide = () => {
 					<span>
 						<h3 className='subheading mb-2'>E-Commerce</h3>
 						<h4 className='text-base text-gray-600 mb-5'>
-							JAMstack e-commerce website selling goods or services online.
+							JAMstack e-commerce website for selling goods or services online.
 						</h4>
 						<p className='mb-10 text-sm text-gray-600'>
 							from
