@@ -1,5 +1,6 @@
 import Navbar from './Navbar';
 import Footer from './Footer';
+import CookieConsent from './CookieConsent';
 
 const Layout = ({ children }) => {
 	return (
@@ -9,6 +10,7 @@ const Layout = ({ children }) => {
 				<main>{children}</main>
 			</div>
 			<Footer />
+			<CookieConsent />
 		</div>
 	);
 };
