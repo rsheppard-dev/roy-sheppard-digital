@@ -59,7 +59,7 @@ const WebsiteReview = props => {
 					<div>
 						<ul className='space-y-8 list-tick text-gray-600'>
 							<li>
-								<h3 className='font-bold text-xl md:text-2xl mb-2'>
+								<h3 className='font-bold text-accent-100 text-xl md:text-2xl mb-2'>
 									UI/UX Design
 								</h3>
 								<p>
@@ -69,7 +69,7 @@ const WebsiteReview = props => {
 								</p>
 							</li>
 							<li>
-								<h3 className='font-bold text-xl md:text-2xl mb-2'>
+								<h3 className='font-bold text-accent-100 text-xl md:text-2xl mb-2'>
 									Performance
 								</h3>
 								<p>
@@ -79,7 +79,7 @@ const WebsiteReview = props => {
 								</p>
 							</li>
 							<li>
-								<h3 className='font-bold text-xl md:text-2xl mb-2'>
+								<h3 className='font-bold text-accent-100 text-xl md:text-2xl mb-2'>
 									Responsiveness
 								</h3>
 								<p>
@@ -89,7 +89,7 @@ const WebsiteReview = props => {
 								</p>
 							</li>
 							<li>
-								<h3 className='font-bold text-xl md:text-2xl mb-2'>
+								<h3 className='font-bold text-accent-100 text-xl md:text-2xl mb-2'>
 									Accessibility
 								</h3>
 								<p>
@@ -100,7 +100,9 @@ const WebsiteReview = props => {
 								</p>
 							</li>
 							<li>
-								<h3 className='font-bold text-xl md:text-2xl mb-2'>SEO</h3>
+								<h3 className='font-bold text-accent-100 text-xl md:text-2xl mb-2'>
+									SEO
+								</h3>
 								<p>
 									SEO or search-engine-optimisation is the process of optimising
 									your site to be found by search engines such as Google. I will
