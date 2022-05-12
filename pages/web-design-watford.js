@@ -1,9 +1,8 @@
-import Head from 'next/head';
-import Link from 'next/link';
 import Image from 'next/image';
 
+import { NextSeo } from 'next-seo';
+
 import Layout from '../components/Layout';
-import Meta from '../components/Meta';
 import Seperator from '../components/Seperator';
 import PageBanner from '../components/PageBanner';
 import QuoteBox from '../components/QuoteBox';
@@ -13,10 +12,7 @@ import Heading from '../components/Heading';
 const WebDesign = () => {
 	return (
 		<Layout>
-			<Head>
-				<Meta />
-				<title>Web Design - Watford || Roy Sheppard Digital</title>
-			</Head>
+			<NextSeo title='Web Design - Watford || Roy Sheppard Digital' />
 			<PageBanner
 				title='Web Design - Watford'
 				alt='Freelance web designer in Watford.'

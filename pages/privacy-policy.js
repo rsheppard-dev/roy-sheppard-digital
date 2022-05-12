@@ -1,7 +1,7 @@
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
+
 import Layout from '../components/Layout';
 import Heading from '../components/Heading';
-import Meta from '../components/Meta';
 
 export async function getStaticProps() {
 	const content = await fetch(
@@ -17,10 +17,7 @@ export async function getStaticProps() {
 const Privacy = ({ content }) => {
 	return (
 		<Layout>
-			<Head>
-				<Meta />
-				<title>Privacy Policy || Roy Sheppard Digital</title>
-			</Head>
+			<NextSeo title='Privacy Policy || Roy Sheppard Digital' />
 			<article className='container mt-40 text-accent-100'>
 				<Heading dark={true} title='Privacy Policy' tag='h1' />
 				<section

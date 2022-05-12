@@ -1,11 +1,10 @@
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 import { FaShopify, FaStripe, FaCcPaypal, FaGooglePay } from 'react-icons/fa';
 
 import { Snipcart } from '../components/Icons';
 import Heading from '../components/Heading';
 import Layout from '../components/Layout';
-import Meta from '../components/Meta';
 import PageBanner from '../components/PageBanner';
 import PriceGuide from '../components/PriceGuide';
 import QuoteBox from '../components/QuoteBox';
@@ -14,10 +13,7 @@ import Seperator from '../components/Seperator';
 const Ecommerce = () => {
 	return (
 		<Layout>
-			<Head>
-				<Meta />
-				<title>E-Commerce - Watford || Roy Sheppard Digital</title>
-			</Head>
+			<NextSeo title='E-Commerce - Watford || Roy Sheppard Digital' />
 			<PageBanner
 				title='E-Commerce - Watford'
 				alt='E-Commerce specialist in Watford.'

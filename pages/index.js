@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 import Layout from '../components/Layout';
 import About from '../components/About';
@@ -9,15 +9,11 @@ import Seperator from '../components/Seperator';
 import Services from '../components/Services';
 import Skills from '../components/Skills';
 import Portfolio from '../components/Portfolio';
-import Meta from '../components/Meta';
 
 export default function Home() {
 	return (
 		<Layout>
-			<Head>
-				<Meta />
-				<title>Freelance Web Designer || Roy Sheppard Digital</title>
-			</Head>
+			<NextSeo title='Freelance Web Designer || Roy Sheppard Digital' />
 			<Hero />
 			<Review />
 			<Seperator dark={true} />

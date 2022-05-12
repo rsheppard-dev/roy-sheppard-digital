@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Heading from './Heading';
 import { WebDesign, WebDevelopment, ECommerce } from './Icons';
+import { HiArrowNarrowRight } from 'react-icons/hi';
 
 const Services = () => {
 	return (
@@ -20,6 +21,7 @@ const Services = () => {
 						<Link href='/web-design-watford'>
 							<a className='text-link'>
 								Find out how my web design process works.
+								<HiArrowNarrowRight className='inline-block ml-2' />
 							</a>
 						</Link>
 					</p>
@@ -34,6 +36,7 @@ const Services = () => {
 							<a className='text-link'>
 								Find out how web development can save you time and simplify your
 								business.
+								<HiArrowNarrowRight className='inline-block ml-2' />
 							</a>
 						</Link>
 					</p>
@@ -48,6 +51,7 @@ const Services = () => {
 							<a className='text-link'>
 								Find out how I can help you reach more customers with an
 								e-commerce website.
+								<HiArrowNarrowRight className='inline-block ml-2' />
 							</a>
 						</Link>
 					</p>

@@ -41,7 +41,8 @@ const Portfolio = () => {
 						<p className='text-gray-300 mb-10 leading-loose'>
 							Studio120 is a modern barber shop based in Bushey Heath, Watford.
 							They needed a new website to integrate with their existing booking
-							system to help increase sales and attract more clients.
+							system to help attract new customers and make it easier for people
+							to book online.
 						</p>
 						<p className='text-gray-300 mb-10 leading-loose'>
 							The site is also hooked up to a live feed from the shop's

@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router';
-import Head from 'next/head';
+
+import { NextSeo } from 'next-seo';
 
 import ReviewForm from '../components/ReviewForm';
 import Layout from '../components/Layout';
-import Meta from '../components/Meta';
 import Heading from '../components/Heading';
 
 const WebsiteReview = props => {
@@ -13,10 +13,8 @@ const WebsiteReview = props => {
 
 	return (
 		<Layout>
-			<Head>
-				<Meta />
-				<title>Free Website Review || Roy Sheppard Digital</title>
-			</Head>
+			<NextSeo title='Free Website Review || Roy Sheppard Digital' />
+
 			<section className='container mt-40 text-accent-100 mb-20'>
 				<Heading dark={true} tag='h1' title='Free Website Review' />
 				<p className='mb-10 text-gray-600'>

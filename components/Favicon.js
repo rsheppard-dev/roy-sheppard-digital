@@ -1,4 +1,4 @@
-const Meta = () => {
+const Favicon = () => {
 	return (
 		<>
 			<link
@@ -26,4 +26,4 @@ const Meta = () => {
 	);
 };
 
-export default Meta;
+export default Favicon;

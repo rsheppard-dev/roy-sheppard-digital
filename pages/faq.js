@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 import { motion, AnimatePresence } from 'framer-motion';
 import { createClient } from '../prismicio';
@@ -7,7 +7,6 @@ import { PrismicRichText } from '@prismicio/react';
 import { FaArrowCircleDown } from 'react-icons/fa';
 
 import Layout from '../components/Layout';
-import Meta from '../components/Meta';
 import Heading from '../components/Heading';
 
 export async function getStaticProps({ previewData }) {
@@ -51,10 +50,8 @@ const FAQ = ({ faq }) => {
 
 	return (
 		<Layout>
-			<Head>
-				<Meta />
-				<title>Frequently Asked Questions || Roy Sheppard Digital</title>
-			</Head>
+			<NextSeo title='Frequently Asked Questions || Roy Sheppard Digital' />
+
 			<section className='container mt-40 text-accent-100 mb-20'>
 				<Heading dark={true} tag='h1' title='FAQ' />
 
