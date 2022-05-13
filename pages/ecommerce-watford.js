@@ -65,11 +65,60 @@ const Ecommerce = () => {
 			<Seperator dark={true} rotate={true} />
 			<section className='bg-accent-100 w-full'>
 				<div className='container py-20'>
-					<Heading tag='h2' title='How e-commerce can help your business' />
+					<Heading
+						tag='h2'
+						title='Why is JAMstack the right choice for e-commerce?'
+					/>
 					<ul className='space-y-4 text-gray-300 mt-20 list-tick'>
-						<li>Reason #1</li>
-						<li>Reason #2</li>
-						<li>Reason #3</li>
+						<li>
+							<h3 className='font-bold text-xl md:text-2xl mb-2'>Page speed</h3>
+							<p className='text-gray-300'>
+								JAMstack is the fastest option when it comes to e-commerce. As
+								you add more products to your online shop, your website will
+								soon grow and will require more product pages. With a JAMstack
+								website, all these pages are prebuilt before your customers even
+								turns on their device. This means they don't need to wait for
+								the server to fetch them before they can be viewed.
+							</p>
+						</li>
+						<li>
+							<h3 className='font-bold text-xl md:text-2xl mb-2'>SEO</h3>
+							<p className='text-gray-300'>
+								Google and other search-engines prefer static pages (JAMstack
+								sites), meaning are more likely to outrank your competitors when
+								customers search for your goods or services.
+							</p>
+						</li>
+						<li>
+							<h3 className='font-bold text-xl md:text-2xl mb-2'>
+								Sell in multiple places
+							</h3>
+							<p className='text-gray-300'>
+								JAMstack sites seperate the front-end (what the page looks like)
+								from the back-end (how things work). Because of this you have
+								the freedom to publish your products or services on mutliple
+								platforms all from the one source.
+							</p>
+						</li>
+						<li>
+							<h3 className='font-bold text-xl md:text-2xl mb-2'>Security</h3>
+							<p className='text-gray-300'>
+								People are very concious of cybersecurity these days so it is
+								very important that you keep all your customer and business data
+								secure. JAMstack websites have no direct connection to databases
+								and do not use plugins. This means your website is as secure as
+								it can possibly be.
+							</p>
+						</li>
+						<li>
+							<h3 className='font-bold text-xl md:text-2xl mb-2'>Cheaper</h3>
+							<p className='text-gray-300'>
+								JAMstack websites don't require as much storage as dynamic
+								websites and so hosting them is much cheaper than a conventional
+								website. They also are much easier to maintain and rarely need
+								fixing once built.
+							</p>
+						</li>
 					</ul>
 				</div>
 			</section>
