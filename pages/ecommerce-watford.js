@@ -85,8 +85,8 @@ const Ecommerce = () => {
 							<h3 className='font-bold text-xl md:text-2xl mb-2'>SEO</h3>
 							<p className='text-gray-300'>
 								Google and other search-engines prefer static pages (JAMstack
-								sites), meaning are more likely to outrank your competitors when
-								customers search for your goods or services.
+								sites), this will help you to outrank your competitors when
+								customers search for similar goods or services.
 							</p>
 						</li>
 						<li>
