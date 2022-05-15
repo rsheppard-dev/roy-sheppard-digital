@@ -14,6 +14,7 @@ export default function Home() {
 	const title = 'Freelance Web Designer - Watford';
 	const description =
 		'I am a freelance web designer and developer based in Watford. I create affordable, modern JAMstack websites that will future-proof your business.';
+	const url = 'https://www.roysheppard.digital';
 	return (
 		<Layout>
 			<NextSeo

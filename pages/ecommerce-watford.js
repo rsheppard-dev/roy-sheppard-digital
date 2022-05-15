@@ -24,8 +24,8 @@ const Ecommerce = () => {
 				openGraph={{
 					type: 'website',
 					url,
-					title: title,
-					description: description,
+					title,
+					description,
 					images: [
 						{
 							url: 'https://www.roysheppard.digital/images/og-image.png',

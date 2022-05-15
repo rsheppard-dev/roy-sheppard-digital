@@ -42,7 +42,7 @@ const WebsiteReview = props => {
 				<Heading dark={true} tag='h1' title='Free Website Review' />
 				<p className='mb-10 text-gray-600'>
 					Are you struggling to get leads or gain conversations through{' '}
-					{url ? (
+					{website ? (
 						<span className='font-bold text-secondary-100'>{website}</span>
 					) : (
 						`your

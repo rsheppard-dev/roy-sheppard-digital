@@ -14,12 +14,11 @@ export async function getStaticProps() {
 	};
 }
 
-const title = 'Privacy Policy';
-const description =
-	'Learn how Roy Sheppard Digital uses your data and why I use cookies on my website.';
-const url = 'https://www.roysheppard.digital/privacy-policy';
-
 const Privacy = ({ content }) => {
+	const title = 'Privacy Policy';
+	const description =
+		'Learn how Roy Sheppard Digital uses your data and why I use cookies on my website.';
+	const url = 'https://www.roysheppard.digital/privacy-policy';
 	return (
 		<Layout>
 			<NextSeo
