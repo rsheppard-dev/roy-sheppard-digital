@@ -2,8 +2,11 @@ import Link from 'next/link';
 import { useEffect } from 'react';
 import Script from 'next/script';
 import { useRouter } from 'next/router';
+
+import { DefaultSeo } from 'next-seo';
 import { GTM_ID, pageview } from '../lib/gtm';
 import * as fbq from '../lib/fpixel';
+import SEO from '../next-seo.config';
 
 import { PrismicProvider } from '@prismicio/react';
 import { PrismicPreview } from '@prismicio/next';
@@ -68,6 +71,7 @@ function MyApp({ Component, pageProps }) {
 						`,
 					}}
 				/>
+				<DefaultSeo {...SEO} />
 				<Component {...pageProps} />
 			</PrismicPreview>
 		</PrismicProvider>

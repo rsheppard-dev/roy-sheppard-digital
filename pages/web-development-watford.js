@@ -8,9 +8,13 @@ import PriceGuide from '../components/PriceGuide';
 import Heading from '../components/Heading';
 
 const WebDevelopment = () => {
+	const title = 'Web Development - Watford';
+	const description =
+		'I am a freelance web developer based in Watford. I develop affordable, modern JAMstack websites that are designed to get results. Book your FREE strategy call today.';
+	const url = 'https://www.roysheppard.digital/web-development-watford';
 	return (
 		<Layout>
-			<NextSeo title='Web Development - Watford || Roy Sheppard Digital' />
+			<NextSeo title='Web Development - Watford' />
 			<PageBanner
 				title='Web Development - Watford'
 				alt='Freelance web developer in Watford.'

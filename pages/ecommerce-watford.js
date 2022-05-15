@@ -1,6 +1,6 @@
 import { NextSeo } from 'next-seo';
 
-import { FaShopify, FaStripe, FaCcPaypal, FaGooglePay } from 'react-icons/fa';
+import { FaShopify, FaStripe, FaCcPaypal } from 'react-icons/fa';
 
 import { Snipcart } from '../components/Icons';
 import Heading from '../components/Heading';
@@ -11,9 +11,31 @@ import QuoteBox from '../components/QuoteBox';
 import Seperator from '../components/Seperator';
 
 const Ecommerce = () => {
+	const title = 'E-Commerce - Watford';
+	const description =
+		'E-Commerce developer based in Watford. Get in touch today for a FREE strategy call on how to sell your products or services online with a modern JAMstack e-commerce website.';
+	const url = 'https://www.roysheppard.digital/ecommerce-watford';
 	return (
 		<Layout>
-			<NextSeo title='E-Commerce - Watford || Roy Sheppard Digital' />
+			<NextSeo
+				title={title}
+				description={description}
+				canonical={url}
+				openGraph={{
+					type: 'website',
+					url,
+					title: title,
+					description: description,
+					images: [
+						{
+							url: 'https://www.roysheppard.digital/images/og-image.png',
+							width: 1200,
+							height: 640,
+							alt: 'Freelance web developer making e-commerce websites.',
+						},
+					],
+				}}
+			/>
 			<PageBanner
 				title='E-Commerce - Watford'
 				alt='E-Commerce specialist in Watford.'

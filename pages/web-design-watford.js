@@ -10,9 +10,31 @@ import PriceGuide from '../components/PriceGuide';
 import Heading from '../components/Heading';
 
 const WebDesign = () => {
+	const title = 'Web Design - Watford';
+	const description =
+		'I am a freelance web designer based in Watford. I design affordable, modern JAMstack websites that are designed to get results. Book your FREE strategy call today.';
+	const url = 'https://www.roysheppard.digital/web-design-watford';
 	return (
 		<Layout>
-			<NextSeo title='Web Design - Watford || Roy Sheppard Digital' />
+			<NextSeo
+				title={title}
+				description={description}
+				canonical={url}
+				openGraph={{
+					type: 'website',
+					url,
+					title: title,
+					description: description,
+					images: [
+						{
+							url: 'https://www.roysheppard.digital/images/og-image.png',
+							width: 1200,
+							height: 640,
+							alt: 'Freelance web developer making e-commerce websites.',
+						},
+					],
+				}}
+			/>
 			<PageBanner
 				title='Web Design - Watford'
 				alt='Freelance web designer in Watford.'

@@ -9,18 +9,41 @@ import Heading from '../components/Heading';
 const WebsiteReview = props => {
 	const router = useRouter();
 
-	const url = router.query.url;
+	const website = router.query.url;
+
+	const title = 'Free Website Review';
+	const description =
+		'Apply for your FREE website review today. Learn how to improve your website and get more visitors that convert!';
+	const url = 'https://www.roysheppard.digital/free-website-review';
 
 	return (
 		<Layout>
-			<NextSeo title='Free Website Review || Roy Sheppard Digital' />
+			<NextSeo
+				title={title}
+				description={description}
+				canonical={url}
+				openGraph={{
+					type: 'website',
+					url,
+					title: title,
+					description: description,
+					images: [
+						{
+							url: 'https://www.roysheppard.digital/images/og-image.png',
+							width: 1200,
+							height: 640,
+							alt: 'Freelance web developer making e-commerce websites.',
+						},
+					],
+				}}
+			/>
 
 			<section className='container mt-40 text-accent-100 mb-20'>
 				<Heading dark={true} tag='h1' title='Free Website Review' />
 				<p className='mb-10 text-gray-600'>
 					Are you struggling to get leads or gain conversations through{' '}
 					{url ? (
-						<span className='font-bold text-secondary-100'>{url}</span>
+						<span className='font-bold text-secondary-100'>{website}</span>
 					) : (
 						`your
 				existing website`
@@ -36,7 +59,7 @@ const WebsiteReview = props => {
 				</p>
 				<div className='grid grid-cols-1 xl:grid-cols-2 gap-10'>
 					<div className='bg-gray-200 px-8 pb-8 xl:mt-10 rounded-lg h-fit xl:row-start-2 xl:col-start-2'>
-						<ReviewForm url={url} />
+						<ReviewForm url={website} />
 						<div className='mt-8 bg-gray-100 rounded-lg p-4'>
 							<p className='text-sm mb-2'>
 								By applying for a free website review you must be the site owner

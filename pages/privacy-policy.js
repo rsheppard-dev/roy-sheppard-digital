@@ -14,10 +14,33 @@ export async function getStaticProps() {
 	};
 }
 
+const title = 'Privacy Policy';
+const description =
+	'Learn how Roy Sheppard Digital uses your data and why I use cookies on my website.';
+const url = 'https://www.roysheppard.digital/privacy-policy';
+
 const Privacy = ({ content }) => {
 	return (
 		<Layout>
-			<NextSeo title='Privacy Policy || Roy Sheppard Digital' />
+			<NextSeo
+				title={title}
+				description={description}
+				canonical={url}
+				openGraph={{
+					type: 'website',
+					url,
+					title: title,
+					description: description,
+					images: [
+						{
+							url: 'https://www.roysheppard.digital/images/og-image.png',
+							width: 1200,
+							height: 640,
+							alt: 'Freelance web developer making e-commerce websites.',
+						},
+					],
+				}}
+			/>
 			<article className='container mt-40 text-accent-100'>
 				<Heading dark={true} title='Privacy Policy' tag='h1' />
 				<section

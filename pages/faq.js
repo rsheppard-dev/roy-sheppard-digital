@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NextSeo } from 'next-seo';
+import { NextSeo, FAQPageJsonLd } from 'next-seo';
 
 import { motion, AnimatePresence } from 'framer-motion';
 import { createClient } from '../prismicio';
@@ -48,9 +48,42 @@ const FAQ = ({ faq }) => {
 		setActive(uid);
 	};
 
+	const faqSchema = [];
+
+	faq.map(item => {
+		faqSchema.push({
+			questionName: item.data.question,
+			acceptedAnswerText: item.data.answer[0].text,
+		});
+	});
+
+	const title = 'Frequently Asked Questions';
+	const description =
+		'Frequently asked questions about my services and what it is like to work with me.';
+	const url = 'https://www.roysheppard.digital/faq';
+
 	return (
 		<Layout>
-			<NextSeo title='Frequently Asked Questions || Roy Sheppard Digital' />
+			<FAQPageJsonLd mainEntity={faqSchema} />
+			<NextSeo
+				title={title}
+				description={description}
+				canonical={url}
+				openGraph={{
+					type: 'website',
+					url,
+					title: title,
+					description: description,
+					images: [
+						{
+							url: 'https://www.roysheppard.digital/images/og-image.png',
+							width: 1200,
+							height: 640,
+							alt: 'Freelance web developer making e-commerce websites.',
+						},
+					],
+				}}
+			/>
 
 			<section className='container mt-40 text-accent-100 mb-20'>
 				<Heading dark={true} tag='h1' title='FAQ' />
