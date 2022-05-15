@@ -1,4 +1,4 @@
-import { NextSeo } from 'next-seo';
+import { NextSeo, FAQPageJsonLd } from 'next-seo';
 
 import Layout from '../components/Layout';
 import Seperator from '../components/Seperator';
@@ -14,7 +14,34 @@ const WebDevelopment = () => {
 	const url = 'https://www.roysheppard.digital/web-development-watford';
 	return (
 		<Layout>
-			<NextSeo title='Web Development - Watford' />
+			<NextSeo
+				title={title}
+				description={description}
+				canonical={url}
+				openGraph={{
+					type: 'website',
+					url,
+					title,
+					description,
+					images: [
+						{
+							url: 'https://www.roysheppard.digital/images/og-image.png',
+							width: 1200,
+							height: 640,
+							alt: 'Freelance web developer making e-commerce websites.',
+						},
+					],
+				}}
+			/>
+			<FAQPageJsonLd
+				mainEntity={[
+					{
+						questionName: 'What are the benefits of JAMstack development?',
+						acceptedAnswerText:
+							'The JAMstack is a modern way of building websites. It takes away the need for traditional databases and prebuilds your pages with the most up-to-date data, which are then served to visitors of your site without making multiple costly server requests. This makes websites faster, more secure and easier to scale. It is the perfect choice for any size of business.',
+					},
+				]}
+			/>
 			<PageBanner
 				title='Web Development - Watford'
 				alt='Freelance web developer in Watford.'
@@ -36,7 +63,10 @@ const WebDevelopment = () => {
 			<Seperator dark={true} rotate={true} />
 			<article className='bg-accent-100 py-20'>
 				<div className='container text-white'>
-					<Heading title='Benefits of JAMstack development' tag='h2' />
+					<Heading
+						title='What are the benefits of JAMstack development?'
+						tag='h2'
+					/>
 					<p className='mb-20 text-gray-300'>
 						The JAMstack is a modern way of building websites. It takes away the
 						need for traditional databases and prebuilds your pages with the

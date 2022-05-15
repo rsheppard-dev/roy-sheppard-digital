@@ -1,4 +1,4 @@
-import { NextSeo } from 'next-seo';
+import { NextSeo, FAQPageJsonLd } from 'next-seo';
 
 import { FaShopify, FaStripe, FaCcPaypal } from 'react-icons/fa';
 
@@ -35,6 +35,15 @@ const Ecommerce = () => {
 						},
 					],
 				}}
+			/>
+			<FAQPageJsonLd
+				mainEntity={[
+					{
+						questionName: 'Why is JAMstack the right choice for e-commerce?',
+						acceptedAnswerText:
+							'JAMstack is the fastest option when it comes to e-commerce. As you add more products to your online shop, your website will soon grow and will require more product pages. With a JAMstack website, all these pages are prebuilt before your customers even turns on their device. This means they don&apos;t need to wait for the server to fetch them before they can be viewed.',
+					},
+				]}
 			/>
 			<PageBanner
 				title='E-Commerce - Watford'
@@ -99,8 +108,8 @@ const Ecommerce = () => {
 								you add more products to your online shop, your website will
 								soon grow and will require more product pages. With a JAMstack
 								website, all these pages are prebuilt before your customers even
-								turns on their device. This means they don't need to wait for
-								the server to fetch them before they can be viewed.
+								turns on their device. This means they don&apos;t need to wait
+								for the server to fetch them before they can be viewed.
 							</p>
 						</li>
 						<li>
