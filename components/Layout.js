@@ -16,6 +16,7 @@ const Layout = ({ children }) => {
 					url='-0.413290'
 					telephone='07883066944'
 					email='info@roysheppard.digital'
+					priceRange='$$'
 					address={{
 						streetAddress: '43 Maytree Crescent',
 						addressLocality: 'Watford',
