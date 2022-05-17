@@ -116,6 +116,7 @@ const ContactForm = () => {
 			<form
 				ref={myForm}
 				name='contact'
+				id='contact'
 				method='POST'
 				netlify-honeypot='bot-field'
 				data-netlify='true'
