@@ -30,7 +30,7 @@ const WebDesign = () => {
 							url: 'https://www.roysheppard.digital/images/og-image.png',
 							width: 1200,
 							height: 640,
-							alt: 'Freelance web developer making e-commerce websites.',
+							alt: 'Freelance web designer in Watford.',
 						},
 					],
 				}}

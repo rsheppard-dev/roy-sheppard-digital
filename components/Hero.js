@@ -46,7 +46,7 @@ const Hero = () => {
 							transition={{ delay: 0.5, duration: 0.5 }}
 							className='max-w-full md:max-w-1/2 text-white text-xl leading-loose text-shadow font-futura'
 						>
-							Freelance web designer and full-stack developer based in Watford.
+							Freelance web designer and JAMstack developer based in Watford.
 						</motion.h1>
 					</div>
 
