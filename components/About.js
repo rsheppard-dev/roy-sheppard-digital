@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Heading from './Heading';
 
 const About = () => {
@@ -22,13 +23,21 @@ const About = () => {
 
 			<ul className='space-y-8 mb-20 list-tick text-gray-600'>
 				<li>
-					All my website designs are made custom for you, your business and your
-					brand. I do not use themes, templates or bloated page builders.
+					All my{' '}
+					<Link href='/web-design-watford'>
+						<a className='text-link'>website designs</a>
+					</Link>{' '}
+					are made custom for you, your business and your brand. I do not use
+					themes, templates or bloated page builders.
 				</li>
 				<li>
-					I’m a full-stack developer, meaning I am comfortable working with both
-					the front end and back end parts of development. This allows me to
-					create fully custom and advanced functionality for your website.
+					I’m a{' '}
+					<Link href='/web-development-watford'>
+						<a className='text-link'>full-stack developer</a>
+					</Link>
+					, meaning I am comfortable working with both the front end and back
+					end parts of development. This allows me to create fully custom and
+					advanced functionality for your website.
 				</li>
 				<li>
 					I specialise in using modern JAMstack tools and headless

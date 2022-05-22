@@ -85,7 +85,7 @@
 
 @layer components {
 	.text-link {
-		@apply underline decoration-wavy underline-offset-2 decoration-primary-100 hover:decoration-primary-200 transition-colors ease-in-out duration-500;
+		@apply font-bold underline decoration-wavy underline-offset-2 decoration-primary-100 hover:decoration-primary-200 transition-colors ease-in-out duration-500;
 	}
 
 	.button-tertiary {
