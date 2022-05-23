@@ -21,7 +21,7 @@ export async function getStaticProps({ previewData }) {
 }
 
 const FAQ = ({ faq }) => {
-	const [active, setActive] = useState(null);
+	const [active, setActive] = useState('update-website');
 
 	const textVariants = {
 		hide: {
@@ -90,7 +90,7 @@ const FAQ = ({ faq }) => {
 
 				<section
 					id='accordionGroup'
-					className='space-y-4 prose mx-auto prose-a:text-link'
+					className='space-y-4 prose mx-auto prose-a:text-link prose-a:text-gray-600'
 				>
 					{faq.map((item, index) => (
 						<div key={item.id}>
