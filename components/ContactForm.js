@@ -84,7 +84,10 @@ const ContactForm = () => {
 							leaveFrom='opacity-100 scale-100'
 							leaveTo='opacity-0 scale-95'
 						>
-							<div className='inline-block max-w-md p-6 my-8 text-left align-middle transition-all transform bg-accent-100 shadow-xl rounded-2xl'>
+							<div
+								id='contact-submitted'
+								className='inline-block max-w-md p-6 my-8 text-left align-middle transition-all transform bg-accent-100 shadow-xl rounded-2xl'
+							>
 								<Dialog.Title
 									as='h3'
 									className='subheading leading-6 text-primary-100'
