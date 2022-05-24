@@ -10,9 +10,55 @@
       "question": {
         "content": "What frequently asked question will you ask?"
       }
-    }
+    },
+    "homepage": {}
   },
   "slices": {
-    "Faq": {}
+    "Faq": {},
+    "HeroSection": {
+      "default": {
+        "primary": {
+          "backgroundImage": {
+            "content": "https://images.prismic.io/roysheppard/1d2a1d6e-889a-487d-93e9-91a240492026_freelance-web-developer.png"
+          },
+          "title": {
+            "content": "Freelance web designer and full-stack developer based in Watford."
+          },
+          "description": {
+            "content": "I create modern JAMstack websites that solve problems, save you time and get leads for your business."
+          },
+          "buttonText": {
+            "content": "BOOK YOUR FREE WEBSITE STRATEGY CALL TODAY!"
+          }
+        }
+      }
+    },
+    "ReviewSection": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "placeholder": {
+            "content": "https://www.yoursite.com"
+          },
+          "buttonText": {
+            "content": "Review"
+          }
+        }
+      }
+    },
+    "Separator": {
+      "default": {
+        "primary": {
+          "faceUp": {
+            "content": false
+          }
+        }
+      }
+    }
   }
 }

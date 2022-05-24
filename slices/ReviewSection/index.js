@@ -1,13 +1,14 @@
+import React from 'react';
 import Router from 'next/router';
 
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import { PrismicRichText } from '@prismicio/react';
 
-import { Arrow } from './Icons';
-import Heading from './Heading';
+import { Arrow } from '../../components/Icons';
 
-const Review = () => {
+const ReviewSection = ({ slice }) => {
 	const schema = yup
 		.object({
 			url: yup.string().url().required(),
@@ -28,16 +29,13 @@ const Review = () => {
 			query: { url: data.url },
 		});
 	};
-
 	return (
 		<section className='text-center w-screen bg-accent-100'>
 			<div className='container py-20'>
-				<Heading
-					title='Already have a website?
-					<br />
-					Apply for your free website review.'
-					tag='h2'
-				/>
+				<div className='h-2 w-1/2 bg-primary-100 mx-auto mb-10'></div>
+				<div className='text-center text-3xl md:text-6xl font-futura lg:w-[90%] font-bold mb-16 leading-normal md:leading-snug mx-auto text-white'>
+					<PrismicRichText field={slice.primary.title} />
+				</div>
 
 				<div className='flex justify-center'>
 					<div className='md:ml-[100px]'>
@@ -48,7 +46,7 @@ const Review = () => {
 							onSubmit={handleSubmit(onSubmit)}
 						>
 							<label htmlFor='url' className='text-gray-300 block mb-10'>
-								Enter your website address below:
+								{slice.primary.description}
 							</label>
 							<div className='mb-10 space-x-3 space-y-6 md:space-y-0 flex flex-col flex-wrap md:flex-row justify-center items-center'>
 								{errors.url && (
@@ -63,7 +61,7 @@ const Review = () => {
 								<input
 									type='url'
 									name='url'
-									placeholder='https://www.yoursite.com'
+									placeholder={slice.primary.placeholder}
 									{...register('url')}
 									className={`${
 										errors.url && 'border-4 border-primary-200	'
@@ -71,7 +69,7 @@ const Review = () => {
 								/>
 
 								<button className='w-fit bg-primary-100 hover:bg-primary-200 transition-colors duration-500 px-6 py-4 rounded-xl md:rounded-tl-none md:rounded-bl-none md:rounded-br-full md:rounded-tr-full'>
-									Review
+									{slice.primary.buttonText}
 								</button>
 							</div>
 						</form>
@@ -86,4 +84,4 @@ const Review = () => {
 	);
 };
 
-export default Review;
+export default ReviewSection;

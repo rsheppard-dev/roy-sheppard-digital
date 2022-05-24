@@ -1,0 +1,11 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "separator",
+    "items": [],
+    "primary": {
+      "faceUp": false
+    }
+  }
+]

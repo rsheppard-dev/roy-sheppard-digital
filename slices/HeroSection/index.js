@@ -1,9 +1,11 @@
+import React from 'react';
 import Image from 'next/image';
 
 import { motion } from 'framer-motion';
-import OpenCalendar from './OpenCalendar';
 
-const Hero = () => {
+import OpenCalendar from '../../components/OpenCalendar';
+
+const HeroSection = ({ slice }) => {
 	const buttonVariants = {
 		hover: {
 			scale: 1.1,
@@ -25,11 +27,16 @@ const Hero = () => {
 		},
 	};
 	return (
-		<section className='bg-cover bg-center h-screen w-screen min-h-[650px] font-lato font-bold bg-[url("https://res.cloudinary.com/roy-sheppard-digital/image/upload/e_blur:1000,f_auto,q_1/v1648761011/roy-sheppard-digital/freelance-web-designer.png")]'>
+		<section
+			style={{
+				backgroundImage: `${slice.primary.backgroundImage.url}?q=0&blur=100`,
+			}}
+			className='bg-cover bg-center h-screen w-screen min-h-[650px] font-lato font-bold'
+		>
 			<div className='relative top-0 h-full w-full '>
 				<Image
-					src='https://res.cloudinary.com/roy-sheppard-digital/image/upload/f_auto,q_auto/v1648761011/roy-sheppard-digital/freelance-web-designer.png'
-					alt='Freelance web designer in Watford'
+					src={slice.primary.backgroundImage.url}
+					alt={slice.primary.backgroundImage.alt}
 					layout='fill'
 					objectFit='cover'
 					objectPosition='center'
@@ -46,7 +53,7 @@ const Hero = () => {
 							transition={{ delay: 0.5, duration: 0.5 }}
 							className='max-w-full md:max-w-1/2 text-white text-xl leading-loose text-shadow font-futura'
 						>
-							Freelance web designer and JAMstack developer based in Watford.
+							{slice.primary.title}
 						</motion.h1>
 					</div>
 
@@ -58,8 +65,7 @@ const Hero = () => {
 							transition={{ delay: 1, duration: 0.5 }}
 							className='max-w-full md:max-w-1/2 text-white text-3xl md:text-4xl lg:text-5xl leading-snug md:leading-normal lg:leading-normal text-shadow font-futura'
 						>
-							I create modern JAMstack websites that solve problems, save you
-							time and get leads for your business.
+							{slice.primary.description}
 						</motion.h2>
 					</div>
 
@@ -71,8 +77,8 @@ const Hero = () => {
 							className='rounded-full bg-secondary-100 w-52 h-52 md:w-64 md:h-64 flex p-4'
 							onClick={OpenCalendar}
 						>
-							<span className='font-futura font-medium tracking-wide place-self-center text-white text-xl md:text-2xl text-center leading-snug'>
-								BOOK YOUR FREE WEBSITE STRATEGY CALL TODAY!
+							<span className='uppercase font-futura font-medium tracking-wide place-self-center text-white text-xl md:text-2xl text-center leading-snug'>
+								{slice.primary.buttonText}
 							</span>
 						</motion.button>
 					</div>
@@ -82,4 +88,4 @@ const Hero = () => {
 	);
 };
 
-export default Hero;
+export default HeroSection;

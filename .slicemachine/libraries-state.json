@@ -35,7 +35,9 @@
                     "placeholder": "A nice description of your feature"
                   }
                 }
-              }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
+              "items": {}
             }
           ]
         },
@@ -72,6 +74,235 @@
             "path": "/Users/roy/Documents/Web Projects/roy-sheppard-digital/.slicemachine/assets/slices/Faq/default/preview.png",
             "width": 800,
             "height": 40
+          }
+        }
+      },
+      "hero_section": {
+        "library": "slices",
+        "id": "hero_section",
+        "name": "HeroSection",
+        "description": "HeroSection",
+        "model": {
+          "id": "hero_section",
+          "type": "SharedSlice",
+          "name": "HeroSection",
+          "description": "HeroSection",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "HeroSection",
+              "primary": {
+                "backgroundImage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Background Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": ""
+                  }
+                },
+                "description": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": ""
+                  }
+                },
+                "buttonText": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Button Text",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "hero_section",
+            "items": [],
+            "primary": {
+              "backgroundImage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.prismic.io/roysheppard/1d2a1d6e-889a-487d-93e9-91a240492026_freelance-web-developer.png?w=900&h=500&fit=crop"
+              },
+              "title": "Freelance web designer and full-stack developer based in Watford.",
+              "description": "I create modern JAMstack websites that solve problems, save you time and get leads for your business.",
+              "buttonText": "BOOK YOUR FREE WEBSITE STRATEGY CALL TODAY!"
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/roy/Documents/Web Projects/roy-sheppard-digital/.slicemachine/assets/slices/HeroSection/default/preview.png",
+            "width": 800,
+            "height": 650
+          }
+        }
+      },
+      "review_section": {
+        "library": "slices",
+        "id": "review_section",
+        "name": "ReviewSection",
+        "description": "ReviewSection",
+        "model": {
+          "id": "review_section",
+          "type": "SharedSlice",
+          "name": "ReviewSection",
+          "description": "ReviewSection",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "ReviewSection",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "multi": "heading1,heading2"
+                  }
+                },
+                "description": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": ""
+                  }
+                },
+                "placeholder": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Placeholder",
+                    "placeholder": ""
+                  }
+                },
+                "buttonText": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Button Text",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "review_section",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Envisioneer mission-critical infrastructures",
+                  "spans": []
+                }
+              ],
+              "description": "repurpose out-of-the-box metrics",
+              "placeholder": "https://www.yoursite.com",
+              "buttonText": "Review"
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/roy/Documents/Web Projects/roy-sheppard-digital/.slicemachine/assets/slices/ReviewSection/default/preview.png",
+            "width": 800,
+            "height": 645
+          }
+        }
+      },
+      "separator": {
+        "library": "slices",
+        "id": "separator",
+        "name": "Separator",
+        "description": "Separator",
+        "model": {
+          "id": "separator",
+          "type": "SharedSlice",
+          "name": "Separator",
+          "description": "Separator",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Separator",
+              "primary": {
+                "faceUp": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "Face Up",
+                    "placeholder_false": "false",
+                    "placeholder_true": "true",
+                    "default_value": false
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "separator",
+            "items": [],
+            "primary": {
+              "faceUp": false
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/roy/Documents/Web Projects/roy-sheppard-digital/.slicemachine/assets/slices/Separator/default/preview.png",
+            "width": 800,
+            "height": 60
           }
         }
       }
