@@ -6,8 +6,10 @@ const Separator = ({ slice }) => (
 			viewBox='0 0 1960 60'
 			width='1960'
 			height='60'
-			className={`relative text-accent-100' ${
-				slice.primary.faceUp ? 'rotate-180 top-1' : 'rotate-0 -top-1'
+			className={`relative text-accent-100 ${
+				slice.variation === 'separatorFacingUp'
+					? 'rotate-180 top-1'
+					: 'rotate-0 -top-1'
 			}`}
 		>
 			<path

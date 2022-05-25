@@ -1,49 +1,43 @@
 import { NextSeo } from 'next-seo';
+import { createClient } from '../prismicio';
+import { SliceZone } from '@prismicio/react';
 
 import Layout from '../components/Layout';
-import About from '../components/About';
-import Contact from '../components/Contact';
-import Hero from '../components/Hero';
-import Review from '../components/Review';
-import Seperator from '../components/Seperator';
-import Services from '../components/Services';
-import Skills from '../components/Skills';
-import Portfolio from '../components/Portfolio';
+import { components } from '../slices/index';
 
-export default function Home() {
-	const title = 'Freelance Web Designer - Watford';
-	const description =
-		'I am a freelance web designer and developer based in Watford. I create affordable, modern JAMstack websites that will future-proof your business.';
-	const url = 'https://www.roysheppard.digital';
+export async function getStaticProps({ previewData }) {
+	const client = createClient({ previewData });
+
+	const homepage = await client.getSingle('homepage');
+
+	return {
+		props: { homepage }, // Will be passed to the page component as props
+	};
+}
+
+export default function Home({ homepage }) {
 	return (
 		<Layout>
 			<NextSeo
-				title={title}
-				description={description}
-				canonical={url}
+				title={homepage.data.title}
+				description={homepage.data.description}
+				canonical={homepage.data.url}
 				openGraph={{
 					type: 'website',
-					url,
-					title: title,
-					description: description,
+					url: homepage.data.url,
+					title: homepage.data.title,
+					description: homepage.data.description,
 					images: [
 						{
-							url: 'https://www.roysheppard.digital/images/og-image.png',
-							width: 1200,
-							height: 640,
-							alt: 'Freelance web designer making websites in Watford.',
+							url: homepage.data.ogImage.url,
+							width: homepage.data.ogImage.dimensions.width,
+							height: homepage.data.ogImage.dimensions.height,
+							alt: homepage.data.ogImage.alt,
 						},
 					],
 				}}
 			/>
-			<Hero />
-			<Review />
-			<Seperator dark={true} />
-			<About />
-			<Portfolio />
-			<Services />
-			<Skills />
-			<Contact />
+			<SliceZone slices={homepage.data.slices} components={components} />
 		</Layout>
 	);
 }

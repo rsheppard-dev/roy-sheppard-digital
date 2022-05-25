@@ -1,0 +1,33 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "heading",
+    "items": [],
+    "primary": {
+      "slug": "innovate impactful communities",
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Engineer B2B methodologies",
+          "spans": []
+        }
+      ]
+    }
+  },
+  {
+    "variation": "headingDarkBackground",
+    "name": "Heading - Dark Background",
+    "slice_type": "heading",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Repurpose one-to-one metrics",
+          "spans": []
+        }
+      ]
+    }
+  }
+]

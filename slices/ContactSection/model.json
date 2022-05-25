@@ -1,0 +1,89 @@
+{
+  "id": "contact_section",
+  "type": "SharedSlice",
+  "name": "ContactSection",
+  "description": "ContactSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ContactSection",
+      "primary": {
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "A nice description of your feature",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl,heading3,heading4,heading5,heading6"
+          }
+        },
+        "phone": {
+          "type": "Text",
+          "config": {
+            "label": "Phone",
+            "placeholder": ""
+          }
+        },
+        "email": {
+          "type": "Text",
+          "config": {
+            "label": "Email",
+            "placeholder": ""
+          }
+        },
+        "subheading": {
+          "type": "Text",
+          "config": {
+            "label": "Subheading",
+            "placeholder": ""
+          }
+        },
+        "strategyCallText": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Strategy Call Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "strategyCallButtonText": {
+          "type": "Text",
+          "config": {
+            "label": "Strategy Call Button Text",
+            "placeholder": ""
+          }
+        },
+        "websiteReviewText": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Website Review Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "websiteReviewButtonText": {
+          "type": "Text",
+          "config": {
+            "label": "Website Review Button Text",
+            "placeholder": ""
+          }
+        },
+        "websiteReviewLink": {
+          "type": "Link",
+          "config": {
+            "label": "Website Review Link",
+            "placeholder": "",
+            "select": null
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

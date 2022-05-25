@@ -1,0 +1,60 @@
+{
+  "id": "list",
+  "type": "SharedSlice",
+  "name": "List",
+  "description": "List",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "List",
+      "primary": {},
+      "items": {
+        "listItem": {
+          "type": "StructuredText",
+          "config": {
+            "label": "List Item",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,rtl,list-item,o-list-item"
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "listWithImage",
+      "name": "List - With Image",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "List",
+      "primary": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {
+              "width": null,
+              "height": null
+            },
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {
+        "listItem": {
+          "type": "StructuredText",
+          "config": {
+            "label": "List Item",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,rtl,list-item,o-list-item"
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

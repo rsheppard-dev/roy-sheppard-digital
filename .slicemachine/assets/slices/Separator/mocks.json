@@ -1,11 +1,16 @@
 [
-  {
-    "variation": "default",
-    "name": "Default",
-    "slice_type": "separator",
-    "items": [],
-    "primary": {
-      "faceUp": false
-    }
-  }
+	{
+		"variation": "default",
+		"name": "Default",
+		"slice_type": "separator",
+		"items": [],
+		"primary": {}
+	},
+	{
+		"variation": "separatorFacingUp",
+		"name": "Seperator - Facing Up",
+		"slice_type": "separator",
+		"items": [],
+		"primary": {}
+	}
 ]

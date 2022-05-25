@@ -1,0 +1,95 @@
+{
+  "id": "projects_section",
+  "type": "SharedSlice",
+  "name": "ProjectsSection",
+  "description": "ProjectsSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ProjectsSection",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "multi": "heading2"
+          }
+        }
+      },
+      "items": {
+        "websiteName": {
+          "type": "Text",
+          "config": {
+            "label": "Website Name",
+            "placeholder": ""
+          }
+        },
+        "tailwind": {
+          "type": "Boolean",
+          "config": {
+            "label": "Tailwind",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": true
+          }
+        },
+        "nextjs": {
+          "type": "Boolean",
+          "config": {
+            "label": "Next JS",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": true
+          }
+        },
+        "prismic": {
+          "type": "Boolean",
+          "config": {
+            "label": "Prismic",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": true
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "websiteImage": {
+          "type": "Image",
+          "config": {
+            "label": "Website Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "websiteLink": {
+          "type": "Link",
+          "config": {
+            "label": "Website Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "buttonText": {
+          "type": "Text",
+          "config": {
+            "label": "Button Text",
+            "placeholder": ""
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

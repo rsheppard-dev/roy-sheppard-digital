@@ -1,0 +1,55 @@
+{
+  "id": "heading",
+  "type": "SharedSlice",
+  "name": "Heading",
+  "description": "Heading",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Heading",
+      "primary": {
+        "slug": {
+          "type": "Text",
+          "config": {
+            "label": "Slug ID",
+            "placeholder": ""
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": false,
+            "multi": "heading1,heading2"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "headingDarkBackground",
+      "name": "Heading - Dark Background",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Heading",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": false,
+            "multi": "heading1,heading2"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

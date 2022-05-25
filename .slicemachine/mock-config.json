@@ -11,7 +11,11 @@
         "content": "What frequently asked question will you ask?"
       }
     },
-    "homepage": {}
+    "homepage": {
+      "url": {
+        "content": "https://www.roysheppard.digital"
+      }
+    }
   },
   "slices": {
     "Faq": {},
@@ -53,9 +57,128 @@
     },
     "Separator": {
       "default": {
+        "primary": {}
+      }
+    },
+    "Heading": {
+      "default": {
         "primary": {
-          "faceUp": {
-            "content": false
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "List": {
+      "default": {
+        "primary": {},
+        "items": {
+          "listItem": {
+            "config": {
+              "patternType": "STORY",
+              "blocks": 1
+            }
+          }
+        }
+      },
+      "listWithImage": {
+        "primary": {
+          "image": {
+            "content": "https://images.prismic.io/roysheppard/8e003c6f-3cd2-4f87-bde9-b885e7344fa9_freelance-web-designer.png"
+          }
+        }
+      }
+    },
+    "ProjectsSection": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        },
+        "items": {
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "websiteImage": {
+            "content": "https://images.unsplash.com/photo-1547082299-de196ea013d6"
+          },
+          "buttonText": {
+            "content": "Visit Website"
+          },
+          "tailwind": {
+            "content": true
+          },
+          "nextjs": {
+            "content": true
+          },
+          "prismic": {
+            "content": true
+          }
+        }
+      }
+    },
+    "ServicesSection": {},
+    "Services": {
+      "default": {
+        "primary": {},
+        "items": {
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "TechSection": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "ContactSection": {
+      "default": {
+        "primary": {
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "phone": {
+            "content": "07883066944"
+          },
+          "email": {
+            "content": "info@roysheppard.digital"
+          },
+          "websiteReviewText": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "strategyCallText": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
           }
         }
       }

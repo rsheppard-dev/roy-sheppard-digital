@@ -1,6 +1,152 @@
 {
   "slices": {
     "components": {
+      "contact_section": {
+        "library": "slices",
+        "id": "contact_section",
+        "name": "ContactSection",
+        "description": "ContactSection",
+        "model": {
+          "id": "contact_section",
+          "type": "SharedSlice",
+          "name": "ContactSection",
+          "description": "ContactSection",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "ContactSection",
+              "primary": {
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl,heading3,heading4,heading5,heading6"
+                  }
+                },
+                "phone": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Phone",
+                    "placeholder": ""
+                  }
+                },
+                "email": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Email",
+                    "placeholder": ""
+                  }
+                },
+                "subheading": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Subheading",
+                    "placeholder": ""
+                  }
+                },
+                "strategyCallText": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Strategy Call Text",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "strategyCallButtonText": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Strategy Call Button Text",
+                    "placeholder": ""
+                  }
+                },
+                "websiteReviewText": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Website Review Text",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "websiteReviewButtonText": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Website Review Button Text",
+                    "placeholder": ""
+                  }
+                },
+                "websiteReviewLink": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Website Review Link",
+                    "placeholder": "",
+                    "select": null
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "contact_section",
+            "items": [],
+            "primary": {
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Proident quis dolor ullamco laborum velit voluptate dolor aute amet dolore.",
+                  "spans": []
+                }
+              ],
+              "phone": "07883066944",
+              "email": "info@roysheppard.digital",
+              "subheading": "drive bleeding-edge e-business",
+              "strategyCallText": [
+                {
+                  "type": "paragraph",
+                  "text": "Culpa ex sunt fugiat qui ea ullamco. Ullamco id laboris id cupidatat ut ea fugiat. Voluptate ut eiusmod laboris enim ea irure anim.",
+                  "spans": []
+                }
+              ],
+              "strategyCallButtonText": "matrix scalable platforms",
+              "websiteReviewText": [
+                {
+                  "type": "paragraph",
+                  "text": "Officia reprehenderit labore veniam officia fugiat.",
+                  "spans": []
+                }
+              ],
+              "websiteReviewButtonText": "unleash B2B markets",
+              "websiteReviewLink": {
+                "link_type": "Web",
+                "url": "http://twitter.com"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/roy/Documents/Web Projects/roy-sheppard-digital/.slicemachine/assets/slices/ContactSection/default/preview.png",
+            "width": 800,
+            "height": 2212
+          }
+        }
+      },
       "faq": {
         "library": "slices",
         "id": "faq",
@@ -74,6 +220,116 @@
             "path": "/Users/roy/Documents/Web Projects/roy-sheppard-digital/.slicemachine/assets/slices/Faq/default/preview.png",
             "width": 800,
             "height": 40
+          }
+        }
+      },
+      "heading": {
+        "library": "slices",
+        "id": "heading",
+        "name": "Heading",
+        "description": "Heading",
+        "model": {
+          "id": "heading",
+          "type": "SharedSlice",
+          "name": "Heading",
+          "description": "Heading",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Heading",
+              "primary": {
+                "slug": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Slug ID",
+                    "placeholder": ""
+                  }
+                },
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": false,
+                    "multi": "heading1,heading2"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "headingDarkBackground",
+              "name": "Heading - Dark Background",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Heading",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": false,
+                    "multi": "heading1,heading2"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "heading",
+            "items": [],
+            "primary": {
+              "slug": "innovate impactful communities",
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Engineer B2B methodologies",
+                  "spans": []
+                }
+              ]
+            }
+          },
+          "headingDarkBackground": {
+            "variation": "headingDarkBackground",
+            "name": "Heading - Dark Background",
+            "slice_type": "heading",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Repurpose one-to-one metrics",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/roy/Documents/Web Projects/roy-sheppard-digital/.slicemachine/assets/slices/Heading/default/preview.png",
+            "width": 800,
+            "height": 213
+          },
+          "headingDarkBackground": {
+            "path": "/Users/roy/Documents/Web Projects/roy-sheppard-digital/.slicemachine/assets/slices/Heading/headingDarkBackground/preview.png",
+            "width": 800,
+            "height": 213
           }
         }
       },
@@ -161,6 +417,399 @@
             "path": "/Users/roy/Documents/Web Projects/roy-sheppard-digital/.slicemachine/assets/slices/HeroSection/default/preview.png",
             "width": 800,
             "height": 650
+          }
+        }
+      },
+      "list": {
+        "library": "slices",
+        "id": "list",
+        "name": "List",
+        "description": "List",
+        "model": {
+          "id": "list",
+          "type": "SharedSlice",
+          "name": "List",
+          "description": "List",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "List",
+              "primary": {},
+              "items": {
+                "listItem": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "List Item",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,rtl,list-item,o-list-item"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "listWithImage",
+              "name": "List - With Image",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "List",
+              "primary": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {
+                      "width": null,
+                      "height": null
+                    },
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {
+                "listItem": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "List Item",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,rtl,list-item,o-list-item"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "list",
+            "items": [
+              {
+                "listItem": [
+                  {
+                    "type": "paragraph",
+                    "text": "Sit excepteur reprehenderit deserunt ex. Eiusmod cupidatat velit irure.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "listItem": [
+                  {
+                    "type": "paragraph",
+                    "text": "Ad reprehenderit amet velit nisi laboris deserunt anim sit irure enim. Cupidatat laboris officia culpa duis.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "listItem": [
+                  {
+                    "type": "paragraph",
+                    "text": "Ad velit fugiat amet occaecat dolore culpa do esse et quis quis sint eu do amet.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "listItem": [
+                  {
+                    "type": "paragraph",
+                    "text": "Minim nulla nulla ea sunt cupidatat cillum veniam nisi commodo veniam dolor consectetur pariatur enim. Ex aliquip voluptate labore dolore anim aliqua pariatur culpa. Lorem sunt irure enim pariatur minim enim ex velit culpa do consequat eiusmod anim.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {}
+          },
+          "listWithImage": {
+            "variation": "listWithImage",
+            "name": "List - With Image",
+            "slice_type": "list",
+            "items": [
+              {
+                "listItem": [
+                  {
+                    "type": "paragraph",
+                    "text": "Sint aliquip anim nostrud. Qui non ut elit dolore adipisicing. Duis ea tempor cupidatat laborum occaecat tempor esse veniam.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "listItem": [
+                  {
+                    "type": "paragraph",
+                    "text": "Magna minim officia pariatur sit laboris dolore.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "listItem": [
+                  {
+                    "type": "paragraph",
+                    "text": "Minim laborum minim amet cillum ea reprehenderit veniam laboris.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "listItem": [
+                  {
+                    "type": "paragraph",
+                    "text": "Sunt nisi est non sit nisi ipsum mollit magna mollit ad duis est velit. Aliqua ea labore sunt in tempor non ea proident.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {
+              "image": {
+                "dimensions": {
+                  "width": null,
+                  "height": null
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.prismic.io/roysheppard/8e003c6f-3cd2-4f87-bde9-b885e7344fa9_freelance-web-designer.png?w=null&h=null&fit=crop"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/roy/Documents/Web Projects/roy-sheppard-digital/.slicemachine/assets/slices/List/default/preview.png",
+            "width": 800,
+            "height": 672
+          },
+          "listWithImage": {
+            "path": "/Users/roy/Documents/Web Projects/roy-sheppard-digital/.slicemachine/assets/slices/List/listWithImage/preview.png",
+            "width": 800,
+            "height": 624
+          }
+        }
+      },
+      "projects_section": {
+        "library": "slices",
+        "id": "projects_section",
+        "name": "ProjectsSection",
+        "description": "ProjectsSection",
+        "model": {
+          "id": "projects_section",
+          "type": "SharedSlice",
+          "name": "ProjectsSection",
+          "description": "ProjectsSection",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "ProjectsSection",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "multi": "heading2"
+                  }
+                }
+              },
+              "items": {
+                "websiteName": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Website Name",
+                    "placeholder": ""
+                  }
+                },
+                "tailwind": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "Tailwind",
+                    "placeholder_false": "false",
+                    "placeholder_true": "true",
+                    "default_value": true
+                  }
+                },
+                "nextjs": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "Next JS",
+                    "placeholder_false": "false",
+                    "placeholder_true": "true",
+                    "default_value": true
+                  }
+                },
+                "prismic": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "Prismic",
+                    "placeholder_false": "false",
+                    "placeholder_true": "true",
+                    "default_value": true
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "websiteImage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Website Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "websiteLink": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Website Link",
+                    "placeholder": "",
+                    "select": null
+                  }
+                },
+                "buttonText": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Button Text",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "projects_section",
+            "items": [
+              {
+                "websiteName": "whiteboard granular infomediaries",
+                "tailwind": true,
+                "nextjs": true,
+                "prismic": true,
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Commodo nostrud consequat occaecat. Labore sit quis reprehenderit id magna dolore minim minim.",
+                    "spans": []
+                  }
+                ],
+                "websiteImage": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&h=500&fit=crop"
+                },
+                "websiteLink": {
+                  "link_type": "Web",
+                  "url": "http://twitter.com"
+                },
+                "buttonText": "incubate dynamic channels"
+              },
+              {
+                "websiteName": "e-enable web-enabled content",
+                "tailwind": true,
+                "nextjs": false,
+                "prismic": true,
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Labore officia est sit proident qui deserunt dolor cillum dolor.",
+                    "spans": []
+                  }
+                ],
+                "websiteImage": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=900&h=500&fit=crop"
+                },
+                "websiteLink": {
+                  "link_type": "Web",
+                  "url": "http://twitter.com"
+                },
+                "buttonText": "incubate B2B systems"
+              },
+              {
+                "websiteName": "monetize synergistic applications",
+                "tailwind": false,
+                "nextjs": true,
+                "prismic": true,
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Ad do deserunt laboris cillum ea dolor culpa Lorem mollit aliqua nulla pariatur deserunt in.",
+                    "spans": []
+                  }
+                ],
+                "websiteImage": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=900&h=500&fit=crop"
+                },
+                "websiteLink": {
+                  "link_type": "Web",
+                  "url": "http://twitter.com"
+                },
+                "buttonText": "empower B2C synergies"
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Disintermediate cutting-edge content",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/roy/Documents/Web Projects/roy-sheppard-digital/.slicemachine/assets/slices/ProjectsSection/default/preview.png",
+            "width": 800,
+            "height": 3029
           }
         }
       },
@@ -267,14 +916,234 @@
               "docURL": "...",
               "version": "sktwi1xtmkfgx8626",
               "description": "Separator",
-              "primary": {
-                "faceUp": {
-                  "type": "Boolean",
+              "primary": {},
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "separatorFacingUp",
+              "name": "Separator - Facing Up",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Separator",
+              "primary": {},
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "separator",
+            "items": [],
+            "primary": {}
+          },
+          "separatorFacingUp": {
+            "variation": "separatorFacingUp",
+            "name": "Seperator - Facing Up",
+            "slice_type": "separator",
+            "items": [],
+            "primary": {}
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/roy/Documents/Web Projects/roy-sheppard-digital/.slicemachine/assets/slices/Separator/default/preview.png",
+            "width": 800,
+            "height": 60
+          },
+          "separatorFacingUp": {
+            "path": "/Users/roy/Documents/Web Projects/roy-sheppard-digital/.slicemachine/assets/slices/Separator/separatorFacingUp/preview.png",
+            "width": 800,
+            "height": 60
+          }
+        }
+      },
+      "services": {
+        "library": "slices",
+        "id": "services",
+        "name": "Services",
+        "description": "Services",
+        "model": {
+          "id": "services",
+          "type": "SharedSlice",
+          "name": "Services",
+          "description": "Services",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Services",
+              "primary": {},
+              "items": {
+                "title": {
+                  "type": "Text",
                   "config": {
-                    "label": "Face Up",
-                    "placeholder_false": "false",
-                    "placeholder_true": "true",
-                    "default_value": false
+                    "label": "Title",
+                    "placeholder": ""
+                  }
+                },
+                "icon": {
+                  "type": "Select",
+                  "config": {
+                    "label": "Icon",
+                    "placeholder": "",
+                    "options": [
+                      "Web Design",
+                      "Web Development",
+                      "E-Commerce"
+                    ],
+                    "default_value": "Web Design"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,strong,em"
+                  }
+                },
+                "linkText": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Link Text",
+                    "placeholder": ""
+                  }
+                },
+                "link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Link",
+                    "placeholder": "",
+                    "select": null
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "services",
+            "items": [
+              {
+                "title": "architect dot-com markets",
+                "icon": "Web Design",
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Dolore irure cillum dolor pariatur nulla laboris qui mollit. Minim elit ullamco ipsum non laboris occaecat deserunt proident ad dolor ea ea. Ipsum duis deserunt mollit eiusmod qui esse.",
+                    "spans": []
+                  }
+                ],
+                "linkText": "synergize back-end e-commerce",
+                "link": {
+                  "link_type": "Web",
+                  "url": "https://prismic.io"
+                }
+              },
+              {
+                "title": "evolve extensible functionalities",
+                "icon": "Web Design",
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Aliquip adipisicing laboris proident ipsum proident adipisicing eu veniam tempor labore amet.",
+                    "spans": []
+                  }
+                ],
+                "linkText": "empower world-class action-items",
+                "link": {
+                  "link_type": "Web",
+                  "url": "https://prismic.io"
+                }
+              },
+              {
+                "title": "generate open-source infomediaries",
+                "icon": "Web Design",
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Officia minim tempor aliquip in ea exercitation reprehenderit quis irure esse et tempor. Quis quis sit cillum est consequat anim aliqua sunt eiusmod culpa ad laborum culpa ad quis. Ad esse labore dolore minim et non nisi ipsum.",
+                    "spans": []
+                  }
+                ],
+                "linkText": "e-enable proactive metrics",
+                "link": {
+                  "link_type": "Web",
+                  "url": "https://prismic.io"
+                }
+              },
+              {
+                "title": "synthesize distributed blockchains",
+                "icon": "Web Design",
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Magna aliquip consequat culpa. Esse sit anim ex officia fugiat cupidatat commodo. Qui velit eiusmod laboris ea Lorem id labore tempor commodo amet irure laboris.",
+                    "spans": []
+                  }
+                ],
+                "linkText": "revolutionize strategic paradigms",
+                "link": {
+                  "link_type": "Web",
+                  "url": "https://slicemachine.dev"
+                }
+              }
+            ],
+            "primary": {}
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/roy/Documents/Web Projects/roy-sheppard-digital/.slicemachine/assets/slices/Services/default/preview.png",
+            "width": 800,
+            "height": 1984
+          }
+        }
+      },
+      "tech_section": {
+        "library": "slices",
+        "id": "tech_section",
+        "name": "TechSection",
+        "description": "TechSection",
+        "model": {
+          "id": "tech_section",
+          "type": "SharedSlice",
+          "name": "TechSection",
+          "description": "TechSection",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "TechSection",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "multi": "heading1,heading2"
                   }
                 }
               },
@@ -287,10 +1156,16 @@
           "default": {
             "variation": "default",
             "name": "Default",
-            "slice_type": "separator",
+            "slice_type": "tech_section",
             "items": [],
             "primary": {
-              "faceUp": false
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Matrix 24/365 users",
+                  "spans": []
+                }
+              ]
             }
           }
         },
@@ -300,9 +1175,9 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/roy/Documents/Web Projects/roy-sheppard-digital/.slicemachine/assets/slices/Separator/default/preview.png",
+            "path": "/Users/roy/Documents/Web Projects/roy-sheppard-digital/.slicemachine/assets/slices/TechSection/default/preview.png",
             "width": 800,
-            "height": 60
+            "height": 499
           }
         }
       }

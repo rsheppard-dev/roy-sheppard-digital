@@ -17,7 +17,16 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "heading": {
+              "type": "SharedSlice"
+            },
             "hero_section": {
+              "type": "SharedSlice"
+            },
+            "list": {
+              "type": "SharedSlice"
+            },
+            "projects_section": {
               "type": "SharedSlice"
             },
             "review_section": {
@@ -25,8 +34,48 @@
             },
             "separator": {
               "type": "SharedSlice"
+            },
+            "services": {
+              "type": "SharedSlice"
+            },
+            "tech_section": {
+              "type": "SharedSlice"
+            },
+            "contact_section": {
+              "type": "SharedSlice"
             }
           }
+        }
+      }
+    },
+    "SEO & Social Cards": {
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        }
+      },
+      "description": {
+        "type": "Text",
+        "config": {
+          "label": "Description",
+          "placeholder": ""
+        }
+      },
+      "url": {
+        "type": "Text",
+        "config": {
+          "label": "Canonical URL",
+          "placeholder": "https://www.roysheppard.digital"
+        }
+      },
+      "ogImage": {
+        "type": "Image",
+        "config": {
+          "label": "Open Graph Image",
+          "constraint": {},
+          "thumbnails": []
         }
       }
     }

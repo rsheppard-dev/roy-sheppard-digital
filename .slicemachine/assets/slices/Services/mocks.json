@@ -1,0 +1,74 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "services",
+    "items": [
+      {
+        "title": "architect dot-com markets",
+        "icon": "Web Design",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Dolore irure cillum dolor pariatur nulla laboris qui mollit. Minim elit ullamco ipsum non laboris occaecat deserunt proident ad dolor ea ea. Ipsum duis deserunt mollit eiusmod qui esse.",
+            "spans": []
+          }
+        ],
+        "linkText": "synergize back-end e-commerce",
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "title": "evolve extensible functionalities",
+        "icon": "Web Design",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Aliquip adipisicing laboris proident ipsum proident adipisicing eu veniam tempor labore amet.",
+            "spans": []
+          }
+        ],
+        "linkText": "empower world-class action-items",
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "title": "generate open-source infomediaries",
+        "icon": "Web Design",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Officia minim tempor aliquip in ea exercitation reprehenderit quis irure esse et tempor. Quis quis sit cillum est consequat anim aliqua sunt eiusmod culpa ad laborum culpa ad quis. Ad esse labore dolore minim et non nisi ipsum.",
+            "spans": []
+          }
+        ],
+        "linkText": "e-enable proactive metrics",
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "title": "synthesize distributed blockchains",
+        "icon": "Web Design",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Magna aliquip consequat culpa. Esse sit anim ex officia fugiat cupidatat commodo. Qui velit eiusmod laboris ea Lorem id labore tempor commodo amet irure laboris.",
+            "spans": []
+          }
+        ],
+        "linkText": "revolutionize strategic paradigms",
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      }
+    ],
+    "primary": {}
+  }
+]
