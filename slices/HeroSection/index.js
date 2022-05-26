@@ -27,13 +27,18 @@ const HeroSection = ({ slice }) => {
 		},
 	};
 	return (
-		<section
-			style={{
-				backgroundImage: `${slice.primary.backgroundImage.url}?q=0&blur=100`,
-			}}
-			className='bg-cover bg-center h-screen w-screen min-h-[650px] font-lato font-bold'
-		>
-			<div className='relative top-0 h-full w-full '>
+		<section className='h-screen w-screen min-h-[650px] font-lato font-bold'>
+			<div className='z-0 h-full w-full'>
+				<Image
+					src={slice.primary.backgroundImage.url + '?q=0&blur=100'}
+					alt={slice.primary.backgroundImage.alt}
+					layout='fill'
+					objectFit='cover'
+					objectPosition='center'
+					priority={true}
+				/>
+			</div>
+			<div className='z-10 h-full w-full'>
 				<Image
 					src={slice.primary.backgroundImage.url}
 					alt={slice.primary.backgroundImage.alt}
@@ -42,7 +47,7 @@ const HeroSection = ({ slice }) => {
 					objectPosition='center'
 					priority={true}
 				/>
-				<div className='absolute w-full h-full bg-black/30 mix-blend-hue overflow-y-hidden'></div>
+				<div className='absolute top-0 w-full h-full bg-black/30 mix-blend-hue overflow-y-hidden'></div>
 
 				<div className='absolute -bottom-14 inset-x-0 text-center md:text-left flex flex-col items-center md:items-start container'>
 					<div className='w-full mb-5'>
