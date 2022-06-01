@@ -44,9 +44,9 @@ module.exports = {
 			},
 		},
 	},
+	safelist: ['pt-(10|20|32|40)', 'pb-(10|20)'],
 	plugins: [
 		require('@tailwindcss/typography'),
 		require('@tailwindcss/aspect-ratio'),
 	],
-	safelist: ['pt-32', 'pt-40'],
 };
