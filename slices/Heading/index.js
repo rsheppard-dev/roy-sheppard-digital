@@ -12,7 +12,7 @@ const Heading = ({ slice }) => {
 		>
 			<div
 				id={slice.primary.slug}
-				className={`container scroll-mt-18 pt-${slice.primary.paddingTop} pb-${slice.primary.paddingBottom}`}
+				className={`container inline-block scroll-mt-18 pt-${slice.primary.paddingTop} pb-${slice.primary.paddingBottom}`}
 			>
 				<div className='h-2 w-1/2 bg-primary-100 mx-auto mb-10'></div>
 				<div
