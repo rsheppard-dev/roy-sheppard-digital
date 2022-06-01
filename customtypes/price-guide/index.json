@@ -1,0 +1,63 @@
+{
+  "id": "price-guide",
+  "label": "Price Guide",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "packages": {
+        "type": "Group",
+        "config": {
+          "label": "Packages",
+          "fields": {
+            "title": {
+              "type": "Text",
+              "config": {
+                "label": "Title",
+                "placeholder": ""
+              }
+            },
+            "description": {
+              "type": "Text",
+              "config": {
+                "label": "Description",
+                "placeholder": ""
+              }
+            },
+            "price": {
+              "type": "Number",
+              "config": {
+                "label": "Price",
+                "placeholder": ""
+              }
+            },
+            "content": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Content",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "list-item"
+              }
+            },
+            "linkText": {
+              "type": "Text",
+              "config": {
+                "label": "Link Text",
+                "placeholder": ""
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

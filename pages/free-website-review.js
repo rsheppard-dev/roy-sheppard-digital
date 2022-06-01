@@ -52,7 +52,7 @@ const WebsiteReview = props => {
 					help correct many common mistakes business owners make when launching
 					their website.
 				</p>
-				<p className='mb-10'>
+				<p className='mb-10 text-gray-600'>
 					Complete the form on this page and I will provide you with a full
 					breakdown of my suggestions in a short video where I will talk you
 					through your website and the improvements I would make.

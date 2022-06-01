@@ -36,6 +36,7 @@ const Dropdown = ({ scrollDown }) => {
 					<Menu.Item>
 						{({ active }) => (
 							<MyLink
+								onClick={toggleDropdown}
 								href='/web-design-watford'
 								className={`${
 									active && 'bg-secondary-200'
@@ -48,6 +49,7 @@ const Dropdown = ({ scrollDown }) => {
 					<Menu.Item>
 						{({ active }) => (
 							<MyLink
+								onClick={toggleDropdown}
 								href='/web-development-watford'
 								className={`${
 									active && 'bg-secondary-200'
@@ -60,6 +62,7 @@ const Dropdown = ({ scrollDown }) => {
 					<Menu.Item>
 						{({ active }) => (
 							<MyLink
+								onClick={toggleDropdown}
 								href='/ecommerce-watford'
 								className={`${
 									active && 'bg-secondary-200'
@@ -72,7 +75,10 @@ const Dropdown = ({ scrollDown }) => {
 					<Menu.Item>
 						{({ active }) => (
 							<button
-								onClick={OpenCalendar}
+								onClick={() => {
+									OpenCalendar();
+									toggleDropdown();
+								}}
 								className={`${
 									active && 'bg-secondary-200'
 								} text-left text-lg w-full rounded-md p-2 transition whitespace-nowrap`}
@@ -84,6 +90,7 @@ const Dropdown = ({ scrollDown }) => {
 					<Menu.Item>
 						{({ active }) => (
 							<MyLink
+								onClick={toggleDropdown}
 								href='/free-website-review'
 								className={`${
 									active && 'bg-secondary-200'

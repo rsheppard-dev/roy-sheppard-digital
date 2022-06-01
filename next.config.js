@@ -1,7 +1,12 @@
 module.exports = {
 	reactStrictMode: true,
 	images: {
-		domains: ['res.cloudinary.com', 'images.prismic.io', 'images.unsplash.com'],
+		domains: [
+			'res.cloudinary.com',
+			'images.prismic.io',
+			'roysheppard.cdn.prismic.io',
+			'images.unsplash.com',
+		],
 	},
 
 	async redirects() {

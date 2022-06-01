@@ -6,6 +6,8 @@ import { motion } from 'framer-motion';
 import OpenCalendar from '../../components/OpenCalendar';
 
 const HeroSection = ({ slice }) => {
+	const blurredImage = slice.primary.backgroundImage.url + '?q=0&blur=100';
+
 	const buttonVariants = {
 		hover: {
 			scale: 1.1,
@@ -27,18 +29,13 @@ const HeroSection = ({ slice }) => {
 		},
 	};
 	return (
-		<section className='h-screen w-screen min-h-[650px] font-lato font-bold'>
-			<div className='z-0 h-full w-full'>
-				<Image
-					src={slice.primary.backgroundImage.url + '?q=0&blur=100'}
-					alt={slice.primary.backgroundImage.alt}
-					layout='fill'
-					objectFit='cover'
-					objectPosition='center'
-					priority={true}
-				/>
-			</div>
-			<div className='z-10 h-full w-full'>
+		<section
+			style={{
+				backgroundImage: `url(${blurredImage})`,
+			}}
+			className='h-screen w-screen min-h-[650px] font-lato font-bold relative bg-cover bg-center'
+		>
+			<div className='relative inset-0 h-full w-full'>
 				<Image
 					src={slice.primary.backgroundImage.url}
 					alt={slice.primary.backgroundImage.alt}
@@ -47,7 +44,7 @@ const HeroSection = ({ slice }) => {
 					objectPosition='center'
 					priority={true}
 				/>
-				<div className='absolute top-0 w-full h-full bg-black/30 mix-blend-hue overflow-y-hidden'></div>
+				<div className='absolute inset-0 w-full h-full bg-black/30 mix-blend-hue overflow-y-hidden'></div>
 
 				<div className='absolute -bottom-14 inset-x-0 text-center md:text-left flex flex-col items-center md:items-start container'>
 					<div className='w-full mb-5'>

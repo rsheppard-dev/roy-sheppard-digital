@@ -1,40 +1,44 @@
 {
   "id": "faq",
   "label": "FAQ",
-  "repeatable": true,
+  "repeatable": false,
   "status": true,
   "json": {
     "Main": {
-      "uid": {
+      "faqList": {
+        "type": "Group",
         "config": {
-          "label": "Uid",
-          "placeholder": ""
-        },
-        "type": "UID"
-      },
-      "question": {
-        "config": {
-          "label": "Question",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "answer": {
-        "config": {
-          "label": "Answer",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "multi": "paragraph,preformatted,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-        },
-        "type": "StructuredText"
-      },
-      "slices": {
-        "type": "Slices",
-        "fieldset": "Slice Zone",
-        "config": {
-          "choices": {
-            "faq": {
-              "type": "SharedSlice"
+          "label": "FAQ",
+          "fields": {
+            "question": {
+              "type": "Text",
+              "config": {
+                "label": "Question",
+                "placeholder": ""
+              }
+            },
+            "answer": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Answer",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph,preformatted,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              }
+            },
+            "catagory": {
+              "type": "Select",
+              "config": {
+                "label": "Category",
+                "placeholder": "",
+                "options": [
+                  "Generic",
+                  "Web Design",
+                  "Web Development",
+                  "E-Commerce"
+                ],
+                "default_value": "Generic"
+              }
             }
           }
         }

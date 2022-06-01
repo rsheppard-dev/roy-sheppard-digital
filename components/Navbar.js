@@ -110,7 +110,7 @@ const Navbar = () => {
 					</div>
 
 					<div className='hidden md:inline-block'>
-						<Link href='/#contact'>
+						<Link href='/contact'>
 							<a
 								onClick={() => setIsOpen(false)}
 								className='text-primary-100 hover:text-white border-2 border-primary-100 py-3 px-4 transition button-fill-left'

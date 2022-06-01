@@ -10,17 +10,7 @@
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "ProjectsSection",
-      "primary": {
-        "title": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Title",
-            "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "multi": "heading2"
-          }
-        }
-      },
+      "primary": {},
       "items": {
         "websiteName": {
           "type": "Text",

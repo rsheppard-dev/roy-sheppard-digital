@@ -5,5 +5,5 @@ export default {
 }
 
 
-export const _Default = () => <MyComponent slice={{"variation":"default","name":"Default","slice_type":"faq","items":[],"primary":{"title":[{"type":"heading1","text":"Reintermediate front-end relationships","spans":[]}],"description":[{"type":"paragraph","text":"Elit sit culpa mollit exercitation officia adipisicing dolore deserunt deserunt anim. Adipisicing sint veniam est deserunt commodo non consectetur voluptate dolore exercitation aliquip. Fugiat dolore eiusmod in magna.","spans":[]}]},"id":"_Default"}} />
+export const _Default = () => <MyComponent slice={{"variation":"default","name":"Default","slice_type":"faq","items":[],"primary":{"faqData":{"link_type":"Web","url":"https://prismic.io"}},"id":"_Default"}} />
 _Default.storyName = 'Default'

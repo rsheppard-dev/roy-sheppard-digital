@@ -11,15 +11,6 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "ReviewSection",
       "primary": {
-        "title": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Title",
-            "placeholder": "This is where it all begins...",
-            "allowTargetBlank": true,
-            "multi": "heading1,heading2"
-          }
-        },
         "description": {
           "type": "Text",
           "config": {

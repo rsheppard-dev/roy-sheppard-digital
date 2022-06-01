@@ -1,5 +1,6 @@
 import React from 'react';
-import { PrismicRichText, PrismicLink } from '@prismicio/react';
+import Link from 'next/link';
+import { PrismicRichText } from '@prismicio/react';
 
 import ContactForm from '../../components/ContactForm';
 import { Phone, Email } from '../../components/Icons';
@@ -41,11 +42,13 @@ const ContactSection = ({ slice }) => (
 			<div className='prose prose-a:text-link prose-a:text-gray-600'>
 				<PrismicRichText field={slice.primary.websiteReviewText} />
 			</div>
-			<PrismicLink field={slice.primary.websiteReviewLink}>
-				<div className='my-10 button-tertiary w-fit'>
-					{slice.primary.websiteReviewButtonText}
-				</div>
-			</PrismicLink>
+			<Link href='/free-website-review'>
+				<a>
+					<div className='my-10 button-tertiary w-fit'>
+						{slice.primary.websiteReviewButtonText}
+					</div>
+				</a>
+			</Link>
 		</div>
 	</article>
 );

@@ -5,14 +5,16 @@
     "slice_type": "heading",
     "items": [],
     "primary": {
-      "slug": "innovate impactful communities",
+      "slug": "aggregate leading-edge applications",
       "title": [
         {
           "type": "heading1",
-          "text": "Engineer B2B methodologies",
+          "text": "Synthesize distributed synergies",
           "spans": []
         }
-      ]
+      ],
+      "paddingTop": "32",
+      "paddingBottom": "20"
     }
   },
   {
@@ -24,10 +26,12 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Repurpose one-to-one metrics",
+          "text": "Harness user-centric models",
           "spans": []
         }
-      ]
+      ],
+      "paddingTop": "10",
+      "paddingBottom": "10"
     }
   }
 ]

@@ -1,0 +1,33 @@
+{
+  "id": "4967ed11-3a4c-4412-ad17-6f4134d0b98f",
+  "uid": "omnis-ut-a",
+  "type": "page",
+  "data": {
+    "title": "innovate intuitive niches",
+    "description": "syndicate 24/365 technologies",
+    "url": "seize web-enabled functionalities",
+    "ogImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
+    },
+    "faq": [
+      {
+        "question": "reintermediate 24/7 technologies",
+        "Answer": "cultivate enterprise infomediaries"
+      },
+      {
+        "question": "evolve cross-media convergence",
+        "Answer": "scale proactive niches"
+      },
+      {
+        "question": "benchmark magnetic eyeballs",
+        "Answer": "cultivate bricks-and-clicks synergies"
+      }
+    ]
+  }
+}

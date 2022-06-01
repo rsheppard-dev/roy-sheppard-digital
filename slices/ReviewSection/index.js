@@ -4,7 +4,6 @@ import Router from 'next/router';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-import { PrismicRichText } from '@prismicio/react';
 
 import { Arrow } from '../../components/Icons';
 
@@ -31,12 +30,7 @@ const ReviewSection = ({ slice }) => {
 	};
 	return (
 		<section className='text-center w-screen bg-accent-100'>
-			<div className='container py-20'>
-				<div className='h-2 w-1/2 bg-primary-100 mx-auto mb-10'></div>
-				<div className='text-center text-3xl md:text-6xl font-futura lg:w-[90%] font-bold mb-16 leading-normal md:leading-snug mx-auto text-white'>
-					<PrismicRichText field={slice.primary.title} />
-				</div>
-
+			<div className='container pb-20'>
 				<div className='flex justify-center'>
 					<div className='md:ml-[100px]'>
 						<form

@@ -1,0 +1,77 @@
+{
+  "id": "e4ccecfd-492e-4eac-be38-02f524f610be",
+  "uid": "eum-assumenda-unde",
+  "type": "price-guide",
+  "data": {
+    "packages": [
+      {
+        "title": "scale dynamic mindshare",
+        "description": "grow frictionless metrics",
+        "price": 7446,
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Deserunt do consequat aliquip sit ullamco exercitation est adipisicing.",
+            "spans": []
+          }
+        ],
+        "linkText": "monetize sticky synergies",
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      },
+      {
+        "title": "empower dynamic e-business",
+        "description": "whiteboard bleeding-edge deliverables",
+        "price": 3454,
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Elit amet quis veniam irure officia eiusmod officia ut irure laborum reprehenderit do.",
+            "spans": []
+          }
+        ],
+        "linkText": "disintermediate open-source e-services",
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "title": "leverage frictionless paradigms",
+        "description": "morph sexy bandwidth",
+        "price": 1726,
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Qui cupidatat non esse non incididunt eiusmod deserunt tempor amet consequat proident pariatur.",
+            "spans": []
+          }
+        ],
+        "linkText": "envisioneer world-class e-commerce",
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      },
+      {
+        "title": "envisioneer 24/365 web services",
+        "description": "architect cross-platform niches",
+        "price": 7790,
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Nostrud proident ad qui fugiat fugiat magna ullamco. Dolore sunt occaecat duis eiusmod nulla deserunt duis nostrud. Voluptate cillum excepteur magna culpa nostrud deserunt reprehenderit ullamco excepteur laboris Lorem nisi cillum anim.",
+            "spans": []
+          }
+        ],
+        "linkText": "matrix robust partnerships",
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      }
+    ]
+  }
+}

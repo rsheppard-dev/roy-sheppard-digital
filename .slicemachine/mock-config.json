@@ -9,16 +9,39 @@
       },
       "question": {
         "content": "What frequently asked question will you ask?"
+      },
+      "faqList": {
+        "answer": {
+          "config": {
+            "patternType": "STORY",
+            "blocks": 1
+          }
+        }
       }
     },
     "homepage": {
       "url": {
         "content": "https://www.roysheppard.digital"
       }
+    },
+    "page": {},
+    "price-guide": {
+      "packages": {
+        "content": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 1
+          }
+        }
+      }
     }
   },
   "slices": {
-    "Faq": {},
+    "Faq": {
+      "default": {
+        "primary": {}
+      }
+    },
     "HeroSection": {
       "default": {
         "primary": {
@@ -40,12 +63,6 @@
     "ReviewSection": {
       "default": {
         "primary": {
-          "title": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          },
           "placeholder": {
             "content": "https://www.yoursite.com"
           },
@@ -70,6 +87,9 @@
             }
           }
         }
+      },
+      "headingDarkBackground": {
+        "primary": {}
       }
     },
     "List": {
@@ -94,14 +114,7 @@
     },
     "ProjectsSection": {
       "default": {
-        "primary": {
-          "title": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          }
-        },
+        "primary": {},
         "items": {
           "description": {
             "config": {
@@ -143,14 +156,7 @@
     },
     "TechSection": {
       "default": {
-        "primary": {
-          "title": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          }
-        }
+        "primary": {}
       }
     },
     "ContactSection": {
@@ -182,6 +188,60 @@
           }
         }
       }
-    }
+    },
+    "PageBanner": {
+      "default": {
+        "primary": {
+          "image": {
+            "content": "https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20(1%20of%201)-5.jpg"
+          }
+        }
+      }
+    },
+    "QuoteBox": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Text": {
+      "default": {
+        "primary": {
+          "text": {
+            "config": {
+              "patternType": "STORY",
+              "blocks": 1
+            }
+          }
+        }
+      },
+      "textDarkBackground": {
+        "primary": {}
+      }
+    },
+    "CardList": {
+      "default": {
+        "primary": {},
+        "items": {
+          "cardBody": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "PriceGuide": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    },
+    "Logos": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "WebsiteReview": {}
   }
 }

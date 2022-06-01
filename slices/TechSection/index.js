@@ -5,11 +5,7 @@ import { SiTailwindcss, SiNextdotjs, SiPrismic, SiReact } from 'react-icons/si';
 
 const TechSection = ({ slice }) => (
 	<section className='w-screen bg-accent-100'>
-		<div className='container py-20'>
-			<div className='h-2 w-1/2 bg-primary-100 mx-auto mb-10'></div>
-			<div className='text-center text-3xl md:text-6xl font-futura lg:w-[90%] font-bold mb-16 leading-normal md:leading-snug mx-auto text-white'>
-				<PrismicRichText field={slice.primary.title} />
-			</div>
+		<div className='container pb-20'>
 			<div className='text-white grid grid-cols-2 md:grid-cols-4 justify-center items-center gap-10'>
 				<div className='mx-auto flex flex-col items-center gap-3'>
 					<SiTailwindcss

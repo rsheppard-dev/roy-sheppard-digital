@@ -26,6 +26,31 @@
             "allowTargetBlank": false,
             "multi": "heading1,heading2"
           }
+        },
+        "paddingTop": {
+          "type": "Select",
+          "config": {
+            "label": "Padding Top",
+            "placeholder": "",
+            "options": [
+              "0",
+              "10",
+              "20",
+              "32",
+              "40"
+            ]
+          }
+        },
+        "paddingBottom": {
+          "type": "Select",
+          "config": {
+            "label": "Padding Bottom",
+            "placeholder": "",
+            "options": [
+              "10",
+              "20"
+            ]
+          }
         }
       },
       "items": {},
@@ -45,6 +70,31 @@
             "placeholder": "This is where it all begins...",
             "allowTargetBlank": false,
             "multi": "heading1,heading2"
+          }
+        },
+        "paddingTop": {
+          "type": "Select",
+          "config": {
+            "label": "Padding Top",
+            "placeholder": "",
+            "options": [
+              "0",
+              "10",
+              "20",
+              "32",
+              "40"
+            ]
+          }
+        },
+        "paddingBottom": {
+          "type": "Select",
+          "config": {
+            "label": "Padding Bottom",
+            "placeholder": "",
+            "options": [
+              "10",
+              "20"
+            ]
           }
         }
       },

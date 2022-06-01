@@ -33,7 +33,11 @@
 	}
 
 	.list-tick li {
-		@apply pl-10 bg-bullet bg-no-repeat bg-[left_top_0.2rem] bg-[length:1.6rem_1.6rem];
+		@apply pl-10 bg-bullet bg-no-repeat bg-[left_top_0.6rem] bg-[length:1.6rem_1.6rem];
+	}
+
+	.list-tick-sm li {
+		@apply pl-10 bg-bullet bg-no-repeat bg-[left_top_0.2rem] bg-[length:1.4rem_1.4rem];
 	}
 
 	input,

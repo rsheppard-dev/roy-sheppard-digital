@@ -4,14 +4,6 @@
     "name": "Default",
     "slice_type": "tech_section",
     "items": [],
-    "primary": {
-      "title": [
-        {
-          "type": "heading1",
-          "text": "Matrix 24/365 users",
-          "spans": []
-        }
-      ]
-    }
+    "primary": {}
   }
 ]

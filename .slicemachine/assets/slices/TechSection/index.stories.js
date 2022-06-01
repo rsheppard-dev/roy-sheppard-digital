@@ -5,5 +5,5 @@ export default {
 }
 
 
-export const _Default = () => <MyComponent slice={{"variation":"default","name":"Default","slice_type":"tech_section","items":[],"primary":{"title":[{"type":"heading1","text":"Matrix 24/365 users","spans":[]}]},"id":"_Default"}} />
+export const _Default = () => <MyComponent slice={{"variation":"default","name":"Default","slice_type":"tech_section","items":[],"primary":{},"id":"_Default"}} />
 _Default.storyName = 'Default'

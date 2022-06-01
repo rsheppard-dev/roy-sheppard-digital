@@ -207,7 +207,7 @@ const MobileMenu = ({ isOpen, toggleMobileMenu }) => {
 				</motion.div>
 				<motion.div variants={childVariants} onClick={toggleMobileMenu}>
 					<MyLink
-						href='/#contact'
+						href='/contact'
 						className='text-2xl w-fit font-futura link-underline link-underline-black'
 					>
 						Contact

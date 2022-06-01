@@ -5,41 +5,14 @@
     "slice_type": "projects_section",
     "items": [
       {
-        "websiteName": "whiteboard granular infomediaries",
-        "tailwind": true,
-        "nextjs": true,
-        "prismic": true,
-        "description": [
-          {
-            "type": "paragraph",
-            "text": "Commodo nostrud consequat occaecat. Labore sit quis reprehenderit id magna dolore minim minim.",
-            "spans": []
-          }
-        ],
-        "websiteImage": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&h=500&fit=crop"
-        },
-        "websiteLink": {
-          "link_type": "Web",
-          "url": "http://twitter.com"
-        },
-        "buttonText": "incubate dynamic channels"
-      },
-      {
-        "websiteName": "e-enable web-enabled content",
+        "websiteName": "reintermediate B2C e-services",
         "tailwind": true,
         "nextjs": false,
         "prismic": true,
         "description": [
           {
             "type": "paragraph",
-            "text": "Labore officia est sit proident qui deserunt dolor cillum dolor.",
+            "text": "Excepteur in duis ullamco amet cillum aute magna sunt. Laborum magna ad elit. Id ad non ea et adipisicing in enim pariatur in do sit.",
             "spans": []
           }
         ],
@@ -50,23 +23,23 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
         },
         "websiteLink": {
           "link_type": "Web",
-          "url": "http://twitter.com"
+          "url": "https://slicemachine.dev"
         },
-        "buttonText": "incubate B2B systems"
+        "buttonText": "matrix interactive synergies"
       },
       {
-        "websiteName": "monetize synergistic applications",
-        "tailwind": false,
+        "websiteName": "grow web-enabled content",
+        "tailwind": true,
         "nextjs": true,
         "prismic": true,
         "description": [
           {
             "type": "paragraph",
-            "text": "Ad do deserunt laboris cillum ea dolor culpa Lorem mollit aliqua nulla pariatur deserunt in.",
+            "text": "Cillum consectetur eiusmod tempor pariatur eiusmod. Eu minim adipisicing elit tempor id Lorem culpa enim aliqua dolore enim consequat pariatur Lorem laboris.",
             "spans": []
           }
         ],
@@ -77,23 +50,42 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=900&h=500&fit=crop"
         },
         "websiteLink": {
           "link_type": "Web",
-          "url": "http://twitter.com"
+          "url": "https://slicemachine.dev"
         },
-        "buttonText": "empower B2C synergies"
+        "buttonText": "embrace plug-and-play e-markets"
+      },
+      {
+        "websiteName": "disintermediate B2C e-markets",
+        "tailwind": true,
+        "nextjs": false,
+        "prismic": true,
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Dolore laboris enim aute quis tempor et nisi consectetur dolor voluptate duis Lorem. Aliqua commodo laborum elit consectetur commodo excepteur exercitation esse voluptate magna.",
+            "spans": []
+          }
+        ],
+        "websiteImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb?w=900&h=500&fit=crop"
+        },
+        "websiteLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "buttonText": "matrix rich schemas"
       }
     ],
-    "primary": {
-      "title": [
-        {
-          "type": "heading2",
-          "text": "Disintermediate cutting-edge content",
-          "spans": []
-        }
-      ]
-    }
+    "primary": {}
   }
 ]

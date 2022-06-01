@@ -1,0 +1,130 @@
+{
+  "id": "page",
+  "label": "Page",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "heading": {
+              "type": "SharedSlice"
+            },
+            "separator": {
+              "type": "SharedSlice"
+            },
+            "page_banner": {
+              "type": "SharedSlice"
+            },
+            "quote_box": {
+              "type": "SharedSlice"
+            },
+            "list": {
+              "type": "SharedSlice"
+            },
+            "text": {
+              "type": "SharedSlice"
+            },
+            "card_list": {
+              "type": "SharedSlice"
+            },
+            "price_guide": {
+              "type": "SharedSlice"
+            },
+            "logos": {
+              "type": "SharedSlice"
+            },
+            "tech_section": {
+              "type": "SharedSlice"
+            },
+            "services": {
+              "type": "SharedSlice"
+            },
+            "review_section": {
+              "type": "SharedSlice"
+            },
+            "projects_section": {
+              "type": "SharedSlice"
+            },
+            "contact_section": {
+              "type": "SharedSlice"
+            },
+            "faq": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "SEO & Social Cards": {
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        }
+      },
+      "description": {
+        "type": "Text",
+        "config": {
+          "label": "Description",
+          "placeholder": ""
+        }
+      },
+      "url": {
+        "type": "Text",
+        "config": {
+          "label": "Canonical URL",
+          "placeholder": "https://"
+        }
+      },
+      "ogImage": {
+        "type": "Image",
+        "config": {
+          "label": "Open Graph Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "faq": {
+        "type": "Group",
+        "config": {
+          "label": "FAQ Schema",
+          "fields": {
+            "question": {
+              "type": "Text",
+              "config": {
+                "label": "Question",
+                "placeholder": ""
+              }
+            },
+            "Answer": {
+              "type": "Text",
+              "config": {
+                "label": "Answer",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "slices1": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    }
+  }
+}

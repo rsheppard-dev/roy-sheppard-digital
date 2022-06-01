@@ -55,6 +55,26 @@
         }
       },
       "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "listDarkBackground",
+      "name": "List - Dark Background",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "List",
+      "primary": {},
+      "items": {
+        "listItem": {
+          "type": "StructuredText",
+          "config": {
+            "label": "List Item",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,rtl,list-item,o-list-item"
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
     }
   ]
 }

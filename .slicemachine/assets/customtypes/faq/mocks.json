@@ -1,19 +1,66 @@
 {
-  "id": "c2083966-6387-41d3-a6a6-628cc33af61f",
-  "uid": "voluptas-quibusdam-beatae",
+  "id": "817a8706-721b-48b9-a63e-e4744bd7de36",
+  "uid": "eum-amet-suscipit",
   "type": "faq",
   "data": {
-    "question": "What frequently asked question will you ask?",
-    "answer": [
+    "faqList": [
       {
-        "type": "heading3",
-        "text": "Visualize wireless niches",
-        "spans": []
+        "question": "drive proactive markets",
+        "answer": [
+          {
+            "type": "heading3",
+            "text": "Redefine integrated e-tailers",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "Eiusmod et amet magna culpa reprehenderit.",
+            "spans": []
+          }
+        ],
+        "catagory": "Generic"
       },
       {
-        "type": "paragraph",
-        "text": "Qui dolor nostrud aliquip laborum et id amet ad proident exercitation culpa nulla cillum eiusmod.",
-        "spans": []
+        "question": "exploit turn-key niches",
+        "answer": [
+          {
+            "type": "heading3",
+            "text": "Incubate world-class schemas",
+            "spans": []
+          },
+          {
+            "type": "paragraph",
+            "text": "In aute laboris eiusmod mollit et esse et aliquip aute ad dolore amet Lorem enim. Magna ullamco amet excepteur. In fugiat incididunt aliqua.",
+            "spans": []
+          }
+        ],
+        "catagory": "E-Commerce"
+      },
+      {
+        "question": "redefine turn-key solutions",
+        "answer": [
+          {
+            "type": "heading3",
+            "text": "Transform intuitive e-business",
+            "spans": []
+          },
+          {
+            "type": "image",
+            "dimensions": {
+              "width": 900,
+              "height": 500
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=900&h=500&fit=crop"
+          },
+          {
+            "type": "paragraph",
+            "text": "Et anim occaecat ex aliqua adipisicing sint cupidatat. Tempor Lorem elit excepteur dolore reprehenderit id nulla incididunt. Cupidatat qui Lorem ut non quis officia dolore.",
+            "spans": []
+          }
+        ],
+        "catagory": "Generic"
       }
     ]
   }
