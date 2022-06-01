@@ -48,4 +48,5 @@ module.exports = {
 		require('@tailwindcss/typography'),
 		require('@tailwindcss/aspect-ratio'),
 	],
+	safelist: ['pt-32', 'pt-40'],
 };
