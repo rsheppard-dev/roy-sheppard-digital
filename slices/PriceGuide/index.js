@@ -6,7 +6,7 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 const PriceGuide = ({ slice }) => {
 	return (
 		<section className='flex flex-wrap gap-10 justify-center mb-20'>
-			{slice.primary.priceData.data.packages.map((item, i) => (
+			{slice.primary.priceData?.data?.packages.map((item, i) => (
 				<div
 					key={i}
 					className='rounded drop-shadow-md hover:drop-shadow-lg flex flex-col justify-between bg-white p-6 w-80 group'
