@@ -4,16 +4,15 @@ import { PrismicRichText } from '@prismicio/react';
 const Heading = ({ slice }) => {
 	return (
 		<div
-			className={`w-full ${
+			className={`w-full scroll-mt-18 pt-${slice.primary.paddingTop} pb-${
+				slice.primary.paddingBottom
+			} ${
 				slice.variation === 'headingDarkBackground'
 					? 'bg-accent-100'
 					: 'bg-white'
 			}`}
 		>
-			<div
-				id={slice.primary.slug}
-				className={`container inline-block scroll-mt-18 pt-${slice.primary.paddingTop} pb-${slice.primary.paddingBottom}`}
-			>
+			<div id={slice.primary.slug} className={`container`}>
 				<div className='h-2 w-1/2 bg-primary-100 mx-auto mb-10'></div>
 				<div
 					className={`${
