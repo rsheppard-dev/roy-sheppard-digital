@@ -1,4 +1,4 @@
-import { createClient, linkResolver } from '../prismicio';
+import { createClient } from '../prismicio';
 import { SliceZone } from '@prismicio/react';
 import { NextSeo, FAQPageJsonLd } from 'next-seo';
 
