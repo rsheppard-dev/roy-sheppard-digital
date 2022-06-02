@@ -9,7 +9,7 @@ const Text = ({ slice }) => (
 	>
 		<div className='container'>
 			<div
-				className={`prose-p:mb-10 prose-headings:mb-10 prose-ul:space-y-10 prose-a:text-link list-tick ${
+				className={`prose-p:mb-10 prose-headings:text-white prose-headings:mb-10 prose-ul:space-y-10 prose-a:text-link list-tick ${
 					slice.variation === 'textDarkBackground'
 						? 'prose-a:text-gray-300 text-gray-300 prose-invert'
 						: 'prose-a:text-gray-600 text-gray-600'
