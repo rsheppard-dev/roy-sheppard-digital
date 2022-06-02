@@ -35,7 +35,7 @@ const Footer = () => {
 					<Link href='/faq'>
 						<a className='underline text-base'>FAQ</a>
 					</Link>
-					<Link href='/#contact'>
+					<Link href='/contact'>
 						<a className='underline text-base'>Contact</a>
 					</Link>
 				</div>
