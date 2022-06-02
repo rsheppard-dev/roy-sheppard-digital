@@ -24,7 +24,9 @@
         "content": "https://www.roysheppard.digital"
       }
     },
-    "page": {},
+    "page": {
+      "faq": {}
+    },
     "price-guide": {
       "packages": {
         "content": {

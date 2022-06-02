@@ -108,7 +108,7 @@
                 "placeholder": ""
               }
             },
-            "Answer": {
+            "answer": {
               "type": "Text",
               "config": {
                 "label": "Answer",
