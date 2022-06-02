@@ -22,7 +22,7 @@ export default async function handler(req, res) {
 
 		// If you have a `createClient()` function defined elsewhere in
 		// your app, use that instead
-		const client = prismic.createClient('your-repo-name');
+		const client = prismic.createClient('roysheppard');
 
 		// Get a list of URLs for any new, updated, or deleted documents
 		const documents = await client.getAllByIDs(req.body.documents);
