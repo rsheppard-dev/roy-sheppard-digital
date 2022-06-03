@@ -1,4 +1,3 @@
-import { GetServerSideProps } from 'next';
 import { getServerSideSitemap } from 'next-sitemap';
 
 import { createClient } from '../../prismicio';
@@ -12,8 +11,6 @@ export const getServerSideProps = async ctx => {
 		loc: page.data.url,
 		lastmod: new Date(page.last_publication_date).toISOString(),
 	}));
-
-	console.log(fields);
 
 	return getServerSideSitemap(ctx, fields);
 };
