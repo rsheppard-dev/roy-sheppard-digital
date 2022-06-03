@@ -8,6 +8,6 @@ module.exports = {
 			{ userAgent: '*', disallow: '/slice-simulator' },
 			{ userAgent: '*', allow: '/' },
 		],
-		additionalSiteMaps: ['https://www.roysheppard.digital/server-sitemap.xml'],
+		additionalSitemaps: ['https://www.roysheppard.digital/server-sitemap.xml'],
 	},
 };
