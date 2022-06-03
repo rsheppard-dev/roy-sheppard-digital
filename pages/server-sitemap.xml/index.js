@@ -10,8 +10,10 @@ export const getServerSideProps = async ctx => {
 
 	const fields = pages.map(page => ({
 		loc: page.data.url,
-		lastmod: page.last_publication_date,
+		lastmod: new Date(page.last_publication_date).toISOString(),
 	}));
+
+	console.log(fields);
 
 	return getServerSideSitemap(ctx, fields);
 };
