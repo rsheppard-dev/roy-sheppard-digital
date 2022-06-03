@@ -27,13 +27,13 @@ const Contact = () => {
 				<div className='text-gray-600'>
 					<a href='tel:07883066944' className='group'>
 						<div className='flex items-center space-x-4 mb-2'>
-							<Phone className='h-6 w-6 text-secondary-100 group-hover:text-secondary-200' />
+							<Phone className='h-6 w-6 text-secondary-200 group-hover:text-secondary-100' />
 							<span className='text-link'>07883066944</span>
 						</div>
 					</a>
 					<a href='mailto:info@roysheppard.digital' className='group'>
 						<div className='flex items-center space-x-4'>
-							<Email className='h-6 w-6 text-secondary-100 group-hover:text-secondary-200' />
+							<Email className='h-6 w-6 text-secondary-200 group-hover:text-secondary-100' />
 							<span className='text-link'>info@roysheppard.digital</span>
 						</div>
 					</a>
