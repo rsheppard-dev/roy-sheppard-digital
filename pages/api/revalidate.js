@@ -19,7 +19,7 @@ export default async function handler(req, res) {
 			return res.status(401).json({ message: 'Invalid token' });
 		}
 
-		const client = createClient({ req });
+		const client = createClient();
 
 		// Get a list of URLs for any new, updated, or deleted documents
 		const documents = await client.getAllByIDs(req.body.documents);
