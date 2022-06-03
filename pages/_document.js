@@ -5,7 +5,7 @@ import { FB_PIXEL_ID } from '../lib/fpixel';
 export default class MyDocument extends Document {
 	render() {
 		return (
-			<Html>
+			<Html lang='en'>
 				<Head />
 				<body>
 					<noscript>

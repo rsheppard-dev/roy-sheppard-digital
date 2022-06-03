@@ -89,8 +89,8 @@ const Navbar = () => {
 									src='/images/logo.png'
 									alt='Roy Sheppard Digital'
 									layout='intrinsic'
-									width={376}
-									height={88}
+									width={256.36}
+									height={57}
 								/>
 							</a>
 						</Link>
@@ -121,22 +121,26 @@ const Navbar = () => {
 					</div>
 					<button
 						id='menuButton'
+						aria-label='Mobile menu'
 						aria-expanded={toggleMobileMenu}
 						aria-controls='menuItems'
 						onClick={toggleMobileMenu}
 						className='lg:hidden text-white relative z-50'
 					>
 						<motion.span
+							aria-hidden='true'
 							variants={buttonVariants.topLine}
 							animate={isOpen ? 'open' : 'closed'}
 							className='block rounded-lg w-10 mb-2 h-1 bg-white'
 						></motion.span>
 						<motion.span
+							aria-hidden='true'
 							variants={buttonVariants.middleLine}
 							animate={isOpen ? 'open' : 'closed'}
 							className='block rounded-lg w-10 mb-2 h-1 bg-white'
 						></motion.span>
 						<motion.span
+							aria-hidden='true'
 							variants={buttonVariants.bottomLine}
 							animate={isOpen ? 'open' : 'closed'}
 							className='block w-10 rounded-lg h-1 bg-white'

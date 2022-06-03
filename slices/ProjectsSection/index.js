@@ -51,7 +51,7 @@ const ProjectsSection = ({ slice }) => {
 								<PrismicRichText field={item.description} />
 							</div>
 							<PrismicLink
-								className='block w-fit mx-auto lg:mx-0 text-white bg-secondary-100 py-3 px-6 rounded-lg hover:bg-secondary-200 transition-colors duration-500 ease-in-out'
+								className='block w-fit mx-auto lg:mx-0 text-white bg-secondary-200 py-3 px-6 rounded-lg hover:bg-secondary-100 transition-colors duration-500 ease-in-out'
 								field={item.websiteLink}
 								target='_blank'
 							>

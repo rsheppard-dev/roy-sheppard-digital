@@ -116,6 +116,7 @@ const MobileMenu = ({ isOpen, toggleMobileMenu }) => {
 					</div>
 					<div>
 						<button
+							aria-label='Services menu'
 							id='subMenuButton'
 							onClick={toggleSubMenu}
 							className='ml-4'
@@ -123,12 +124,14 @@ const MobileMenu = ({ isOpen, toggleMobileMenu }) => {
 							aria-controls='subMenuItems'
 						>
 							<motion.span
+								aria-hidden='true'
 								variants={buttonVariants.crossHorizontal}
 								initial={false}
 								animate={isSubOpen ? 'open' : 'closed'}
 								className='block rounded-lg h-1 w-6 bg-white'
 							></motion.span>
 							<motion.span
+								aria-hidden='true'
 								variants={buttonVariants.crossVertical}
 								initial={false}
 								animate={isSubOpen ? 'open' : 'closed'}
