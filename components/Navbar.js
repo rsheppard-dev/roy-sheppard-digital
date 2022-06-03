@@ -89,8 +89,8 @@ const Navbar = () => {
 									src='/images/logo.png'
 									alt='Roy Sheppard Digital'
 									layout='intrinsic'
-									width={256.36}
-									height={57}
+									width={256.3636}
+									height={60}
 								/>
 							</a>
 						</Link>
