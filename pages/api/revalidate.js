@@ -31,7 +31,7 @@ export default async function handler(req, res) {
 				urls.map(async url => await res.unstable_revalidate(url))
 			);
 
-			return res.json({ revalidated: true });
+			return res.json({ revalidated: true, urls });
 		} catch (err) {
 			// If there was an error, Next.js will continue to show
 			// the last successfully generated page
