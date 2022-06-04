@@ -39,7 +39,8 @@ const CookieConsent = () => {
 					/>
 				</div>
 				<span className='font-lato text-gray-600 text-lg'>
-					This site uses cookies to enhance and improve the user experience.
+					This site uses cookies to analyse site usage and improve the user
+					experience.
 				</span>
 			</div>
 			<div className='flex justify-between'>
