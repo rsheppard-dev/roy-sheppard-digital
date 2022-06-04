@@ -91,6 +91,23 @@ const Layout = ({ children }) => {
 							},
 						},
 					]}
+					rating={{
+						ratingValue: '5',
+						ratingCount: '1',
+					}}
+					review={[
+						{
+							author: 'George Thomas',
+							datePublished: '2022-05-26',
+							reviewBody:
+								'Roy was exceptionally professional and efficient with building us a website for our new barbershop. He had a lot of his own very useful ideas which helped us gain a further reach to our audience. Would highly recommend!',
+							reviewRating: {
+								bestRating: '5',
+								worstRating: '1',
+								ratingValue: '5',
+							},
+						},
+					]}
 				/>
 				<Navbar />
 				<main>{children}</main>
