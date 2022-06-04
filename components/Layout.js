@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
 					id='https://www.roysheppard.digital'
 					name='Roy Sheppard Digital'
 					description='Freelance website designer and JAMstack developer based in Watford, Hertfordshire.'
-					url='-0.413290'
+					url='https://www.roysheppard.digital'
 					telephone='07883066944'
 					email='info@roysheppard.digital'
 					priceRange='$$'
