@@ -11,7 +11,7 @@ const Testimonial = ({ slice }) => (
 				<span className='hidden sm:flex justify-end items-end relative bottom-24 flex-grow'>
 					<Quote className='fill-gray-600 h-20 w-20' />
 				</span>
-				<div className='flex flex-col items-center flex-initial'>
+				<div className='flex flex-col items-center flex-initial sm:flew-grow'>
 					<span className='relative'>
 						<Image
 							src={slice.primary.photo.url}
