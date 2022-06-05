@@ -238,7 +238,13 @@
           "fileName": "index",
           "extension": "js"
         },
-        "screenshotPaths": {}
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/roy/Documents/Web Projects/roy-sheppard-digital/.slicemachine/assets/slices/ContactSection/default/preview.png",
+            "width": 800,
+            "height": 2308
+          }
+        }
       },
       "faq": {
         "library": "slices",
