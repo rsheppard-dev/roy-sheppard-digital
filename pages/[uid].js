@@ -8,6 +8,7 @@ import PageNotFound from '../components/404';
 
 export default function Page({ page, errorCode }) {
 	if (errorCode) return <PageNotFound />;
+	console.log(page);
 
 	const faq = page.data.faq.map(item => {
 		return {
@@ -15,6 +16,7 @@ export default function Page({ page, errorCode }) {
 			acceptedAnswerText: item.answer,
 		};
 	});
+
 	return (
 		<Layout>
 			{page.data.ogImage.url && (
@@ -38,7 +40,7 @@ export default function Page({ page, errorCode }) {
 					}}
 				/>
 			)}
-			{page.data.faq && <FAQPageJsonLd mainEntity={faq} />}
+			{page.data.faq[0].question && <FAQPageJsonLd mainEntity={faq} />}
 			<SliceZone slices={page.data.slices} components={components} />
 		</Layout>
 	);

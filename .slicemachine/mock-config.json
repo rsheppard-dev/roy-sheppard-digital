@@ -253,6 +253,15 @@
               "patternType": "PARAGRAPH",
               "blocks": 1
             }
+          },
+          "photo": {
+            "content": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef"
+          },
+          "name": {
+            "content": "George Thomas"
+          },
+          "position": {
+            "content": "Owner - Studio120 Barbering"
           }
         }
       }

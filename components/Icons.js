@@ -311,7 +311,7 @@ export const Quote = ({ className }) => (
 		x='0px'
 		y='0px'
 		viewBox='0 0 64 64'
-		enable-background='new 0 0 64 64'
+		enableBackground='new 0 0 64 64'
 		className={className}
 	>
 		<title>Quotation Mark</title>
@@ -363,7 +363,7 @@ export const Quote = ({ className }) => (
 
 export const Stars = ({ className }) => (
 	<svg
-		enable-background='new 0 0 512 512'
+		enableBackground='new 0 0 512 512'
 		viewBox='0 0 512 512'
 		className={className}
 	>

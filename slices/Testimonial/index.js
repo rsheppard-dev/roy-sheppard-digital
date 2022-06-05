@@ -9,7 +9,7 @@ const Testimonial = ({ slice }) => (
 		<div className='container'>
 			<div className='flex w-full gap-6'>
 				<span className='hidden sm:flex justify-end items-end relative bottom-24 sm:flex-grow'>
-					<Quote className='fill-gray-400 h-20 w-20' />
+					<Quote className='fill-gray-300 h-20 w-20' />
 				</span>
 				<div className='flex flex-col items-center justify-center flex-initial w-full sm:w-fit'>
 					<span className='relative'>
@@ -29,11 +29,11 @@ const Testimonial = ({ slice }) => (
 					</span>
 				</div>
 				<span className='hidden sm:flex sm:flex-grow justify-start items-end relative bottom-24'>
-					<Quote className='fill-gray-400 h-20 w-20 rotate-180' />
+					<Quote className='fill-gray-300 h-20 w-20 rotate-180' />
 				</span>
 			</div>
 			<div className='flex flex-col items-center justify-center'>
-				<span className='text-gray-600 prose sm:prose-p:text-lg text-center max-w-none min-w-full'>
+				<span className='prose-p:text-gray-600 prose sm:prose-p:text-lg text-center max-w-none min-w-full'>
 					<PrismicRichText field={slice.primary.testimonial} />
 				</span>
 				<Stars className='text-primary-100 w-32' />
