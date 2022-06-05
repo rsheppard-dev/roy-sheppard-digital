@@ -24,7 +24,7 @@ const Testimonial = ({ slice }) => (
 					<span className='font-bold text-center text-gray-900'>
 						{slice.primary.name}
 					</span>
-					<span className='font-bold text-xl text-center text-secondary-100 mb-10'>
+					<span className='font-bold text-base sm:text-xl text-center text-secondary-100 mb-10'>
 						{slice.primary.position}
 					</span>
 				</div>
@@ -33,7 +33,7 @@ const Testimonial = ({ slice }) => (
 				</span>
 			</div>
 			<div className='flex flex-col items-center justify-center'>
-				<span className='text-gray-600 prose-p:text-lg text-center'>
+				<span className='text-gray-500 prose-p:text-sm prose-p:sm:text-lg text-center'>
 					<PrismicRichText field={slice.primary.testimonial} />
 				</span>
 				<Stars className='text-primary-100 w-32' />
