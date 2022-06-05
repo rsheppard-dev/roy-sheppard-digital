@@ -8,7 +8,7 @@ const PageNotFound = () => {
 				<title>404: Page Not Found</title>
 			</Head>
 			<Layout>
-				<section className='container h-screen text-center flex justify-center items-center'>
+				<section className='container h-full text-center flex justify-center items-center'>
 					404 | Sorry, that page does not exist.
 				</section>
 			</Layout>
