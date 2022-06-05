@@ -8,7 +8,7 @@ const Testimonial = ({ slice }) => (
 	<section className='pb-20'>
 		<div className='container'>
 			<div className='flex w-full gap-6'>
-				<span className='hidden sm:flex justify-end items-end relative bottom-24 flex-grow'>
+				<span className='hidden sm:flex justify-end items-end relative bottom-24 flex-grow w-full'>
 					<Quote className='fill-gray-400 h-20 w-20' />
 				</span>
 				<div className='flex flex-col items-center flex-initial sm:flew-grow'>
