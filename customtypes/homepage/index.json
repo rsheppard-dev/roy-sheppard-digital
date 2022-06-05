@@ -43,6 +43,18 @@
             },
             "contact_section": {
               "type": "SharedSlice"
+            },
+            "price_guide": {
+              "type": "SharedSlice"
+            },
+            "quote_box": {
+              "type": "SharedSlice"
+            },
+            "testimonial": {
+              "type": "SharedSlice"
+            },
+            "text": {
+              "type": "SharedSlice"
             }
           }
         }

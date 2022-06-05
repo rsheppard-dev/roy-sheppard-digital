@@ -244,6 +244,18 @@
         "primary": {}
       }
     },
-    "WebsiteReview": {}
+    "WebsiteReview": {},
+    "Testimonial": {
+      "default": {
+        "primary": {
+          "testimonial": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    }
   }
 }

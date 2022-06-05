@@ -15,6 +15,7 @@ import ReviewSection from './ReviewSection';
 import Separator from './Separator';
 import Services from './Services';
 import TechSection from './TechSection';
+import Testimonial from './Testimonial';
 import Text from './Text';
 
 export {
@@ -33,6 +34,7 @@ export {
 	Separator,
 	Services,
 	TechSection,
+	Testimonial,
 	Text,
 };
 
@@ -52,5 +54,6 @@ export const components = {
 	separator: Separator,
 	services: Services,
 	tech_section: TechSection,
+	testimonial: Testimonial,
 	text: Text,
 };

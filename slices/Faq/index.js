@@ -38,7 +38,7 @@ const Faq = ({ slice }) => {
 				id='accordionGroup'
 				className='space-y-4 prose mx-auto prose-a:text-link prose-a:text-gray-600'
 			>
-				{slice.primary.faqData.data.faqList.map((item, index) => (
+				{slice.primary.faqData?.data?.faqList.map((item, index) => (
 					<div key={index}>
 						<button
 							onClick={() => handleClick(index)}
