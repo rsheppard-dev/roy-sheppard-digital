@@ -11,7 +11,7 @@ const Testimonial = ({ slice }) => (
 				<span className='hidden sm:flex justify-end items-end relative bottom-24 sm:flex-grow'>
 					<Quote className='fill-gray-400 h-20 w-20' />
 				</span>
-				<div className='flex flex-col items-center flex-initial sm:w-full'>
+				<div className='flex flex-col items-center justify-center flex-initial'>
 					<span className='relative'>
 						<Image
 							src={slice.primary.photo.url}
@@ -28,7 +28,7 @@ const Testimonial = ({ slice }) => (
 						{slice.primary.position}
 					</span>
 				</div>
-				<span className='hidden sm:flex flex-grow justify-start items-end relative bottom-24'>
+				<span className='hidden sm:flex sm:flex-grow justify-start items-end relative bottom-24'>
 					<Quote className='fill-gray-400 h-20 w-20 rotate-180' />
 				</span>
 			</div>
