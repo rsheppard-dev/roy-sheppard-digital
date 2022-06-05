@@ -4,8 +4,11 @@ import { NextSeo, FAQPageJsonLd } from 'next-seo';
 
 import { components } from '../slices';
 import Layout from '../components/Layout';
+import PageNotFound from '../components/404';
 
-export default function Page({ page }) {
+export default function Page({ page, errorCode }) {
+	if (errorCode) return <PageNotFound />;
+
 	const faq = page.data.faq.map(item => {
 		return {
 			questionName: item.question,
@@ -42,15 +45,23 @@ export default function Page({ page }) {
 }
 
 export async function getStaticProps({ params, previewData }) {
+	let page = '';
+	let errorCode = '';
+
 	const client = createClient({ previewData });
 
-	const page = await client.getByUID('page', params.uid, {
-		fetchLinks: ['price-guide.packages', 'faq.faqList'],
-	});
+	try {
+		page = await client.getByUID('page', params.uid, {
+			fetchLinks: ['price-guide.packages', 'faq.faqList'],
+		});
+	} catch (e) {
+		if (!e.response) errorCode = 404;
+	}
 
 	return {
 		props: {
 			page,
+			errorCode,
 		},
 		revalidate: 60,
 	};

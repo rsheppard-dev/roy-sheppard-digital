@@ -27,9 +27,9 @@ export default async function handler(req, res) {
 
 		try {
 			// Revalidate the URLs for those documents
-			// await Promise.all(
-			urls.map(async url => await res.unstable_revalidate(url));
-			// );
+			await Promise.all(
+				urls.map(async url => await res.unstable_revalidate(url))
+			);
 
 			return res.json({ revalidated: true });
 		} catch (err) {
