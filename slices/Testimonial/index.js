@@ -5,7 +5,7 @@ import { PrismicRichText } from '@prismicio/react';
 import { Stars, Quote } from '../../components/Icons';
 
 const Testimonial = ({ slice }) => (
-	<section className='mb-20 bg-accent-100'>
+	<section className='pb-20 bg-accent-100'>
 		<div className='container'>
 			<div className='flex w-full gap-6'>
 				<span className='hidden sm:flex justify-end items-end relative bottom-24 flex-grow'>
