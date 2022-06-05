@@ -21,10 +21,10 @@ const Testimonial = ({ slice }) => (
 							className='rounded-full grayscale'
 						/>
 					</span>
-					<span className='font-bold text-center text-gray-900'>
+					<span className='font-bold font-futura text-center text-gray-900'>
 						{slice.primary.name}
 					</span>
-					<span className='font-bold text-base sm:text-xl text-center text-secondary-100 mb-10'>
+					<span className='font-bold font-futura text-base sm:text-xl text-center text-secondary-100 mb-10'>
 						{slice.primary.position}
 					</span>
 				</div>
