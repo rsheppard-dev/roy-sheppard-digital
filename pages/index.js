@@ -11,7 +11,8 @@ export async function getStaticProps({ previewData }) {
 	const homepage = await client.getSingle('homepage');
 
 	return {
-		props: { homepage }, // Will be passed to the page component as props
+		props: { homepage },
+		revalidate: 60,
 	};
 }
 
