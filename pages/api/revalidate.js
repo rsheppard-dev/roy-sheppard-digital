@@ -27,12 +27,11 @@ export default async function handler(req, res) {
 
 		try {
 			// Revalidate the URLs for those documents
-			await Promise.all(
+			const urlChecker = await Promise.all(
 				urls.map(async url => await res.unstable_revalidate(url))
 			);
-			console.log(urls);
 
-			return res.json({ revalidated: true });
+			return res.json({ revalidated: true, urlChecker });
 		} catch (err) {
 			// If there was an error, Next.js will continue to show
 			// the last successfully generated page
