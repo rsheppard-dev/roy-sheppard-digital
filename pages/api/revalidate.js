@@ -25,13 +25,18 @@ export default async function handler(req, res) {
 		const documents = await client.getAllByIDs(req.body.documents);
 		const urls = documents.map(doc => prismicH.asLink(doc, linkResolver));
 
+		let urlCheck = [];
+
 		try {
 			// Revalidate the URLs for those documents
-			const urlChecker = await Promise.all(
-				urls.map(async url => await res.unstable_revalidate(url))
+			await Promise.all(
+				urls.map(async url => {
+					await res.unstable_revalidate(url);
+					urlCheck.push(url);
+				})
 			);
 
-			return res.json({ revalidated: true, urlChecker });
+			return res.json({ revalidated: true, urlCheck });
 		} catch (err) {
 			// If there was an error, Next.js will continue to show
 			// the last successfully generated page
