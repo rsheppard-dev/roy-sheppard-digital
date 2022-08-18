@@ -121,8 +121,8 @@ const ReviewForm = ({ url = '' }) => {
 				name='website-review'
 				id='website-review'
 				method='POST'
-				netlify-honeypot='bot-field'
 				data-netlify='true'
+				netlify-honeypot='bot-field'
 				onSubmit={handleSubmit(onSubmit)}
 				className='space-y-6 text-gray-600'
 			>
