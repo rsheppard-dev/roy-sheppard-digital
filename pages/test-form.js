@@ -1,6 +1,11 @@
 const TestForm = () => {
 	return (
-		<form data-netlify='true' name='test-form' method='POST'>
+		<form
+			data-netlify='true'
+			name='test-form'
+			method='POST'
+			netlify-honeypot='bot-field'
+		>
 			<input type='hidden' name='form-name' value='test-form' />
 			<input type='hidden' name='subject' value='Test form has messaged you' />
 			<div className='hidden'>
