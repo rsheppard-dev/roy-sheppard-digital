@@ -36,7 +36,7 @@ const ReviewForm = ({ url = '' }) => {
 	const onSubmit = () => {
 		const formData = new FormData(myForm.current);
 
-		fetch('/', {
+		fetch('/favicon.ico', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
 			body: new URLSearchParams(formData).toString(),
