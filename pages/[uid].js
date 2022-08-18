@@ -8,7 +8,6 @@ import PageNotFound from '../components/404';
 
 export default function Page({ page, errorCode }) {
 	if (errorCode) return <PageNotFound />;
-	console.log(page);
 
 	const faq = page.data.faq.map(item => {
 		return {
