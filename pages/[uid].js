@@ -59,6 +59,10 @@ export async function getStaticProps({ params, previewData }) {
 		if (!e.response) errorCode = 404;
 	}
 
+	if (errorCode === 404) {
+		return { notFound: true };
+	}
+
 	return {
 		props: {
 			page,
