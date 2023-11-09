@@ -83,7 +83,7 @@ const Footer = () => {
 						<Twitter className='h-8 w-8 text-white' />
 					</a>
 					<a
-						href='https://www.linkedin.com/in/roysheppard-digital'
+						href='https://www.linkedin.com/in/roy-sheppard'
 						target='_blank'
 						className='relative hover:bottom-1 transition-all'
 					>
